@@ -1,0 +1,1272 @@
+@prefix chm:     <https://example.org/chm#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+
+chm:StrongVerbIShape a sh:NodeShape ;
+  sh:targetClass chm:StrongVerbI ;
+
+  sh:sparql [
+    a sh:SPARQLConstraint ;
+    sh:message "For Strong Verb Class I, the infinitive must have root vowel ī."@en ;
+    sh:select """
+      PREFIX chm:     <https://example.org/chm#>
+      PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+      SELECT $this
+      WHERE {
+        $this ontolex:canonicalForm ?f .
+        ?f chm:rootVowel ?v .
+        FILTER(?v != "ī")
+      }
+    """
+  ] ;
+
+  
+  sh:sparql [
+    a sh:SPARQLConstraint ;
+    sh:message "For Strong Verb Class I, any 1sg past indicative form must have root vowel ā."@en ;
+    sh:select """
+      PREFIX chm:     <https://example.org/chm#>
+      PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+      PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+
+      SELECT $this
+      WHERE {
+        $this ontolex:otherForm ?f .
+        ?f lexinfo:tense lexinfo:past ;
+           lexinfo:person lexinfo:firstPerson ;
+           lexinfo:number lexinfo:singular ;
+           lexinfo:verbFormMood lexinfo:indicative ;
+           chm:rootVowel ?v .
+        FILTER(?v != "ā")
+      }
+    """
+  ] ;
+
+  sh:sparql [
+    a sh:SPARQLConstraint ;
+    sh:message "For Strong Verb Class I, any past participle form must have root vowel i."@en ;
+    sh:select """
+      PREFIX chm:     <https://example.org/chm#>
+      PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+      PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+
+      SELECT $this
+      WHERE {
+        $this ontolex:otherForm ?f .
+        ?f lexinfo:tense lexinfo:past ;
+           lexinfo:verbFormMood lexinfo:participle ;
+           chm:rootVowel ?v .
+        FILTER(?v != "i")
+      }
+    """
+  ] .
+
+chm:StrongVerbIIaShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIIa ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIa infinitive must have root vowel ēo." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "ēo")
+            }
+        """
+    ] ;
+
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIa past 1sg must have root vowel ēa." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ēa")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIa past 2sg must have root vowel ēa." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ēa")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIa past plural must have root vowel u." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "u")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIa past participle must have root vowel o." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "o")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class IIIa
+# e, æ, u, o
+############################################################
+
+chm:StrongVerbIIIaShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIIIa ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIa infinitive must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIa past 1sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIa past 2sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIa past plural must have root vowel u." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "u")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIa past participle must have root vowel o." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "o")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class IIIb
+# eo, ea, u, o
+############################################################
+
+chm:StrongVerbIIIbShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIIIb ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIb infinitive must have root vowel eo." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "eo")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIb past 1sg must have root vowel ea." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ea")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIb past 2sg must have root vowel ea." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ea")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIb past plural must have root vowel u." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "u")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIb past participle must have root vowel o." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "o")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class IIIc
+# e, æ, u, o
+############################################################
+
+chm:StrongVerbIIIcShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIIIc ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIc infinitive must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIc past 1sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIc past 2sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIc past plural must have root vowel u." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "u")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIc past participle must have root vowel o." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "o")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class IIId
+# ie, ea, u, o
+############################################################
+
+chm:StrongVerbIIIdShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIIId ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIId infinitive must have root vowel ie." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "ie")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIId past 1sg must have root vowel ea." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ea")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIId past 2sg must have root vowel ea." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ea")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIId past plural must have root vowel u." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "u")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIId past participle must have root vowel o." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "o")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class IIIe
+# i, a, u, u
+############################################################
+
+chm:StrongVerbIIIeShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIIIe ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIe infinitive must have root vowel i." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "i")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIe past 1sg must have root vowel a." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "a")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIe past 2sg must have root vowel a." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "a")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIe past plural must have root vowel u." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "u")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IIIe past participle must have root vowel u." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "u")
+            }
+        """
+    ] .
+
+###########################################################
+# Strong Verb Class IV
+# e, æ, ǣ, o
+############################################################
+
+chm:StrongVerbIVShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIV ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV infinitive must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past 1sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past 2sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past plural must have root vowel ǣ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ǣ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past participle must have root vowel o." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "o")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class V
+# e, æ, ǣ, e
+############################################################
+
+chm:StrongVerbVShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbV ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V infinitive must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past 1sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past 2sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past plural must have root vowel ǣ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ǣ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past participle must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class VI
+# a, ō, ō, a
+############################################################
+
+chm:StrongVerbVIShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbVI ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI infinitive must have root vowel a." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "a")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past 1sg must have root vowel ō." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ō")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past 2sg must have root vowel ō." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ō")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past plural must have root vowel ō." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ō")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past participle must have root vowel a." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "a")
+            }
+        """
+    ] .
+
+###########################################################
+# Strong Verb Class IV
+# e, æ, ǣ, o
+############################################################
+
+chm:StrongVerbIVShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbIV ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV infinitive must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past 1sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past 2sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past plural must have root vowel ǣ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ǣ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb IV past participle must have root vowel o." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "o")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class V
+# e, æ, ǣ, e
+############################################################
+
+chm:StrongVerbVShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbV ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V infinitive must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past 1sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past 2sg must have root vowel æ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "æ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past plural must have root vowel ǣ." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ǣ")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb V past participle must have root vowel e." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "e")
+            }
+        """
+    ] .
+
+############################################################
+# Strong Verb Class VI
+# a, ō, ō, a
+############################################################
+
+chm:StrongVerbVIShape
+    a sh:NodeShape ;
+    sh:targetClass chm:StrongVerbVI ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI infinitive must have root vowel a." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            SELECT $this
+            WHERE {
+                $this ontolex:canonicalForm ?f .
+                ?f chm:rootVowel ?v .
+                FILTER (?v != "a")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past 1sg must have root vowel ō." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:firstPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ō")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past 2sg must have root vowel ō." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:person lexinfo:secondPerson ;
+                   lexinfo:number lexinfo:singular ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ō")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past plural must have root vowel ō." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:number lexinfo:plural ;
+                   lexinfo:verbFormMood lexinfo:indicative ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "ō")
+            }
+        """
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Strong Verb VI past participle must have root vowel a." ;
+        sh:select """
+            PREFIX chm: <https://example.org/chm#>
+            PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+            PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+            SELECT $this
+            WHERE {
+                $this ontolex:otherForm ?f .
+                ?f lexinfo:tense lexinfo:past ;
+                   lexinfo:verbFormMood lexinfo:participle ;
+                   chm:rootVowel ?v .
+                FILTER (?v != "a")
+            }
+        """
+    ] .
