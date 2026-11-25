@@ -1,0 +1,111 @@
+@prefix chm: <https://example.org/chm#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix ns1: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/ch/CAS2.b_am_d_1_entry> a ontolex:LexicalEntry ;
+    lexinfo:gender lexinfo:feminine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.b_im_dan_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.b_am_d_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.b_am_d_1.1.1_sense>,
+        <https://example.org/ch/CAS2.b_am_d_1.1.2_sense>,
+        <https://example.org/ch/CAS2.b_am_d_1.1_sense> .
+
+<https://example.org/ch/CAS2.b_am_d_2_entry> rdfs:seeAlso <https://example.org/ch/CAS2.b_im_dan_entry> .
+
+<https://example.org/ch/CAS2.b_im_tan_entry> ontolex:otherForm <https://example.org/ch/CAS2.b_im_t_form>,
+        <https://example.org/ch/CAS2.b_im_tst_form> .
+
+<https://example.org/ch/CAS2.b_am_d_1.1.1_sense> a ontolex:LexicalSense ;
+    rdfs:label "forced contribution, impost, pledge,"@en .
+
+<https://example.org/ch/CAS2.b_am_d_1.1.2_sense> a ontolex:LexicalSense ;
+    rdfs:label "expectation"@en .
+
+<https://example.org/ch/CAS2.b_am_d_1.1_sense> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.b_am_d_1_form> a ontolex:Form ;
+    ontolex:writtenRep "bād"@ang .
+
+<https://example.org/ch/CAS2.b_am_d_2_form> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "bād"@ang .
+
+<https://example.org/ch/CAS2.b_im_dan.1.1_sense> a ontolex:LexicalSense ;
+    rdfs:label "to stay, continue, live, remain, delay,"@en .
+
+<https://example.org/ch/CAS2.b_im_dan.1.2_sense> a ontolex:LexicalSense ;
+    rdfs:label "wait for, await, expect,"@en .
+
+<https://example.org/ch/CAS2.b_im_dan.1.3_sense> a ontolex:LexicalSense ;
+    rdfs:label "endure, experience, find"@en .
+
+<https://example.org/ch/CAS2.b_im_dan.1.4_sense> a ontolex:LexicalSense ;
+    rdfs:label "attain, obtain"@en .
+
+<https://example.org/ch/CAS2.b_im_dan.1_sense> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.b_im_dan_form> a ontolex:Form ;
+    ontolex:writtenRep "bīdan"@ang .
+
+<https://example.org/ch/CAS2.b_im_dan_form_ge> a ontolex:Form .
+
+<https://example.org/ch/CAS2.b_im_dst_form> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:secondPerson ;
+    lexinfo:tense lexinfo:present ;
+    ontolex:writtenRep "bīdst"@ang .
+
+<https://example.org/ch/CAS2.b_im_st_form> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:secondPerson ;
+    lexinfo:tense lexinfo:present ;
+    ontolex:writtenRep "bīst"@ang .
+
+<https://example.org/ch/CAS2.beodan_form> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "beodan"@ang .
+
+<https://example.org/ch/CAS2.bidon_form> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "bidon"@ang .
+
+<https://example.org/ch/CAS2.b_im_dan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.b_im_dan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.b_am_d_2_form>,
+        <https://example.org/ch/CAS2.b_im_dan_form_ge>,
+        <https://example.org/ch/CAS2.b_im_dst_form>,
+        <https://example.org/ch/CAS2.b_im_st_form>,
+        <https://example.org/ch/CAS2.b_im_t_form>,
+        <https://example.org/ch/CAS2.b_im_tst_form>,
+        <https://example.org/ch/CAS2.beodan_form>,
+        <https://example.org/ch/CAS2.bidon_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.b_im_dan.1.1_sense>,
+        <https://example.org/ch/CAS2.b_im_dan.1.2_sense>,
+        <https://example.org/ch/CAS2.b_im_dan.1.3_sense>,
+        <https://example.org/ch/CAS2.b_im_dan.1.4_sense>,
+        <https://example.org/ch/CAS2.b_im_dan.1_sense> ;
+    ontolex:writtenRep "ge-bīdan"@ang .
+
+<https://example.org/ch/CAS2.b_im_t_form> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:present ;
+    ontolex:writtenRep "bīt"@ang .
+
+<https://example.org/ch/CAS2.b_im_tst_form> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:secondPerson ;
+    lexinfo:tense lexinfo:present ;
+    ontolex:writtenRep "bītst"@ang .
+
+[] ns1:role ns1:sourceLanguage .
+

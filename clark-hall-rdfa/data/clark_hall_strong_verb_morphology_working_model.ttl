@@ -1,0 +1,245 @@
+@prefix chm:     <https://example.org/chm#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix exentry: <https://example.org/clarkhall/entry/> .
+@prefix exform:  <https://example.org/clarkhall/form/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+####################################################################
+# Clark–Hall morphology – working RDF model
+# Focus: strong verbs, morphology only (no TEI print details)
+# Notes:
+#  - Use exentry: for LexicalEntry IRIs and exform: for Form IRIs.
+#  - Form IRIs use underscore naming (no '/' or '#') for Turtle/Protégé compatibility.
+####################################################################
+
+####################################################################
+# Lemma: bīdan (Strong Verb Class I)
+####################################################################
+
+exentry:biidan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbI ;
+  rdfs:label "bīdan"@ang ;
+  ontolex:canonicalForm exform:biidan_inf ;
+  ontolex:otherForm
+    exform:biidan_pret-3sg ,
+    exform:biidan_pret-pl_1 ,
+    exform:biidan_pret-pl_2 ,
+    exform:biidan_pres-2sg_1 ,
+    exform:biidan_pres-2sg_2 ,
+    exform:biidan_pres-2sg_3 ,
+    exform:biidan_pres-3sg .
+
+# infinitive
+exform:biidan_inf a ontolex:Form ;
+  ontolex:writtenRep "bīdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+# pret. 3 sg. (bād)
+exform:biidan_pret-3sg a ontolex:Form ;
+  ontolex:writtenRep "bād"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pret. pl. variant 1 (beodan)
+exform:biidan_pret-pl_1 a ontolex:Form ;
+  ontolex:writtenRep "beodan"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pret. pl. variant 2 (bidon)
+exform:biidan_pret-pl_2 a ontolex:Form ;
+  ontolex:writtenRep "bidon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 2 sg. variant 1 (bīst)
+exform:biidan_pres-2sg_1 a ontolex:Form ;
+  ontolex:writtenRep "bīst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 2 sg. variant 2 (bīdst)
+exform:biidan_pres-2sg_2 a ontolex:Form ;
+  ontolex:writtenRep "bīdst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 2 sg. variant 3 (bītst)
+exform:biidan_pres-2sg_3 a ontolex:Form ;
+  ontolex:writtenRep "bītst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 3 sg. (bīt)
+exform:biidan_pres-3sg a ontolex:Form ;
+  ontolex:writtenRep "bīt"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+
+####################################################################
+# Lemma: cēosan (Strong Verb Class IIa)
+# Clark–Hall has ± on the lemma => found with and without ge-
+####################################################################
+
+exentry:ceosan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIIa ;
+  rdfs:label "cēosan"@ang ;
+  ontolex:canonicalForm exform:ceosan_inf ;
+  ontolex:otherForm
+    exform:ceosan_inf_2 ,
+    exform:ceosan_pret-3sg_1 ,
+    exform:ceosan_pret-3sg_2 ,
+    exform:ceosan_pret-3sg_3 ,
+    exform:ceosan_pret-pl ,
+    exform:ceosan_pp_1 ,
+    exform:ceosan_pp_2 ,
+    exform:ceosan_pres-3sg_1 ,
+    exform:ceosan_pres-3sg_2 ,
+    exform:ceosan_pres-3sg_3 ,
+    exform:ceosan_pres-3sg_4 ,
+    exform:ceosan_pres-3sg_5 .
+
+# infinitive (unprefixed + ge- prefixed variant)
+exform:ceosan_inf a ontolex:Form ;
+  ontolex:writtenRep "cēosan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+exform:ceosan_inf_2 a ontolex:Form ;
+  ontolex:writtenRep "gecēosan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+# preterite 3 sg. (variants: cēas, cǣs, cēs)
+exform:ceosan_pret-3sg_1 a ontolex:Form ;
+  ontolex:writtenRep "cēas"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+exform:ceosan_pret-3sg_2 a ontolex:Form ;
+  ontolex:writtenRep "cǣs"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+exform:ceosan_pret-3sg_3 a ontolex:Form ;
+  ontolex:writtenRep "cēs"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# preterite plural (curon)
+exform:ceosan_pret-pl a ontolex:Form ;
+  ontolex:writtenRep "curon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# past participle (±coren => coren and gecoren)
+exform:ceosan_pp_1 a ontolex:Form ;
+  ontolex:writtenRep "coren"@ang ;
+  lexinfo:verbFormMood lexinfo:participle ;
+  lexinfo:tense lexinfo:past .
+
+exform:ceosan_pp_2 a ontolex:Form ;
+  ontolex:writtenRep "gecoren"@ang ;
+  lexinfo:verbFormMood lexinfo:participle ;
+  lexinfo:tense lexinfo:past .
+
+# present 3 sg. variants
+exform:ceosan_pres-3sg_1 a ontolex:Form ;
+  ontolex:writtenRep "cīest"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+exform:ceosan_pres-3sg_2 a ontolex:Form ;
+  ontolex:writtenRep "cīesð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+exform:ceosan_pres-3sg_3 a ontolex:Form ;
+  ontolex:writtenRep "cīst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+exform:ceosan_pres-3sg_4 a ontolex:Form ;
+  ontolex:writtenRep "cȳst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+exform:ceosan_pres-3sg_5 a ontolex:Form ;
+  ontolex:writtenRep "cȳsð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+
+####################################################################
+# Lemma: lūcan (Strong Verb Class IIb)
+# Clark–Hall has (±) on the lemma => found with and without ge-
+####################################################################
+
+exentry:luucan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIIb ;
+  rdfs:label "lūcan"@ang ;
+  ontolex:canonicalForm exform:luucan_inf ;
+  ontolex:otherForm
+    exform:luucan_inf_2 ,
+    exform:luucan_pret-3sg ,
+    exform:luucan_pp ,
+    exform:luucan_pres-3sg .
+
+# infinitive (unprefixed + ge- prefixed variant)
+exform:luucan_inf a ontolex:Form ;
+  ontolex:writtenRep "lūcan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+exform:luucan_inf_2 a ontolex:Form ;
+  ontolex:writtenRep "gelūcan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+# preterite 3 sg. (lēac)
+exform:luucan_pret-3sg a ontolex:Form ;
+  ontolex:writtenRep "lēac"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# past participle (locen)
+exform:luucan_pp a ontolex:Form ;
+  ontolex:writtenRep "locen"@ang ;
+  lexinfo:verbFormMood lexinfo:participle ;
+  lexinfo:tense lexinfo:past .
+
+# present 3 sg. (lȳcð)
+exform:luucan_pres-3sg a ontolex:Form ;
+  ontolex:writtenRep "lȳcð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .

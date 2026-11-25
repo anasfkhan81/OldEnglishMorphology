@@ -1,0 +1,19 @@
+@prefix chm: <https://example.org/chm#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+<https://example.org/ch/lacan> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/lacan#lemma> ;
+    ontolex:otherForm <https://example.org/ch/lacan#leolc-pret-3sg> .
+
+<https://example.org/ch/lacan#lemma> a ontolex:Form ;
+    ontolex:writtenRep "lācan"@ang .
+
+<https://example.org/ch/lacan#leolc-pret-3sg> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "leolc"@ang .
+

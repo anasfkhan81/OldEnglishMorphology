@@ -1,0 +1,166 @@
+@prefix chm:     <https://example.org/chm#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+####################################################################
+# Clark–Hall strong verb classes using OWL 2 punning
+#
+# The same IRI (e.g., chm:StrongVerbIII) is used:
+#  (1) as an owl:Class to type verb entries, and
+#  (2) as an individual to carry descriptive properties (vowel series).
+#
+# Note: OWL reasoners do NOT transfer facts between the class and
+# individual interpretations. We use SHACL for the constraints/validation.
+####################################################################
+
+########
+# Core class for strong-verb lexical entries
+########
+
+chm:StrongVerb a owl:Class ;
+  rdfs:label "Strong verb (Clark–Hall morphology)"@en ;
+  rdfs:subClassOf ontolex:LexicalEntry , lexinfo:Verb .
+
+########
+# Vowel-series properties (descriptive; used on punned class IRIs)
+#
+# IMPORTANT: we intentionally avoid rdfs:domain/rdfs:range here.
+# With punning, adding a domain could cause unwanted RDFS inferences.
+# SHACL below provides the actual validation constraints.
+########
+
+chm:infinitive_vowel a owl:DatatypeProperty ;
+  rdfs:label "infinitive vowel"@en .
+
+chm:pret_sing_vowel a owl:DatatypeProperty ;
+  rdfs:label "preterite singular vowel"@en .
+
+chm:pret_pl_vowel a owl:DatatypeProperty ;
+  rdfs:label "preterite plural vowel"@en .
+
+chm:past_part_vowel a owl:DatatypeProperty ;
+  rdfs:label "past participle vowel"@en .
+
+########
+# Strong verb classes (OWL classes; also punned individuals)
+########
+
+chm:StrongVerbI a owl:Class ;
+  rdfs:label "Strong verb class I"@en ;
+  rdfs:subClassOf chm:StrongVerb .
+
+chm:StrongVerbII a owl:Class ;
+  rdfs:label "Strong verb class II"@en ;
+  rdfs:subClassOf chm:StrongVerb .
+
+chm:StrongVerbIII a owl:Class ;
+  rdfs:label "Strong verb class III"@en ;
+  rdfs:subClassOf chm:StrongVerb .
+
+chm:StrongVerbIV a owl:Class ;
+  rdfs:label "Strong verb class IV"@en ;
+  rdfs:subClassOf chm:StrongVerb .
+
+chm:StrongVerbV a owl:Class ;
+  rdfs:label "Strong verb class V"@en ;
+  rdfs:subClassOf chm:StrongVerb .
+
+chm:StrongVerbVI a owl:Class ;
+  rdfs:label "Strong verb class VI"@en ;
+  rdfs:subClassOf chm:StrongVerb .
+
+chm:StrongVerbVII a owl:Class ;
+  rdfs:label "Strong verb class VII"@en ;
+  rdfs:subClassOf chm:StrongVerb .
+
+# Subclasses (OWL classes)
+chm:StrongVerbIIa a owl:Class ; rdfs:label "Strong verb class IIa"@en ; rdfs:subClassOf chm:StrongVerbII .
+chm:StrongVerbIIb a owl:Class ; rdfs:label "Strong verb class IIb"@en ; rdfs:subClassOf chm:StrongVerbII .
+
+chm:StrongVerbIIIa a owl:Class ; rdfs:label "Strong verb class IIIa"@en ; rdfs:subClassOf chm:StrongVerbIII .
+chm:StrongVerbIIIb a owl:Class ; rdfs:label "Strong verb class IIIb"@en ; rdfs:subClassOf chm:StrongVerbIII .
+chm:StrongVerbIIIc a owl:Class ; rdfs:label "Strong verb class IIIc"@en ; rdfs:subClassOf chm:StrongVerbIII .
+chm:StrongVerbIIId a owl:Class ; rdfs:label "Strong verb class IIId"@en ; rdfs:subClassOf chm:StrongVerbIII .
+chm:StrongVerbIIIe a owl:Class ; rdfs:label "Strong verb class IIIe"@en ; rdfs:subClassOf chm:StrongVerbIII .
+
+chm:StrongVerbVIIa a owl:Class ; rdfs:label "Strong verb class VIIa"@en ; rdfs:subClassOf chm:StrongVerbVII .
+chm:StrongVerbVIIb a owl:Class ; rdfs:label "Strong verb class VIIb"@en ; rdfs:subClassOf chm:StrongVerbVII .
+
+########
+# Example: attach vowel series (punned use)
+# (fill these from Clark–Hall / your doc)
+########
+
+# chm:StrongVerbI
+#   chm:infinitive_vowel "ī" ;
+#   chm:pret_sing_vowel  "ā" ;
+#   chm:pret_pl_vowel    "i" ;
+#   chm:past_part_vowel  "i" .
+
+########
+# SHACL shapes
+########
+
+# Validate the descriptive vowel-series on each strong verb class I–VII (and optionally subclasses)
+chm:StrongVerbClassVowelSeriesShape a sh:NodeShape ;
+  rdfs:label "Strong verb class vowel series must be present"@en ;
+  sh:targetNode chm:StrongVerbI, chm:StrongVerbII, chm:StrongVerbIII,
+                chm:StrongVerbIV, chm:StrongVerbV, chm:StrongVerbVI,
+                chm:StrongVerbVII ;
+  sh:property [
+    sh:path chm:infinitive_vowel ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path chm:pret_sing_vowel ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path chm:pret_pl_vowel ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path chm:past_part_vowel ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] .
+
+# Validate that each strong verb entry is typed as at least one of the class IRIs
+# (add or remove subclasses here as you like)
+chm:StrongVerbEntryTypingShape a sh:NodeShape ;
+  rdfs:label "Strong verb entries must be typed with a strong verb class"@en ;
+  sh:targetClass chm:StrongVerb ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:or (
+      [ sh:hasValue chm:StrongVerbI ]
+      [ sh:hasValue chm:StrongVerbII ]
+      [ sh:hasValue chm:StrongVerbIII ]
+      [ sh:hasValue chm:StrongVerbIV ]
+      [ sh:hasValue chm:StrongVerbV ]
+      [ sh:hasValue chm:StrongVerbVI ]
+      [ sh:hasValue chm:StrongVerbVII ]
+      [ sh:hasValue chm:StrongVerbIIa ]
+      [ sh:hasValue chm:StrongVerbIIb ]
+      [ sh:hasValue chm:StrongVerbIIIa ]
+      [ sh:hasValue chm:StrongVerbIIIb ]
+      [ sh:hasValue chm:StrongVerbIIIc ]
+      [ sh:hasValue chm:StrongVerbIIId ]
+      [ sh:hasValue chm:StrongVerbIIIe ]
+      [ sh:hasValue chm:StrongVerbVIIa ]
+      [ sh:hasValue chm:StrongVerbVIIb ]
+    )
+  ] .

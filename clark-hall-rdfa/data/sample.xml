@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://lex-0.org/schema/lex-0.rng"
+  type="application/xml"
+  schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="lex-0" prefix="   ontolex: http://www.w3.org/ns/lemon/ontolex#   lexinfo: http://www.lexinfo.net/ontology/3.0/lexinfo#   lexicog: http://www.w3.org/ns/lemon/lexicog#   rdfs: http://www.w3.org/2000/01/rdf-schema#   chm: https://example.org/chm#">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+      </titleStmt>
+      <publicationStmt>
+        <publisher/>
+        <availability>
+          <licence/>
+        </availability>
+      </publicationStmt>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language role="sourceLanguage" ident="ang"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+
+
+      <entry xml:id="CAS2.b_am_d" type="mainEntry" xml:lang="ang">
+        <form type="lemma"><orth>bād</orth></form>
+        <entry xml:id="CAS2.b_am_d_1" type="homonymicEntry" xml:lang="ang" n="I" about="https://example.org/ch/CAS2.b_am_d_1_entry" typeof="ontolex:LexicalEntry">
+          <lbl type="homNum">I.</lbl>
+          <form type="lemma" about="https://example.org/ch/CAS2.b_am_d_1_entry" rel="ontolex:canonicalForm" resource="https://example.org/ch/CAS2.b_am_d_1_form">
+            <orth about="https://example.org/ch/CAS2.b_am_d_1_form" typeof="ontolex:Form" property="ontolex:writtenRep" datatype="">bād</orth>
+          </form>
+          <gramGrp>
+            <gram type="pos" value="noun" about="https://example.org/ch/CAS2.b_am_d_1_entry" rel="lexinfo:partOfSpeech" resource="lexinfo:noun"/>
+            <gram type="gender" value="feminine" about="https://example.org/ch/CAS2.b_am_d_1_entry" rel="lexinfo:gender" resource="lexinfo:feminine">f.</gram>
+          </gramGrp>
+          <sense xml:id="CAS2.b_am_d_1.1" about="https://example.org/ch/CAS2.b_am_d_1.1_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_am_d_1_entry">
+            <sense xml:id="CAS2.b_am_d_1.1.1" about="https://example.org/ch/CAS2.b_am_d_1.1.1_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_am_d_1_entry">
+              <cit type="translationEquivalent" xml:lang="en"><quote about="https://example.org/ch/CAS2.b_am_d_1.1.1_sense" property="rdfs:label" content="forced contribution, impost, pledge,">forced contribution, impost, pledge,</quote>
+                <bibl type="attestation" source="#LL"><title>LL</title></bibl></cit>
+            </sense>
+            <metamark function="senseSeparator">:</metamark>
+            <sense xml:id="CAS2.b_am_d_1.1.2" about="https://example.org/ch/CAS2.b_am_d_1.1.2_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_am_d_1_entry">
+              <cit type="translationEquivalent" xml:lang="en"><quote about="https://example.org/ch/CAS2.b_am_d_1.1.2_sense" property="rdfs:label" content="expectation">expectation</quote></cit>
+            </sense>
+          </sense>
+          <metamark>.</metamark>
+          <etym><pc>[</pc><xr type="related"><ref type="entry" target="#CAS2.b_im_dan" about="https://example.org/ch/CAS2.b_am_d_1_entry" rel="rdfs:seeAlso" resource="https://example.org/ch/CAS2.b_im_dan_entry">bīdan</ref></xr><pc>]</pc></etym>
+        </entry>
+        <entry xml:id="CAS2.b_am_d_2" type="homonymicEntry" xml:lang="ang" n="II" typeof="ontolex:Form" about="https://example.org/ch/CAS2.b_am_d_2_form">
+          <lbl type="homNum">II.</lbl>
+          <form type="lemma"><orth property="ontolex:writtenRep" datatype="">bād</orth></form><gramGrp>
+            <gram type="pos" value="verb"/>
+            <gram type="tense" value="preterite" about="https://example.org/ch/CAS2.b_am_d_2_form" rel="lexinfo:tense" resource="lexinfo:past">pret.</gram>
+            <gram type="person" value="third" about="https://example.org/ch/CAS2.b_am_d_2_form" rel="lexinfo:person" resource="lexinfo:thirdPerson">3</gram>
+            <gram type="number" value="singular" about="https://example.org/ch/CAS2.b_am_d_2_form" rel="lexinfo:number" resource="lexinfo:singular">sg.</gram>
+          </gramGrp>
+          <xr type="related" expand="inflected form" about="https://example.org/ch/CAS2.b_am_d_2_entry" rel="rdfs:seeAlso" resource="https://example.org/ch/CAS2.b_im_dan_entry">
+            <lbl>of</lbl>
+            <ref target="#CAS2.b_im_dan" type="entry" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_am_d_2_form">bīdan</ref>
+          </xr>
+        </entry>
+      </entry>
+
+      <entry xml:id="CAS2.beodan" type="mainEntry" xml:lang="ang" about="https://example.org/ch/CAS2.beodan_form" typeof="ontolex:Form">
+
+        <form type="lemma">
+          <orth property="ontolex:writtenRep" datatype="">beodan</orth>
+          
+          <form type="variant" about="https://example.org/ch/CAS2.bidon_form" typeof="ontolex:Form">
+            <lbl>=</lbl>
+            <orth property="ontolex:writtenRep" datatype="">bidon</orth>
+          </form>
+        </form>
+
+        <gramGrp>
+          <gram type="pos" value="verb"/>
+
+          <gram type="tense" value="preterite" about="https://example.org/ch/CAS2.beodan_form" rel="lexinfo:tense" resource="lexinfo:past">pret.</gram>
+
+          <gram type="number" value="plural" about="https://example.org/ch/CAS2.beodan_form" rel="lexinfo:number" resource="lexinfo:plural">pl.</gram>
+        <gram type="tense" value="preterite" about="https://example.org/ch/CAS2.bidon_form" rel="lexinfo:tense" resource="lexinfo:past" rend="silent"/><gram type="number" value="plural" about="https://example.org/ch/CAS2.bidon_form" rel="lexinfo:number" resource="lexinfo:plural" rend="silent"/></gramGrp>
+
+        <xr type="related" expand="inflected form">
+          <lbl>of</lbl>
+          <ref target="#CAS2.b_im_dan" type="entry" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.beodan_form">bīdan</ref>
+        <ref target="#CAS2.b_im_dan" type="entry" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.bidon_form" rend="silent"/></xr>
+      </entry>
+      
+      <entry xml:id="CAS2.b_im_dan" type="mainEntry" xml:lang="ang" about="https://example.org/ch/CAS2.b_im_dan_entry" typeof="ontolex:LexicalEntry chm:StrongVerbI">
+        <form type="lemma" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:canonicalForm" resource="https://example.org/ch/CAS2.b_im_dan_form">
+          <orth extent="full" expand="bīdan, ge-bīdan" about="https://example.org/ch/CAS2.b_im_dan_form" typeof="ontolex:Form" property="ontolex:writtenRep" content="bīdan">
+            <lbl expand="ge-_optional">±</lbl>
+            <seg>bīdan</seg>
+          </orth>
+        <form type="variant" about="https://example.org/ch/CAS2.b_im_dan_form_ge" typeof="ontolex:Form" rev="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_im_dan_entry"><orth property="ontolex:writtenRep" datatype="">ge-bīdan</orth></form></form>
+        <gramGrp>
+          <gram type="pos" value="strong verb" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="lexinfo:partOfSpeech" resource="lexinfo:verb"/>
+          <gram type="inflectionType">
+            <hi rend="superscript">1</hi>
+          </gram>
+        </gramGrp>
+        <sense xml:id="CAS2.b_im_dan.1" about="https://example.org/ch/CAS2.b_im_dan.1_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_im_dan_entry">
+          <sense xml:id="CAS2.b_im_dan.1.1" about="https://example.org/ch/CAS2.b_im_dan.1.1_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_im_dan_entry">
+            <gramGrp>
+              <gram type="valency" value="intransitive">(intr.)</gram>
+            </gramGrp>
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote about="https://example.org/ch/CAS2.b_im_dan.1.1_sense" property="rdfs:label" content="to stay, continue, live, remain, delay,">to stay, continue, live, remain,
+                delay,</quote>
+              <bibl type="attestation" source="#AO">
+                <title>AO,</title>
+              </bibl>
+              <bibl type="attestation" source="#Ps">
+                <title>Ps</title>
+              </bibl>
+            </cit>
+          </sense>
+          <metamark function="senseSeparator">:</metamark>
+          <sense xml:id="CAS2.b_im_dan.1.2" about="https://example.org/ch/CAS2.b_im_dan.1.2_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_im_dan_entry">
+            <gramGrp>
+              <gram type="valency" value="transitive">(tr.</gram>
+            </gramGrp>
+            <cit type="translationEquivalent" xml:lang="en">
+              <gramGrp>
+                <gram type="construction" value="usu. w. genitive">usu. w. g.</gram>
+              </gramGrp>
+              <pc>)</pc>
+              <quote about="https://example.org/ch/CAS2.b_im_dan.1.2_sense" property="rdfs:label" content="wait for, await, expect,">wait for, await, expect,</quote>
+              <bibl type="attestation" source="#Bl">
+                <title>Bl,</title>
+              </bibl>
+              <bibl type="attestation" source="#Mt">
+                <title>Mt;</title>
+              </bibl>
+              <bibl type="attestation" source="#AO">
+                <title>AO,</title>
+              </bibl>
+              <bibl type="attestation" source="#CP">
+                <title>CP</title>
+              </bibl>
+            </cit>
+          </sense>
+          <metamark function="senseSeparator">:</metamark>
+          <sense xml:id="CAS2.b_im_dan.1.3" about="https://example.org/ch/CAS2.b_im_dan.1.3_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_im_dan_entry">
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote about="https://example.org/ch/CAS2.b_im_dan.1.3_sense" property="rdfs:label" content="endure, experience, find">endure, experience, find</quote>
+            </cit>
+          </sense>
+          <metamark function="senseSeparator">:</metamark>
+          <sense xml:id="CAS2.b_im_dan.1.4" about="https://example.org/ch/CAS2.b_im_dan.1.4_sense" typeof="ontolex:LexicalSense" rev="ontolex:sense" resource="https://example.org/ch/CAS2.b_im_dan_entry">
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote about="https://example.org/ch/CAS2.b_im_dan.1.4_sense" property="rdfs:label" content="attain, obtain">attain, obtain</quote>
+            </cit>
+          </sense>
+        </sense>
+        <etym>
+          <pc>[</pc>
+          <xr type="related">
+            <ref type="entry" target="OED_bide">'bide'</ref>
+          </xr>
+          <pc>]</pc>
+        </etym>
+        <metamark>.</metamark>
+      </entry>
+
+      <entry xml:id="CAS2.b_im_st" type="mainEntry" xml:lang="ang" about="https://example.org/ch/CAS2.b_im_st_form" typeof="ontolex:Form">
+        <form type="lemma" about="https://example.org/ch/CAS2.b_im_st_form" typeof="ontolex:Form">
+
+          <orth about="https://example.org/ch/CAS2.b_im_st_form" property="ontolex:writtenRep" datatype="">bīst</orth>
+          
+            <lbl>=</lbl>
+          <form type="variant" about="https://example.org/ch/CAS2.b_im_dst_form" typeof="ontolex:Form"> 
+            <orth about="https://example.org/ch/CAS2.b_im_dst_form" property="ontolex:writtenRep" datatype="">bīdst</orth>
+          </form>
+        </form>
+        <gramGrp>
+          <gram type="pos" value="verb"/>
+          <gram type="tense" value="present" about="https://example.org/ch/CAS2.b_im_st_form" rel="lexinfo:tense" resource="lexinfo:present">pres.</gram>
+          <gram type="person" value="second" about="https://example.org/ch/CAS2.b_im_st_form" rel="lexinfo:person" resource="lexinfo:secondPerson">2</gram>
+          <gram type="number" value="singular" about="https://example.org/ch/CAS2.b_im_st_form" rel="lexinfo:number" resource="lexinfo:singular">sg.</gram>
+        <gram type="tense" value="present" about="https://example.org/ch/CAS2.b_im_dst_form" rel="lexinfo:tense" resource="lexinfo:present" rend="silent"/><gram type="person" value="second" about="https://example.org/ch/CAS2.b_im_dst_form" rel="lexinfo:person" resource="lexinfo:secondPerson" rend="silent"/><gram type="number" value="singular" about="https://example.org/ch/CAS2.b_im_dst_form" rel="lexinfo:number" resource="lexinfo:singular" rend="silent"/></gramGrp>
+        <xr type="related" expand="inflected form">
+          <lbl>of</lbl>
+          <ref target="#CAS2.b_im_dan" type="entry" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_im_st_form">bīdan</ref>
+        <ref target="#CAS2.b_im_dan" type="entry" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_im_dst_form" rend="silent"/></xr>
+      </entry>
+
+      <entry xml:id="CAS2.b_im_t" type="mainEntry" xml:lang="ang" about="https://example.org/ch/CAS2.b_im_t_form" typeof="ontolex:Form">
+
+        <form type="lemma">
+          <orth property="ontolex:writtenRep" datatype="">bīt</orth>
+        </form>
+        <gramGrp>
+          <gram type="pos" value="verb"/>
+          <gram type="tense" value="present" about="https://example.org/ch/CAS2.b_im_t_form" rel="lexinfo:tense" resource="lexinfo:present">pres.</gram>
+          <gram type="person" value="third" about="https://example.org/ch/CAS2.b_im_t_form" rel="lexinfo:person" resource="lexinfo:thirdPerson">3</gram>
+          <gram type="number" value="singular" about="https://example.org/ch/CAS2.b_im_t_form" rel="lexinfo:number" resource="lexinfo:singular">sg.</gram>
+        </gramGrp>
+        <xr type="related" expand="inflected form">
+          <lbl>of</lbl>
+          <lbl type="enumeration">(1)</lbl>
+          <ref target="#CAS2.b_im_dan" type="entry" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_im_t_form">bīdan</ref>
+          <pc>;</pc>
+          <lbl type="enumeration">(2)</lbl>
+          <ref target="#CAS2.b_im_tan" type="entry" about="https://example.org/ch/CAS2.b_im_tan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_im_t_form">bītan</ref>
+        </xr>
+      </entry>
+
+      <entry xml:id="CAS2.b_im_tst" type="mainEntry" xml:lang="ang" about="https://example.org/ch/CAS2.b_im_tst_form" typeof="ontolex:Form">
+
+        <form type="lemma">
+          <orth property="ontolex:writtenRep" datatype="">bītst</orth>
+        </form>
+
+        <gramGrp>
+          <gram type="pos" value="verb"/>
+
+          <gram type="tense" value="present" rel="lexinfo:tense" resource="lexinfo:present">pres.</gram>
+
+          <gram type="person" value="second" rel="lexinfo:person" resource="lexinfo:secondPerson">2</gram>
+
+          <gram type="number" value="singular" rel="lexinfo:number" resource="lexinfo:singular">sg.</gram>
+        </gramGrp>
+
+        <xr type="related" expand="inflected form">
+          <lbl>of</lbl>
+
+          <ref target="#CAS2.b_im_dan" type="entry" about="https://example.org/ch/CAS2.b_im_dan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_im_tst_form">bīdan</ref>
+
+          <lbl>and</lbl>
+
+          <ref target="#CAS2.b_im_tan" type="entry" about="https://example.org/ch/CAS2.b_im_tan_entry" rel="ontolex:otherForm" resource="https://example.org/ch/CAS2.b_im_tst_form">bītan</ref>
+        </xr>
+
+      </entry>
+
+    </body>
+  </text>
+
+
+</TEI>

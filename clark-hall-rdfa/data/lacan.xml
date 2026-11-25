@@ -1,0 +1,91 @@
+<entry xmlns="http://www.tei-c.org/ns/1.0"
+       xml:id="CAS2.lācan" type="mainEntry" xml:lang="ang"
+       prefix="ontolex: http://www.w3.org/ns/lemon/ontolex#
+               lexinfo: http://www.lexinfo.net/ontology/3.0/lexinfo#
+               chm: https://example.org/chm#"
+       about="https://example.org/ch/lacan"
+       typeof="ontolex:LexicalEntry chm:StrongVerbVII">
+        <form type="lemma"
+              rel="ontolex:canonicalForm"
+              resource="https://example.org/ch/lacan#lemma"
+              typeof="ontolex:Form">
+          <orth property="ontolex:writtenRep">lācan</orth>
+        </form>
+        <gramGrp>
+          <gram type="pos" value="strong verb"
+                property="lexinfo:partOfSpeech" resource="lexinfo:verb"/>
+          <gram type="inflectionType">
+            <hi rend="superscript">7</hi>
+          </gram>
+        </gramGrp>
+        <form type="inflected"
+              rel="ontolex:otherForm"
+              resource="https://example.org/ch/lacan#leolc-pret-3sg"
+              typeof="ontolex:Form">
+          <gramGrp>
+            <gram type="pos" value="verb"/>
+            <gram type="tense" value="preterite"
+                  property="lexinfo:tense" resource="lexinfo:past">pret.</gram>
+            <gram type="person" value="third"
+                  property="lexinfo:person" resource="lexinfo:thirdPerson">3</gram>
+            <gram type="number" value="singular"
+                  property="lexinfo:number" resource="lexinfo:singular">sg.</gram>
+          </gramGrp>
+          <orth property="ontolex:writtenRep">leolc</orth>
+        </form>
+        <sense xml:id="CAS2.lācan.1">
+          <sense xml:id="CAS2.lācan.1.1">
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote>to move up and down, leap, jump, swing, fly,</quote>
+              <bibl type="attestation" source="#Jul">
+                <title>Jul</title>
+              </bibl>
+            </cit>
+          </sense>
+          <metamark function="senseSeparator">:</metamark>
+          <sense xml:id="CAS2.lācan.1.2">
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote>play</quote>
+              <gloss>(instrument)</gloss>
+            </cit>
+          </sense>
+          <metamark function="senseSeparator">:</metamark>
+          <sense xml:id="CAS2.lācan.1.3">
+            <usg type="textType" norm="attested in poetic texts only">†</usg>
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote>fight, contend,</quote>
+              <bibl type="attestation" source="#B">
+                <title>B</title>
+              </bibl>
+            </cit>
+          </sense>
+          <metamark function="senseSeparator">:</metamark>
+          <sense xml:id="CAS2.lācan.1.4">
+            <form type="variant">
+              <orth expand="ge-lācan">
+                <lbl expand="ge-">(+)</lbl>
+              </orth>
+            </form>
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote>incite to,</quote>
+              <bibl type="attestation" source="#AO">
+                <title>AO</title>
+              </bibl>
+            </cit>
+          </sense>
+          <metamark function="senseSeparator">:</metamark>
+          <sense xml:id="CAS2.lācan.1.5">
+            <cit type="translationEquivalent" xml:lang="en">
+              <quote>be rewarded</quote>
+            </cit>
+          </sense>
+        </sense>
+        <etym>
+          <pc>[</pc>
+          <xr type="related">
+            <ref type="entry" target="OED_lake">'lake'</ref>
+          </xr>
+          <pc>]</pc>
+        </etym>
+        <metamark>.</metamark>
+      </entry>

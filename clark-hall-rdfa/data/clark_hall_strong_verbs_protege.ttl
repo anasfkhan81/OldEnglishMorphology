@@ -1,0 +1,598 @@
+@prefix chm: <https://example.org/chm#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix exentry: <https://example.org/clarkhall/entry/> .
+@prefix exform: <https://example.org/clarkhall/form/> .
+@prefix ex: <https://example.org/clarkhall/source/> .
+
+# Clark Hall asserted classifications; RDF 1.2 triple terms attribute scholarly analyses.
+# Morphological forms derive from the working model and supplied TEI/entry list.
+
+exentry:CAS2.b_im_dan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbI ;
+  rdfs:label "±bīdan"@ang ;
+  ontolex:canonicalForm exform:biidan_inf ;
+  ontolex:otherForm
+    exform:biidan_inf_ge ,
+    exform:biidan_pret-3sg ,
+    exform:biidan_pret-pl_1 ,
+    exform:biidan_pret-pl_2 ,
+    exform:biidan_pres-2sg_1 ,
+    exform:biidan_pres-2sg_2 ,
+    exform:biidan_pres-2sg_3 ,
+    exform:biidan_pres-3sg .
+
+# infinitive
+exform:biidan_inf a ontolex:Form ;
+  ontolex:writtenRep "bīdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+# pret. 3 sg. (bād)
+exform:biidan_pret-3sg a ontolex:Form ;
+  ontolex:writtenRep "bād"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pret. pl. variant 1 (beodan)
+exform:biidan_pret-pl_1 a ontolex:Form ;
+  ontolex:writtenRep "beodan"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pret. pl. variant 2 (bidon)
+exform:biidan_pret-pl_2 a ontolex:Form ;
+  ontolex:writtenRep "bidon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 2 sg. variant 1 (bīst)
+exform:biidan_pres-2sg_1 a ontolex:Form ;
+  ontolex:writtenRep "bīst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 2 sg. variant 2 (bīdst)
+exform:biidan_pres-2sg_2 a ontolex:Form ;
+  ontolex:writtenRep "bīdst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 2 sg. variant 3 (bītst)
+exform:biidan_pres-2sg_3 a ontolex:Form ;
+  ontolex:writtenRep "bītst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# pres. 3 sg. (bīt)
+exform:biidan_pres-3sg a ontolex:Form ;
+  ontolex:writtenRep "bīt"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+
+
+exform:biidan_inf_ge a ontolex:Form ;
+  ontolex:writtenRep "gebīdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+# RDF 1.2 classification attribution: bīdan
+
+####################################################################
+# drincan: Clark Hall I; Arista III
+####################################################################
+exentry:CAS2.drincan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbI ;
+  rdfs:label "drincan"@ang ;
+  ontolex:canonicalForm exform:drincan_inf ;
+  ontolex:otherForm
+    exform:drincan_pret-3sg,
+    exform:drincan_pret-pl,
+    exform:drincan_pp,
+    exform:drincan_imp_1,
+    exform:drincan_imp_2 .
+
+exform:drincan_inf a ontolex:Form ;
+  ontolex:writtenRep "drincan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+
+exform:drincan_pret-3sg a ontolex:Form ;
+  ontolex:writtenRep "dranc"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+exform:drincan_pret-pl a ontolex:Form ;
+  ontolex:writtenRep "druncon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+
+# Past participle: TEI homonymic entry CAS2.druncen_2
+exform:drincan_pp a ontolex:Form ;
+  ontolex:writtenRep "druncen"@ang ;
+  lexinfo:verbFormMood lexinfo:participle ;
+  lexinfo:tense lexinfo:past .
+
+# Imperative variants: TEI CAS2.eth_rync
+exform:drincan_imp_1 a ontolex:Form ;
+  ontolex:writtenRep "ðrync"@ang ;
+  lexinfo:verbFormMood lexinfo:imperative .
+
+exform:drincan_imp_2 a ontolex:Form ;
+  ontolex:writtenRep "drinc"@ang ;
+  lexinfo:verbFormMood lexinfo:imperative .
+
+# RDF 1.2 classification attribution: drincan
+
+# This Arista classification is quoted, NOT asserted.
+
+# ADDITIONAL STRONG VERBS: source list and supplied TEI
+
+# ±cēosan | CH IIa; Arista II
+exentry:CAS2.c_em_osan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIIa ;
+  rdfs:label "±cēosan"@ang ;
+  ontolex:canonicalForm exform:ceosan_0 ;
+  ontolex:otherForm exform:ceosan_1, exform:ceosan_2, exform:ceosan_3, exform:ceosan_4, exform:ceosan_5, exform:ceosan_6, exform:ceosan_7, exform:ceosan_8, exform:ceosan_9, exform:ceosan_10, exform:ceosan_11, exform:ceosan_12 .
+exform:ceosan_0 a ontolex:Form ;
+  ontolex:writtenRep "cēosan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:ceosan_1 a ontolex:Form ;
+  ontolex:writtenRep "gecēosan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:ceosan_2 a ontolex:Form ;
+  ontolex:writtenRep "cēas"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_3 a ontolex:Form ;
+  ontolex:writtenRep "cǣs"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_4 a ontolex:Form ;
+  ontolex:writtenRep "cēs"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_5 a ontolex:Form ;
+  ontolex:writtenRep "curon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_6 a ontolex:Form ;
+  ontolex:writtenRep "coren"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exform:ceosan_7 a ontolex:Form ;
+  ontolex:writtenRep "gecoren"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exform:ceosan_8 a ontolex:Form ;
+  ontolex:writtenRep "cīest"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_9 a ontolex:Form ;
+  ontolex:writtenRep "cīesð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_10 a ontolex:Form ;
+  ontolex:writtenRep "cīst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_11 a ontolex:Form ;
+  ontolex:writtenRep "cȳst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:ceosan_12 a ontolex:Form ;
+  ontolex:writtenRep "cȳsð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exentry:luucan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIIb ;
+  rdfs:label "lūcan (±)"@ang ;
+  ontolex:canonicalForm exform:luucan_0 ;
+  ontolex:otherForm exform:luucan_1, exform:luucan_2, exform:luucan_3, exform:luucan_4 .
+exform:luucan_0 a ontolex:Form ;
+  ontolex:writtenRep "lūcan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:luucan_1 a ontolex:Form ;
+  ontolex:writtenRep "gelūcan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:luucan_2 a ontolex:Form ;
+  ontolex:writtenRep "lēac"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:luucan_3 a ontolex:Form ;
+  ontolex:writtenRep "locen"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exform:luucan_4 a ontolex:Form ;
+  ontolex:writtenRep "lȳcð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exentry:CAS2.bregdan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIIIa ;
+  rdfs:label "bregdan (brēd-)"@ang ;
+  ontolex:canonicalForm exform:bregdan_0 ;
+  ontolex:otherForm exform:bregdan_1, exform:bregdan_2, exform:bregdan_3, exform:bregdan_4, exform:bregdan_5, exform:bregdan_6, exform:bregdan_7, exform:bregdan_8, exform:bregdan_9, exform:bregdan_10, exform:bregdan_11 .
+exform:bregdan_0 a ontolex:Form ;
+  ontolex:writtenRep "bregdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:bregdan_1 a ontolex:Form ;
+  ontolex:writtenRep "brægdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:bregdan_2 a ontolex:Form ;
+  ontolex:writtenRep "brēdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:bregdan_3 a ontolex:Form ;
+  ontolex:writtenRep "gebrēdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:bregdan_4 a ontolex:Form ;
+  ontolex:writtenRep "brǣd"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:bregdan_5 a ontolex:Form ;
+  ontolex:writtenRep "brēt"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:bregdan_6 a ontolex:Form ;
+  ontolex:writtenRep "brīst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:bregdan_7 a ontolex:Form ;
+  ontolex:writtenRep "brītst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:bregdan_8 a ontolex:Form ;
+  ontolex:writtenRep "brīt"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:bregdan_9 a ontolex:Form ;
+  ontolex:writtenRep "brogden"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exform:bregdan_10 a ontolex:Form ;
+  ontolex:writtenRep "brūdon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:bregdan_11 a ontolex:Form ;
+  ontolex:writtenRep "brugdon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exentry:CAS2.weorpan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIIIb ;
+  rdfs:label "±weorpan (o, u, y)"@ang ;
+  ontolex:canonicalForm exform:weorpan_0 ;
+  ontolex:otherForm exform:weorpan_1, exform:weorpan_2, exform:weorpan_3, exform:weorpan_4, exform:weorpan_5, exform:weorpan_6, exform:weorpan_7, exform:weorpan_8, exform:weorpan_9, exform:weorpan_10, exform:weorpan_11, exform:weorpan_12, exform:weorpan_13, exform:weorpan_14, exform:weorpan_15 .
+exform:weorpan_0 a ontolex:Form ;
+  ontolex:writtenRep "weorpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_1 a ontolex:Form ;
+  ontolex:writtenRep "geweorpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_2 a ontolex:Form ;
+  ontolex:writtenRep "worpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_3 a ontolex:Form ;
+  ontolex:writtenRep "geworpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_4 a ontolex:Form ;
+  ontolex:writtenRep "wurpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_5 a ontolex:Form ;
+  ontolex:writtenRep "gewurpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_6 a ontolex:Form ;
+  ontolex:writtenRep "wyrpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_7 a ontolex:Form ;
+  ontolex:writtenRep "gewyrpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_8 a ontolex:Form ;
+  ontolex:writtenRep "werpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:weorpan_9 a ontolex:Form ;
+  ontolex:writtenRep "wearp"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:weorpan_10 a ontolex:Form ;
+  ontolex:writtenRep "wearf"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:weorpan_11 a ontolex:Form ;
+  ontolex:writtenRep "wierpð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:weorpan_12 a ontolex:Form ;
+  ontolex:writtenRep "wirpð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:weorpan_13 a ontolex:Form ;
+  ontolex:writtenRep "wyrpð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:weorpan_14 a ontolex:Form ;
+  ontolex:writtenRep "wyrpst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:weorpan_15 a ontolex:Form ;
+  ontolex:writtenRep "worpen"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exentry:CAS2.helpan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIIIc ;
+  rdfs:label "helpan"@ang ;
+  ontolex:canonicalForm exform:helpan_0 ;
+  ontolex:otherForm exform:helpan_1, exform:helpan_2, exform:helpan_3, exform:helpan_4, exform:helpan_5, exform:helpan_6, exform:helpan_7, exform:helpan_8, exform:helpan_9 .
+exform:helpan_0 a ontolex:Form ;
+  ontolex:writtenRep "helpan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:helpan_1 a ontolex:Form ;
+  ontolex:writtenRep "healp"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:helpan_2 a ontolex:Form ;
+  ontolex:writtenRep "hālp"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:helpan_3 a ontolex:Form ;
+  ontolex:writtenRep "hulpon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:helpan_4 a ontolex:Form ;
+  ontolex:writtenRep "holpen"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exform:helpan_5 a ontolex:Form ;
+  ontolex:writtenRep "hielpeð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:helpan_6 a ontolex:Form ;
+  ontolex:writtenRep "hilpeð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:helpan_7 a ontolex:Form ;
+  ontolex:writtenRep "hilpð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:helpan_8 a ontolex:Form ;
+  ontolex:writtenRep "hylpð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:helpan_9 a ontolex:Form ;
+  ontolex:writtenRep "hilpest"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:gieldan_0 a ontolex:Form ;
+  ontolex:writtenRep "gieldan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_1 a ontolex:Form ;
+  ontolex:writtenRep "gegieldan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_2 a ontolex:Form ;
+  ontolex:writtenRep "geldan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_3 a ontolex:Form ;
+  ontolex:writtenRep "gegeldan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_4 a ontolex:Form ;
+  ontolex:writtenRep "gildan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_5 a ontolex:Form ;
+  ontolex:writtenRep "gegildan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_6 a ontolex:Form ;
+  ontolex:writtenRep "gyldan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_7 a ontolex:Form ;
+  ontolex:writtenRep "gegyldan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:gieldan_8 a ontolex:Form ;
+  ontolex:writtenRep "geald"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:gieldan_9 a ontolex:Form ;
+  ontolex:writtenRep "guldon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:gieldan_10 a ontolex:Form ;
+  ontolex:writtenRep "golden"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exentry:niman a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbIV ;
+  rdfs:label "±niman (eo, io, y)"@ang ;
+  ontolex:canonicalForm exform:niman_0 ;
+  ontolex:otherForm exform:niman_1, exform:niman_2, exform:niman_3, exform:niman_4, exform:niman_5, exform:niman_6, exform:niman_7, exform:niman_8, exform:niman_9, exform:niman_10, exform:niman_11 .
+exform:niman_0 a ontolex:Form ;
+  ontolex:writtenRep "niman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_1 a ontolex:Form ;
+  ontolex:writtenRep "geniman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_2 a ontolex:Form ;
+  ontolex:writtenRep "neoman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_3 a ontolex:Form ;
+  ontolex:writtenRep "geneoman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_4 a ontolex:Form ;
+  ontolex:writtenRep "nioman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_5 a ontolex:Form ;
+  ontolex:writtenRep "genioman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_6 a ontolex:Form ;
+  ontolex:writtenRep "nyman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_7 a ontolex:Form ;
+  ontolex:writtenRep "genyman"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:niman_8 a ontolex:Form ;
+  ontolex:writtenRep "nam"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:niman_9 a ontolex:Form ;
+  ontolex:writtenRep "nom"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:niman_10 a ontolex:Form ;
+  ontolex:writtenRep "nāmon"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:number lexinfo:plural ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:niman_11 a ontolex:Form ;
+  ontolex:writtenRep "numen"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:verbFormMood lexinfo:participle .
+exform:faran_0 a ontolex:Form ;
+  ontolex:writtenRep "faran"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:faran_1 a ontolex:Form ;
+  ontolex:writtenRep "gefaran"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:faran_2 a ontolex:Form ;
+  ontolex:writtenRep "færeð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:faran_3 a ontolex:Form ;
+  ontolex:writtenRep "fereð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:faran_4 a ontolex:Form ;
+  ontolex:writtenRep "færst"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:secondPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:faran_5 a ontolex:Form ;
+  ontolex:writtenRep "fōr"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:cnaawan_0 a ontolex:Form ;
+  ontolex:writtenRep "cnāwan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:cnaawan_1 a ontolex:Form ;
+  ontolex:writtenRep "gecnāwan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:cnaawan_2 a ontolex:Form ;
+  ontolex:writtenRep "cnæwð"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:cnaawan_3 a ontolex:Form ;
+  ontolex:writtenRep "cnēow"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exentry:CAS2.dr_aem_dan a ontolex:LexicalEntry, chm:StrongVerb, chm:StrongVerbVIIb ;
+  rdfs:label "drǣdan"@ang ;
+  ontolex:canonicalForm exform:draedan_0 ;
+  ontolex:otherForm exform:draedan_1, exform:draedan_2, exform:draedan_3, exform:draedan_4 .
+exform:draedan_0 a ontolex:Form ;
+  ontolex:writtenRep "drǣdan"@ang ;
+  lexinfo:verbFormMood lexinfo:infinitive .
+exform:draedan_1 a ontolex:Form ;
+  ontolex:writtenRep "drǣt"@ang ;
+  lexinfo:tense lexinfo:present ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:draedan_2 a ontolex:Form ;
+  ontolex:writtenRep "drǣd"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:draedan_3 a ontolex:Form ;
+  ontolex:writtenRep "drēd"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
+exform:draedan_4 a ontolex:Form ;
+  ontolex:writtenRep "dreord"@ang ;
+  lexinfo:tense lexinfo:past ;
+  lexinfo:person lexinfo:thirdPerson ;
+  lexinfo:number lexinfo:singular ;
+  lexinfo:verbFormMood lexinfo:indicative .
