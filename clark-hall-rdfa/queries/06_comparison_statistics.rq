@@ -1,0 +1,57 @@
+PREFIX ex: <https://example.org/source/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT
+    ?chEntries
+    ?aristaEntries
+    ?sharedEntries
+    ?entryCoverage
+    ?chAssignments
+    ?aristaAssignments
+    ?sharedAssignments
+    ?assignmentAgreement
+WHERE {
+    {
+        SELECT (COUNT(DISTINCT ?entry) AS ?chEntries)
+               (COUNT(*) AS ?chAssignments)
+        WHERE {
+            << ?entry rdf:type ?class >>
+                dcterms:source ex:ClarkHall .
+        }
+    }
+    {
+        SELECT (COUNT(DISTINCT ?entry) AS ?aristaEntries)
+               (COUNT(*) AS ?aristaAssignments)
+        WHERE {
+            << ?entry rdf:type ?class >>
+                dcterms:source ex:Arista .
+        }
+    }
+    {
+        SELECT (COUNT(DISTINCT ?entry) AS ?sharedEntries)
+        WHERE {
+            << ?entry rdf:type ?chClass >>
+                dcterms:source ex:ClarkHall .
+            << ?entry rdf:type ?aristaClass >>
+                dcterms:source ex:Arista .
+        }
+    }
+    {
+        SELECT (COUNT(*) AS ?sharedAssignments)
+        WHERE {
+            << ?entry rdf:type ?class >>
+                dcterms:source ex:ClarkHall, ex:Arista .
+        }
+    }
+
+    BIND(
+        ROUND(10000.0 * ?sharedEntries / ?chEntries) / 100
+        AS ?entryCoverage
+    )
+
+    BIND(
+        ROUND(10000.0 * ?sharedAssignments / ?chAssignments) / 100
+        AS ?assignmentAgreement
+    )
+}

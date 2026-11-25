@@ -1,0 +1,26 @@
+PREFIX ex: <https://example.org/source/>
+PREFIX chm: <https://example.org/chm#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT
+    ?entry
+    ?lemma
+    (COUNT(DISTINCT ?class) AS ?numberOfClasses)
+    (GROUP_CONCAT(DISTINCT ?className; SEPARATOR=", ")
+        AS ?classes)
+WHERE {
+    << ?entry rdf:type ?class >>
+        dcterms:source ex:ClarkHall .
+
+    ?entry rdfs:label ?lemma .
+
+    BIND(
+        STRAFTER(STR(?class), STR(chm:StrongVerb))
+        AS ?className
+    )
+}
+GROUP BY ?entry ?lemma
+HAVING (COUNT(DISTINCT ?class) > 1)
+ORDER BY DESC(?numberOfClasses) ?lemma

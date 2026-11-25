@@ -1,0 +1,36 @@
+PREFIX ex: <https://example.org/source/>
+PREFIX chm: <https://example.org/chm#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT
+    ?class
+    (COUNT(*) AS ?totalVerbs)
+    (SUM(?hasPrefix) AS ?optionalPrefix)
+    (COUNT(*) - SUM(?hasPrefix) AS ?withoutMarker)
+    (ROUND(10000.0 * SUM(?hasPrefix) / COUNT(*)) / 100
+        AS ?percentage)
+WHERE {
+    {
+        SELECT ?class ?entry (MAX(?marker) AS ?hasPrefix)
+        WHERE {
+            << ?entry rdf:type ?class >>
+                dcterms:source ex:ClarkHall .
+
+            << ?entry chm:headword ?headword >>
+                dcterms:source ex:ClarkHall .
+
+            BIND(
+                IF(
+                    STRSTARTS(STR(?headword), "+") ||
+                    STRSTARTS(STR(?headword), "±"),
+                    1,
+                    0
+                ) AS ?marker
+            )
+        }
+        GROUP BY ?class ?entry
+    }
+}
+GROUP BY ?class
+ORDER BY ?class

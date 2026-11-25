@@ -1,0 +1,10 @@
+PREFIX ex: <https://example.org/source/>
+PREFIX chm: <https://example.org/chm#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?entry ?chClass ?aristaClass WHERE {
+  << ?entry rdf:type ?chClass >> dcterms:source ex:ClarkHall .
+  << ?entry rdf:type ?aristaClass >> dcterms:source ex:Arista .
+  FILTER(?chClass != ?aristaClass)
+}

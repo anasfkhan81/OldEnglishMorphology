@@ -1,0 +1,51 @@
+PREFIX ex: <https://example.org/source/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?agreement (COUNT(DISTINCT ?entry) AS ?count)
+WHERE {
+    {
+        SELECT DISTINCT ?entry
+        WHERE {
+            << ?entry rdf:type ?chClass >>
+                dcterms:source ex:ClarkHall .
+            << ?entry rdf:type ?aristaClass >>
+                dcterms:source ex:Arista .
+        }
+    }
+
+    BIND(EXISTS {
+        << ?entry rdf:type ?sharedClass >>
+            dcterms:source ex:ClarkHall, ex:Arista .
+    } AS ?hasSharedClass)
+
+    BIND(EXISTS {
+        << ?entry rdf:type ?c >>
+            dcterms:source ex:ClarkHall .
+        FILTER NOT EXISTS {
+            << ?entry rdf:type ?c >>
+                dcterms:source ex:Arista .
+        }
+    } AS ?hasCHOnlyClass)
+
+    BIND(EXISTS {
+        << ?entry rdf:type ?a >>
+            dcterms:source ex:Arista .
+        FILTER NOT EXISTS {
+            << ?entry rdf:type ?a >>
+                dcterms:source ex:ClarkHall .
+        }
+    } AS ?hasAristaOnlyClass)
+
+    BIND(
+        IF(!?hasSharedClass,
+            "Complete disagreement",
+            IF(?hasCHOnlyClass || ?hasAristaOnlyClass,
+                "Partial agreement",
+                "Complete agreement"
+            )
+        ) AS ?agreement
+    )
+}
+GROUP BY ?agreement
+ORDER BY ?agreement

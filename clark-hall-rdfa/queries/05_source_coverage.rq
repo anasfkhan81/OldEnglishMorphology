@@ -1,0 +1,8 @@
+PREFIX ex: <https://example.org/source/>
+PREFIX chm: <https://example.org/chm#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?source (COUNT(DISTINCT ?entry) AS ?count) WHERE {
+  << ?entry rdf:type ?class >> dcterms:source ?source .
+} GROUP BY ?source ORDER BY ?source

@@ -1,0 +1,52 @@
+@prefix ex: <https://example.org/source/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ClarkHall a bibo:Book ;
+    rdfs:label "Clark Hall (1916)" ;
+    dcterms:title "A Concise Anglo-Saxon Dictionary for the Use of Students"@en ;
+    dcterms:creator ex:JohnClarkHall ;
+    dcterms:issued "1916"^^xsd:gYear ;
+    bibo:edition "2nd ed., revised and enlarged"@en ;
+    dcterms:publisher ex:MacmillanCompany ;
+    dcterms:bibliographicCitation "Hall, John R. Clark. 1916. A Concise Anglo-Saxon Dictionary for the Use of Students. 2nd ed., revised and enlarged. New York: The Macmillan Company." .
+
+ex:Arista a bibo:Article ;
+    rdfs:label "Arista (2012)" ;
+    dcterms:title "The reference list of Old English strong verbs"@en ;
+    dcterms:creator ex:FranciscoJavierMartinArista ;
+    dcterms:issued "2012"^^xsd:gYear ;
+    dcterms:isPartOf ex:WPEELEX2 ;
+    bibo:pageStart "1" ;
+    bibo:pageEnd "62" ;
+    dcterms:bibliographicCitation "Arista, Francisco Javier Martín. 2012. The reference list of Old English strong verbs. Working Papers in Early English Lexicology and Lexicography (WPEELEX) 2: 1-62." .
+
+ex:WPEELEX2 a bibo:Issue ;
+    bibo:issue "2" ;
+    dcterms:isPartOf ex:WPEELEX ;
+    dcterms:issued "2012"^^xsd:gYear .
+
+ex:WPEELEX a bibo:Periodical ;
+    dcterms:title "Working Papers in Early English Lexicology and Lexicography"@en ;
+    bibo:shortTitle "WPEELEX" .
+
+ex:MitchellRobinson a bibo:Book ;
+    rdfs:label "Mitchell and Robinson (2012)" ;
+    dcterms:title "A Guide to Old English"@en ;
+    dcterms:creator ex:BruceMitchell, ex:FredRobinson ;
+    bibo:authorList ( ex:BruceMitchell ex:FredRobinson ) ;
+    dcterms:issued "2012"^^xsd:gYear ;
+    bibo:edition "8th ed."@en ;
+    dcterms:publisher ex:WileyBlackwell ;
+    dcterms:bibliographicCitation "Mitchell, Bruce, and Fred C. Robinson. 2012. A Guide to Old English. 8th ed. Chichester: Wiley-Blackwell." .
+
+ex:JohnClarkHall a foaf:Person ; foaf:name "John R. Clark Hall" .
+ex:FranciscoJavierMartinArista a foaf:Person ; foaf:name "Francisco Javier Martín Arista" .
+ex:BruceMitchell a foaf:Person ; foaf:name "Bruce Mitchell" .
+ex:FredRobinson a foaf:Person ; foaf:name "Fred C. Robinson" .
+ex:MacmillanCompany a foaf:Organization ; foaf:name "The Macmillan Company" .
+ex:WileyBlackwell a foaf:Organization ; foaf:name "Wiley-Blackwell" .
