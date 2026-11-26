@@ -1,231 +1,339 @@
-Modelling Old English Strong Verbs in OntoLex-Lemon
+# Modelling Old English Strong Verbs in OntoLex-Lemon
 
+## Introduction
 
-# Introduction
+The aim of this project is to use OntoLex-lemon, its Morphology module (Morph), and LexInfo to encode the morphological information contained in the Clark–Hall Old English dictionary as RDF.
 
-Our plan is to use OntoLex/Morph/Lexinfo to encode the morphological information in the Clark-Hall dictionary as RDF with **bonus**, the use of SHACL to encode various constraints/morphological patterns; another **bonus**: look into whether it’s better to work directly in paralex and map the results into OntoLex later, since we are looking to integrate information from unimorph too; further **bonus,** start looking into the use of RDF 1.2 along with SHACL
+Our main objective is to use Semantic Web standards to make the morphological information contained in traditional lexicographic resources more machine-actionable, facilitating its querying, reuse and integration with other linguistic resources.
 
-Main aim is: use Semantic Web standards to make the morphology more machine actionable!
+Further objectives include:
 
+- Exploring interoperability with Paralex, including the possibility of working directly in Paralex and subsequently mapping the results into OntoLex-lemon.
+- Integrating morphological information from other resources, in particular UniMorph.
+- Exploring the use of RDF 1.2 to represent the provenance of morphological descriptions and classifications, including cases where different sources provide different analyses of the same lexical entry.
 
 ## Ontology of Old English Strong Verbs
 
+We have developed a small OWL ontology (CHM) that extends OntoLex-lemon and LexInfo with classes and properties for the representation of Old English strong verb morphology.
+
+The following prefixes are used in the ontology and the accompanying examples:
+
+```turtle
+@prefix chm:     <https://example.org/chm#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix exentry: <https://example.org/clarkhall/entry/> .
+@prefix exform:  <https://example.org/clarkhall/form/> .
+```
+
 ### The Basic Classes
 
-Here is the core class which we define (might be better to change the name to OE\_StrongVerb)
+The core class of the ontology is `chm:StrongVerb`, defined as a subclass of both `ontolex:LexicalEntry` and `lexinfo:Verb`.
 
-    chm:StrongVerb a owl:Class ;
-      rdfs:label "Strong verb (Clark–Hall morphology)"@en ;
-      rdfs:subClassOf ontolex:LexicalEntry , lexinfo:Verb .
+```turtle
+chm:StrongVerb a owl:Class ;
+    rdfs:label "Strong verb (Clark–Hall morphology)"@en ;
+    rdfs:subClassOf ontolex:LexicalEntry, lexinfo:Verb .
+```
 
-We define seven classes of StrongVerb
+We define seven subclasses of `chm:StrongVerb`, corresponding to the seven traditional classes of Old English strong verbs.
 
-    chm:StrongVerbI a owl:Class ;
-      rdfs:label "Strong verb class I"@en ;
-      rdfs:subClassOf chm:StrongVerb .
+```turtle
+chm:StrongVerbI a owl:Class ;
+    rdfs:label "Strong verb class I"@en ;
+    rdfs:subClassOf chm:StrongVerb .
 
-    chm:StrongVerbII a owl:Class ;
-      rdfs:label "Strong verb class II"@en ;
-      rdfs:subClassOf chm:StrongVerb .
+chm:StrongVerbII a owl:Class ;
+    rdfs:label "Strong verb class II"@en ;
+    rdfs:subClassOf chm:StrongVerb .
 
-    chm:StrongVerbIII a owl:Class ;
-      rdfs:label "Strong verb class III"@en ;
-      rdfs:subClassOf chm:StrongVerb .
+chm:StrongVerbIII a owl:Class ;
+    rdfs:label "Strong verb class III"@en ;
+    rdfs:subClassOf chm:StrongVerb .
 
-    chm:StrongVerbIV a owl:Class ;
-      rdfs:label "Strong verb class IV"@en ;
-      rdfs:subClassOf chm:StrongVerb .
+chm:StrongVerbIV a owl:Class ;
+    rdfs:label "Strong verb class IV"@en ;
+    rdfs:subClassOf chm:StrongVerb .
 
-    chm:StrongVerbV a owl:Class ;
-      rdfs:label "Strong verb class V"@en ;
-      rdfs:subClassOf chm:StrongVerb .
+chm:StrongVerbV a owl:Class ;
+    rdfs:label "Strong verb class V"@en ;
+    rdfs:subClassOf chm:StrongVerb .
 
-    chm:StrongVerbVI a owl:Class ;
-      rdfs:label "Strong verb class VI"@en ;
-      rdfs:subClassOf chm:StrongVerb .
+chm:StrongVerbVI a owl:Class ;
+    rdfs:label "Strong verb class VI"@en ;
+    rdfs:subClassOf chm:StrongVerb .
 
-    chm:StrongVerbVII a owl:Class ;
-      rdfs:label "Strong verb class VII"@en ;
-      rdfs:subClassOf chm:StrongVerb .
+chm:StrongVerbVII a owl:Class ;
+    rdfs:label "Strong verb class VII"@en ;
+    rdfs:subClassOf chm:StrongVerb .
+```
 
-We go into further subclasses (our intention is that each leaf level sub-class is granular enough that it shares the same morphological pattern):
+We introduce further subclasses where necessary. Our intention is that the classification should be sufficiently granular for the members of each leaf-level class to share a characteristic morphological pattern.
 
-    chm:StrongVerbIIa a owl:Class ; rdfs:label "Strong verb class IIa"@en ; rdfs:subClassOf chm:StrongVerbII .
-    chm:StrongVerbIIb a owl:Class ; rdfs:label "Strong verb class IIb"@en ; rdfs:subClassOf chm:StrongVerbII .
+The current class hierarchy is as follows:
 
-    chm:StrongVerbIIIa a owl:Class ; rdfs:label "Strong verb class IIIa"@en ; rdfs:subClassOf chm:StrongVerbIII .
-    chm:StrongVerbIIIb a owl:Class ; rdfs:label "Strong verb class IIIb"@en ; rdfs:subClassOf chm:StrongVerbIII .
-    chm:StrongVerbIIIc a owl:Class ; rdfs:label "Strong verb class IIIc"@en ; rdfs:subClassOf chm:StrongVerbIII .
-    chm:StrongVerbIIId a owl:Class ; rdfs:label "Strong verb class IIId"@en ; rdfs:subClassOf chm:StrongVerbIII .
-    chm:StrongVerbIIIe a owl:Class ; rdfs:label "Strong verb class IIIe"@en ; rdfs:subClassOf chm:StrongVerbIII .
+```text
+StrongVerb
+├── StrongVerbI
+├── StrongVerbII
+│   ├── StrongVerbIIa
+│   └── StrongVerbIIb
+├── StrongVerbIII
+│   ├── StrongVerbIIIa
+│   ├── StrongVerbIIIb
+│   ├── StrongVerbIIIc
+│   ├── StrongVerbIIId
+│   └── StrongVerbIIIe
+├── StrongVerbIV
+├── StrongVerbV
+├── StrongVerbVI
+└── StrongVerbVII
+    ├── StrongVerbVIIa
+    └── StrongVerbVIIb
+```
 
-    chm:StrongVerbVIIa a owl:Class ; rdfs:label "Strong verb class VIIa"@en ; rdfs:subClassOf chm:StrongVerbVII .
-    chm:StrongVerbVIIb a owl:Class ; rdfs:label "Strong verb class VIIb"@en ; rdfs:subClassOf chm:StrongVerbVII .
+### Describing Strong Verb Classes Using OWL Punning
 
+In addition to classifying lexical entries, we want to be able to describe the morphological characteristics of the strong verb classes themselves, in particular their characteristic vowel series.
+
+To this end, we make use of **OWL 2 punning**, which allows the same IRI to be used both as an OWL class and as an individual.
+
+For example, `chm:StrongVerbI` can be used:
+
+- As an OWL class whose instances are lexical entries belonging to strong verb class I.
+- As an individual to which we can attach information concerning the characteristic vowel series of strong verb class I.
+
+We have introduced four datatype properties for the latter purpose:
+
+```turtle
+chm:infinitive_vowel a owl:DatatypeProperty ;
+    rdfs:label "infinitive vowel"@en .
+
+chm:pret_sing_vowel a owl:DatatypeProperty ;
+    rdfs:label "preterite singular vowel"@en .
+
+chm:pret_pl_vowel a owl:DatatypeProperty ;
+    rdfs:label "preterite plural vowel"@en .
+
+chm:past_part_vowel a owl:DatatypeProperty ;
+    rdfs:label "past participle vowel"@en .
+```
+
+These properties correspond to the four principal forms traditionally used to describe the vowel alternations of Old English strong verbs.
+
+For example, the characteristic vowel series of strong verb class I can be represented as follows:
+
+```turtle
+chm:StrongVerbI a owl:NamedIndividual ;
+    chm:infinitive_vowel "ī" ;
+    chm:pret_sing_vowel "ā" ;
+    chm:pret_pl_vowel "i" ;
+    chm:past_part_vowel "i" .
+```
+
+This approach allows us to represent both the classification of individual verbs and the morphological characteristics of the classes themselves without introducing a separate set of identifiers for the latter.
+
+It should be noted that, under OWL 2 punning, the class and individual interpretations of an IRI are semantically independent. The properties associated with a strong verb class as an individual are therefore not automatically inherited by the lexical entries that instantiate that class.
+
+The vowel-series properties have been defined in the current ontology; their systematic population for all classes and subclasses remains work in progress.
+
+### Representing Paradigm Cells and Morphological Variants
+
+A lexical entry may have more than one form corresponding to a particular combination of grammatical features, i.e. more than one form occupying the same cell in its inflectional paradigm.
+
+In order to explicitly represent the relationship between such forms, we introduce a new object property, `chm:cellmate`.
+
+```turtle
+chm:cellmate a owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:label "cellmate"@en ;
+    rdfs:domain ontolex:Form ;
+    rdfs:range ontolex:Form ;
+    rdfs:comment "Relates two distinct morphological forms that occupy the same cell in the inflectional paradigm of a lexical entry, irrespective of their orthographic or phonological differences."@en .
+```
+
+The property is symmetric: if form A is a cellmate of form B, then form B is also a cellmate of form A.
+
+The property is deliberately underspecified with respect to the nature of the variation between the forms. The differences may be orthographic, phonological, dialectal or morphological.
+
+The use of `chm:cellmate` is compatible with the OntoLex-lemon distinction between forms and their written representations. Where variants are modelled as different written representations of a single `ontolex:Form`, there is no need to introduce a cellmate relation. Where they are modelled as distinct instances of `ontolex:Form`, the property allows us to explicitly represent their paradigmatic relationship.
+
+The property can also be used to relate prefixed and unprefixed forms of the same lexical entry, where these occupy the same paradigm cell.
+
+We do not define the property as transitive. Instead, where a paradigm cell contains several distinct forms, we explicitly relate each pair of forms.
+
+## Representing Lexical Entries and Their Forms
+
+Individual verbs are represented as instances of `ontolex:LexicalEntry` and of the relevant strong verb class.
+
+Their morphological forms are represented as instances of `ontolex:Form`, linked to the corresponding lexical entry via the OntoLex-lemon properties `ontolex:canonicalForm` and `ontolex:otherForm`.
+
+We use existing LexInfo properties to describe the grammatical features associated with each form.
+
+| Property | Description |
+|---|---|
+| `lexinfo:tense` | Grammatical tense |
+| `lexinfo:person` | Grammatical person |
+| `lexinfo:number` | Grammatical number |
+| `lexinfo:verbFormMood` | Verbal form or mood |
+| `ontolex:writtenRep` | Written representation of a form |
+| `chm:cellmate` | Relation between forms occupying the same paradigm cell |
+
+The morphological information associated with individual forms is thus represented separately from the characteristic vowel series associated with the strong verb class as a whole.
 
 ## Example Entries
 
-We will look at one of the entries, from the first strong verb class, the entry _bīdan_.
+### bīdan — Strong Verb Class I
 
-    chm:biidan rdf:type owl:NamedIndividual ,
-                        ontolex:LexicalEntry ,
-                        chm:StrongVerb ,
-                        chm:StrongVerbI ;
-               rdfs:label "bīdan"@ang ;
-               ontolex:canonicalForm chm:biidan_inf ;
-               ontolex:otherForm chm:biidan_pres-2sg_1 ,
-                                 chm:biidan_pres-2sg_2 ,
-                                 chm:biidan_pres-2sg_3 ,
-                                 chm:biidan_pres-3sg ,
-                                 chm:biidan_pret-3sg ,
-                                 chm:biidan_pret-pl_1 ,
-                                 chm:biidan_pret-pl_2 .
+The following example illustrates the representation of the Old English verb *bīdan*.
 
+The forms currently represented in the example are:
 
-    ###  https://example.org/chm#biidan_inf
-    chm:biidan_inf rdf:type owl:NamedIndividual ,
-                            ontolex:Form ;
-                   chm:rootVowel "ī" ;
-                   lexinfo:verbFormMood lexinfo:infinitive ;
-                   ontolex:writtenRep "bīdan"@ang .
+| Paradigm cell | Forms |
+|---|---|
+| Infinitive | bīdan |
+| Present indicative, second person singular | bīst, bīdst, bītst |
+| Present indicative, third person singular | bīt |
+| Preterite indicative, third person singular | bād |
+| Preterite indicative, plural | beodan, bidon |
 
+The lexical entry is represented as follows:
 
-    ###  https://example.org/chm#biidan_pres-2sg_1
-    chm:biidan_pres-2sg_1 rdf:type owl:NamedIndividual ,
-                                   ontolex:Form ;
-                          chm:rootVowel "ī"^^xsd:string ;
-                          lexinfo:number lexinfo:singular ;
-                          lexinfo:person lexinfo:secondPerson ;
-                          lexinfo:tense lexinfo:present ;
-                          lexinfo:verbFormMood lexinfo:indicative ;
-                          ontolex:writtenRep "bīst"@ang .
+```turtle
+exentry:biidan a ontolex:LexicalEntry,
+                 chm:StrongVerb,
+                 chm:StrongVerbI ;
+    rdfs:label "bīdan"@ang ;
+    ontolex:canonicalForm exform:biidan_inf ;
+    ontolex:otherForm
+        exform:biidan_pret-3sg,
+        exform:biidan_pret-pl_1,
+        exform:biidan_pret-pl_2,
+        exform:biidan_pres-2sg_1,
+        exform:biidan_pres-2sg_2,
+        exform:biidan_pres-2sg_3,
+        exform:biidan_pres-3sg .
+```
 
+The infinitive is represented as the canonical form:
 
-    ###  https://example.org/chm#biidan_pres-2sg_2
-    chm:biidan_pres-2sg_2 rdf:type owl:NamedIndividual ,
-                                   ontolex:Form ;
-                          chm:rootVowel "ī"^^xsd:string ;
-                          lexinfo:number lexinfo:singular ;
-                          lexinfo:person lexinfo:secondPerson ;
-                          lexinfo:tense lexinfo:present ;
-                          lexinfo:verbFormMood lexinfo:indicative ;
-                          ontolex:writtenRep "bīdst"@ang .
+```turtle
+exform:biidan_inf a ontolex:Form ;
+    ontolex:writtenRep "bīdan"@ang ;
+    lexinfo:verbFormMood lexinfo:infinitive .
+```
 
+The three variants of the present indicative second person singular are represented as distinct instances of `ontolex:Form`, each associated with the same set of grammatical features.
 
-    ###  https://example.org/chm#biidan_pres-2sg_3
-    chm:biidan_pres-2sg_3 rdf:type owl:NamedIndividual ,
-                                   ontolex:Form ;
-                          chm:rootVowel "ī"^^xsd:string ;
-                          lexinfo:number lexinfo:singular ;
-                          lexinfo:person lexinfo:secondPerson ;
-                          lexinfo:tense lexinfo:present ;
-                          lexinfo:verbFormMood lexinfo:indicative ;
-                          ontolex:writtenRep "bītst"@ang .
+```turtle
+exform:biidan_pres-2sg_1 a ontolex:Form ;
+    ontolex:writtenRep "bīst"@ang ;
+    lexinfo:tense lexinfo:present ;
+    lexinfo:person lexinfo:secondPerson ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:verbFormMood lexinfo:indicative .
 
+exform:biidan_pres-2sg_2 a ontolex:Form ;
+    ontolex:writtenRep "bīdst"@ang ;
+    lexinfo:tense lexinfo:present ;
+    lexinfo:person lexinfo:secondPerson ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:verbFormMood lexinfo:indicative .
 
-    ###  https://example.org/chm#biidan_pres-3sg
-    chm:biidan_pres-3sg rdf:type owl:NamedIndividual ,
-                                 ontolex:Form ;
-                        chm:rootVowel "ī"^^xsd:string ;
-                        lexinfo:number lexinfo:singular ;
-                        lexinfo:person lexinfo:thirdPerson ;
-                        lexinfo:tense lexinfo:present ;
-                        lexinfo:verbFormMood lexinfo:indicative ;
-                        ontolex:writtenRep "bīt"@ang .
+exform:biidan_pres-2sg_3 a ontolex:Form ;
+    ontolex:writtenRep "bītst"@ang ;
+    lexinfo:tense lexinfo:present ;
+    lexinfo:person lexinfo:secondPerson ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:verbFormMood lexinfo:indicative .
+```
 
+Since all three forms occupy the same cell in the inflectional paradigm of *bīdan*, we relate them using `chm:cellmate`.
 
-    ###  https://example.org/chm#biidan_pret-3sg
-    chm:biidan_pret-3sg rdf:type owl:NamedIndividual ,
-                                 ontolex:Form ;
-                        chm:rootVowel "ā"^^xsd:string ;
-                        lexinfo:number lexinfo:singular ;
-                        lexinfo:person lexinfo:thirdPerson ;
-                        lexinfo:tense lexinfo:past ;
-                        lexinfo:verbFormMood lexinfo:indicative ;
-                        ontolex:writtenRep "bād"@ang .
+```turtle
+exform:biidan_pres-2sg_1
+    chm:cellmate exform:biidan_pres-2sg_2,
+                 exform:biidan_pres-2sg_3 .
 
+exform:biidan_pres-2sg_2
+    chm:cellmate exform:biidan_pres-2sg_3 .
+```
 
-    ###  https://example.org/chm#biidan_pret-pl_1
-    chm:biidan_pret-pl_1 rdf:type owl:NamedIndividual ,
-                                  ontolex:Form ;
-                         chm:rootVowel "eo"^^xsd:string ;
-                         lexinfo:number lexinfo:plural ;
-                         lexinfo:tense lexinfo:past ;
-                         lexinfo:verbFormMood lexinfo:indicative ;
-                         ontolex:writtenRep "beodan"@ang .
+Similarly, the two preterite plural forms, *beodan* and *bidon*, are represented as follows:
 
+```turtle
+exform:biidan_pret-pl_1 a ontolex:Form ;
+    ontolex:writtenRep "beodan"@ang ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:verbFormMood lexinfo:indicative .
 
-    ###  https://example.org/chm#biidan_pret-pl_2
-    chm:biidan_pret-pl_2 rdf:type owl:NamedIndividual ,
-                                  ontolex:Form ;
-                         chm:rootVowel "i"^^xsd:string ;
-                         lexinfo:number lexinfo:plural ;
-                         lexinfo:tense lexinfo:past ;
-                         lexinfo:verbFormMood lexinfo:indicative ;
-                         ontolex:writtenRep "bidon"@ang .
+exform:biidan_pret-pl_2 a ontolex:Form ;
+    ontolex:writtenRep "bidon"@ang ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:verbFormMood lexinfo:indicative .
 
+exform:biidan_pret-pl_1
+    chm:cellmate exform:biidan_pret-pl_2 .
+```
 
-### SHACL Shapes
+The inverse of each cellmate relation can be inferred on the basis of the symmetry of the property.
 
-Here is the SPARQL-SHACL shape for Strong Verb Class I. It makes use of the root vowels associated with four different forms (if these exist)
+### cēosan — Strong Verb Class IIa
 
-    chm:StrongVerbIShape a sh:NodeShape ;
-      sh:targetClass chm:StrongVerbI ;
+The verb *cēosan* provides a further example of the use of `chm:cellmate`, particularly in relation to prefixed and unprefixed forms.
 
-      sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "For Strong Verb Class I, the infinitive must have root vowel ī."@en ;
-        sh:select """
-          PREFIX chm:     <https://example.org/chm#>
-          PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+Clark–Hall uses the symbol ± to indicate that the verb occurs both with and without the prefix *ge-*.
 
-          SELECT $this
-          WHERE {
-            $this ontolex:canonicalForm ?f .
-            ?f chm:rootVowel ?v .
-            FILTER(?v != "ī")
-          }
-        """
-      ] ;
+Rather than introducing a property to represent the optionality of the prefix, we explicitly represent the prefixed and unprefixed forms as separate instances of `ontolex:Form`.
 
-      
-      sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "For Strong Verb Class I, any 1sg past indicative form must have root vowel ā."@en ;
-        sh:select """
-          PREFIX chm:     <https://example.org/chm#>
-          PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
-          PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+```turtle
+exform:ceosan_inf a ontolex:Form ;
+    ontolex:writtenRep "cēosan"@ang ;
+    lexinfo:verbFormMood lexinfo:infinitive .
 
-          SELECT $this
-          WHERE {
-            $this ontolex:otherForm ?f .
-            ?f lexinfo:tense lexinfo:past ;
-               lexinfo:person lexinfo:firstPerson ;
-               lexinfo:number lexinfo:singular ;
-               lexinfo:verbFormMood lexinfo:indicative ;
-               chm:rootVowel ?v .
-            FILTER(?v != "ā")
-          }
-        """
-      ] ;
+exform:ceosan_inf_2 a ontolex:Form ;
+    ontolex:writtenRep "gecēosan"@ang ;
+    lexinfo:verbFormMood lexinfo:infinitive .
 
-      sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "For Strong Verb Class I, any past participle form must have root vowel i."@en ;
-        sh:select """
-          PREFIX chm:     <https://example.org/chm#>
-          PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
-          PREFIX lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#>
+exform:ceosan_inf
+    chm:cellmate exform:ceosan_inf_2 .
+```
 
-          SELECT $this
-          WHERE {
-            $this ontolex:otherForm ?f .
-            ?f lexinfo:tense lexinfo:past ;
-               lexinfo:verbFormMood lexinfo:participle ;
-               chm:rootVowel ?v .
-            FILTER(?v != "i")
-          }
-        """
-      ] .
+The same approach is used for the past participles *coren* and *gecoren*.
 
+Other examples of paradigm-cell variation in the entry include:
+
+| Paradigm cell | Forms |
+|---|---|
+| Infinitive | cēosan, gecēosan |
+| Preterite indicative, third person singular | cēas, cǣs, cēs |
+| Past participle | coren, gecoren |
+| Present indicative, third person singular | cīest, cīesð, cīst, cȳst, cȳsð |
+
+All distinct forms within each of these cells are pairwise related using `chm:cellmate`.
+
+This illustrates how the same property can be used to represent different kinds of morphological variation without committing ourselves to a particular analysis of the differences between the forms.
+
+## Integration with TEI
+
+An important objective of the project is to integrate the RDF representation of morphological information with the existing TEI encoding of the Clark–Hall dictionary.
+
+In particular, we are exploring the use of RDFa to embed RDF statements directly within the TEI representation of dictionary entries.
+
+This is especially relevant in the case of traditional dictionaries such as Clark–Hall, where the morphological information associated with a single lexical entry may be distributed across several dictionary entries. For example, an inflected form may have its own dictionary entry containing a cross-reference to the corresponding lemma.
+
+The RDF representation allows us to bring together this distributed information into a single morphological description of the lexical entry while retaining the structure of the original dictionary in the TEI representation.
+
+## Further Work
+
+The ontology and the accompanying RDF examples constitute a working model. Further work will focus on:
+
+- Extending the coverage of the morphological descriptions to all Old English strong verb classes and subclasses.
+- Populating the characteristic vowel series associated with each class.
+- Consolidating morphological information distributed across different dictionary entries.
+- Further developing the integration of RDF and TEI through RDFa.
+- Representing the provenance of morphological information and alternative strong verb classifications using RDF 1.2.
+- Investigating interoperability with Paralex and UniMorph.
