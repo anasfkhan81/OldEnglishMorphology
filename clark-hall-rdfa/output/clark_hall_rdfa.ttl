@@ -1,0 +1,3151 @@
+@prefix chm: <https://example.org/chm#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/ch/CAS2.ae_t-bregdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ae_t-bregdan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.ae_t-bregdan_sense_1>,
+        <https://example.org/ch/CAS2.ae_t-bregdan_sense_2>,
+        <https://example.org/ch/CAS2.ae_t-bregdan_sense_3>,
+        <https://example.org/ch/CAS2.ae_t-bregdan_sense_4> .
+
+<https://example.org/ch/CAS2.am_etan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.am_etan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.am_etan_sense_1> .
+
+<https://example.org/ch/CAS2.am_hebban_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.am_hebban_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.am_hebban_form_inflected_1>,
+        <https://example.org/ch/CAS2.am_hebban_form_inflected_2> ;
+    ontolex:sense <https://example.org/ch/CAS2.am_hebban_sense_1>,
+        <https://example.org/ch/CAS2.am_hebban_sense_2>,
+        <https://example.org/ch/CAS2.am_hebban_sense_3>,
+        <https://example.org/ch/CAS2.am_hebban_sense_4>,
+        <https://example.org/ch/CAS2.am_hebban_sense_5> .
+
+<https://example.org/ch/CAS2.am_ne_forl_aem_tan_entry> a ontolex:LexicalEntry ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.am_nforl_aem_tan_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.am_ne_forl_aem_tan_form> .
+
+<https://example.org/ch/CAS2.am_sittan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.am_sittan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.am_sittan_sense_1>,
+        <https://example.org/ch/CAS2.am_sittan_sense_2>,
+        <https://example.org/ch/CAS2.am_sittan_sense_3>,
+        <https://example.org/ch/CAS2.am_sittan_sense_4> .
+
+<https://example.org/ch/CAS2.am_weor_eth_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.weor_eth_an_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.am_weor_eth_an_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.am_weor_eth_an_sense_1> .
+
+<https://example.org/ch/CAS2.b_em_atan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.b_em_atan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.b_em_atan_form_ge>,
+        <https://example.org/ch/CAS2.b_em_atan_form_inflected_1>,
+        <https://example.org/ch/CAS2.b_em_atan_form_inflected_2> ;
+    ontolex:sense <https://example.org/ch/CAS2.b_em_atan_sense_1>,
+        <https://example.org/ch/CAS2.b_em_atan_sense_2>,
+        <https://example.org/ch/CAS2.b_em_atan_sense_3>,
+        <https://example.org/ch/CAS2.b_em_atan_sense_4> .
+
+<https://example.org/ch/CAS2.be-fr_im_nan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.be-fr_im_nan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.be-fr_im_nan_sense_1> .
+
+<https://example.org/ch/CAS2.bedr_em_osan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.bedr_em_osan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.bedr_em_osan_sense_1>,
+        <https://example.org/ch/CAS2.bedr_em_osan_sense_2>,
+        <https://example.org/ch/CAS2.bedr_em_osan_sense_3> .
+
+<https://example.org/ch/CAS2.befaran_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.befaran_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.befaran_sense_1>,
+        <https://example.org/ch/CAS2.befaran_sense_2>,
+        <https://example.org/ch/CAS2.befaran_sense_3> .
+
+<https://example.org/ch/CAS2.beorgan_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.beorgan_1_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.beorgan_1_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.beorgan_1_sense_1>,
+        <https://example.org/ch/CAS2.beorgan_1_sense_2>,
+        <https://example.org/ch/CAS2.beorgan_1_sense_3> .
+
+<https://example.org/ch/CAS2.beorgan_2_form> a ontolex:Form ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.byrgan_2_entry> ;
+    ontolex:writtenRep "beorgan"@ang .
+
+<https://example.org/ch/CAS2.beorgan_2_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-beorgan"@ang .
+
+<https://example.org/ch/CAS2.berstan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.berstan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.berstan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.berstan_sense_1>,
+        <https://example.org/ch/CAS2.berstan_sense_2>,
+        <https://example.org/ch/CAS2.berstan_sense_3>,
+        <https://example.org/ch/CAS2.berstan_sense_4> .
+
+<https://example.org/ch/CAS2.bew_am_wan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.bew_am_wan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.bew_am_wan_sense_1> .
+
+<https://example.org/ch/CAS2.biddan2_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.biddan2_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.biddan2_sense_1>,
+        <https://example.org/ch/CAS2.biddan2_sense_2>,
+        <https://example.org/ch/CAS2.biddan2_sense_3> .
+
+<https://example.org/ch/CAS2.cuman_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.cuman_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.cuman_sense_1>,
+        <https://example.org/ch/CAS2.cuman_sense_2> .
+
+<https://example.org/ch/CAS2.cuman_um_p_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.cuman_um_p_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.cuman_um_p_form_sense_variant_2> ;
+    ontolex:sense <https://example.org/ch/CAS2.cuman_um_p_sense_1>,
+        <https://example.org/ch/CAS2.cuman_um_p_sense_2>,
+        <https://example.org/ch/CAS2.cuman_um_p_sense_3>,
+        <https://example.org/ch/CAS2.cuman_um_p_sense_4>,
+        <https://example.org/ch/CAS2.cuman_um_p_sense_5>,
+        <https://example.org/ch/CAS2.cuman_um_p_sense_6>,
+        <https://example.org/ch/CAS2.cuman_um_p_sense_7>,
+        <https://example.org/ch/CAS2.cuman_um_p_sense_8> .
+
+<https://example.org/ch/CAS2.cwe_eth_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.cwe_eth_an_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.cwe_eth_an_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.cwe_eth_an_sense_1>,
+        <https://example.org/ch/CAS2.cwe_eth_an_sense_2>,
+        <https://example.org/ch/CAS2.cwe_eth_an_sense_3>,
+        <https://example.org/ch/CAS2.cwe_eth_an_sense_4>,
+        <https://example.org/ch/CAS2.cwe_eth_an_sense_5> .
+
+<https://example.org/ch/CAS2.cwe_eth_an_on_hwone_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.cwe_eth_an_on_hwone_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.cwe_eth_an_on_hwone_sense_1> .
+
+<https://example.org/ch/CAS2.cwe_eth_e_g_em_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.cwe_eth_e_g_em_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.cwe_eth_e_g_em_sense_1> .
+
+<https://example.org/ch/CAS2.cwyst_eth_um_l_am_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.cwyst_eth_um_l_am_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.cwyst_eth_um_l_am_sense_1> .
+
+<https://example.org/ch/CAS2.delan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.delan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.delan_sense_1>,
+        <https://example.org/ch/CAS2.delan_sense_2>,
+        <https://example.org/ch/CAS2.delan_sense_3> .
+
+<https://example.org/ch/CAS2.eald_f_ae_der_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.eald_f_ae_der_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.eald_f_ae_der_sense_1> .
+
+<https://example.org/ch/CAS2.eftfl_om_wan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.eftfl_om_wan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.eftfl_om_wan_sense_1> .
+
+<https://example.org/ch/CAS2.eth_icgan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.eth_icgan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.eth_icgan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.eth_icgan_sense_1>,
+        <https://example.org/ch/CAS2.eth_icgan_sense_2>,
+        <https://example.org/ch/CAS2.eth_icgan_sense_3> .
+
+<https://example.org/ch/CAS2.eth_indan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.eth_indan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.eth_indan_sense_1>,
+        <https://example.org/ch/CAS2.eth_indan_sense_2>,
+        <https://example.org/ch/CAS2.eth_indan_sense_3>,
+        <https://example.org/ch/CAS2.eth_indan_sense_4> .
+
+<https://example.org/ch/CAS2.eth_ridda_f_ae_der_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.eth_ridda_f_ae_der_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.eth_ridda_f_ae_der_sense_1> .
+
+<https://example.org/ch/CAS2.f_ae_der_entry> a ontolex:LexicalEntry ;
+    lexinfo:gender lexinfo:masculine ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.f_ae_der_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.f_ae_der_sense_1>,
+        <https://example.org/ch/CAS2.f_ae_der_sense_2>,
+        <https://example.org/ch/CAS2.f_ae_der_sense_3>,
+        <https://example.org/ch/CAS2.f_ae_der_sense_4>,
+        <https://example.org/ch/CAS2.f_ae_der_sense_5> .
+
+<https://example.org/ch/CAS2.f_em_on_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.f_em_on_1_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.f_em_on_1_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.f_em_on_1_sense_1> .
+
+<https://example.org/ch/CAS2.f_em_on_2_form> a ontolex:Form ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.f_em_ogan_entry> ;
+    ontolex:writtenRep "fēon"@ang .
+
+<https://example.org/ch/CAS2.f_em_ower_eth_a_f_ae_der_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.f_em_ower_eth_a_f_ae_der_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.f_em_ower_eth_a_f_ae_der_sense_1> .
+
+<https://example.org/ch/CAS2.feohtan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.feohtan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.feohtan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.feohtan_sense_1> .
+
+<https://example.org/ch/CAS2.fetan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.fetan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.fetan_sense_1> .
+
+<https://example.org/ch/CAS2.findan_ae_t_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.findan_ae_t_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.findan_ae_t_sense_1> .
+
+<https://example.org/ch/CAS2.findan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.findan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.findan_form_inflected_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.findan_sense_1>,
+        <https://example.org/ch/CAS2.findan_sense_2>,
+        <https://example.org/ch/CAS2.findan_sense_3>,
+        <https://example.org/ch/CAS2.findan_sense_4>,
+        <https://example.org/ch/CAS2.findan_sense_5>,
+        <https://example.org/ch/CAS2.findan_sense_6> .
+
+<https://example.org/ch/CAS2.fl_em_ogan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.fl_em_ogan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.fl_em_ogan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.fl_em_ogan_sense_1>,
+        <https://example.org/ch/CAS2.fl_em_ogan_sense_2>,
+        <https://example.org/ch/CAS2.fl_em_ogan_sense_3> .
+
+<https://example.org/ch/CAS2.for_eth_-st_ae_ppan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.for_eth_-st_ae_ppan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.for_eth_-st_ae_ppan_sense_1>,
+        <https://example.org/ch/CAS2.for_eth_-st_ae_ppan_sense_2>,
+        <https://example.org/ch/CAS2.for_eth_-st_ae_ppan_sense_3> .
+
+<https://example.org/ch/CAS2.for_eth_am_t_em_on_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.for_eth_am_t_em_on_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.for_eth_am_t_em_on_form_inflected_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.for_eth_am_t_em_on_sense_1> .
+
+<https://example.org/ch/CAS2.foresprecan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.foresprecan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.foresprecan_sense_1>,
+        <https://example.org/ch/CAS2.foresprecan_sense_2>,
+        <https://example.org/ch/CAS2.foresprecan_sense_3> .
+
+<https://example.org/ch/CAS2.foresprecen_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.foresprecen_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.foresprecen_sense_1>,
+        <https://example.org/ch/CAS2.foresprecen_sense_2> .
+
+<https://example.org/ch/CAS2.forgietan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.forgietan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.forgietan_sense_1> .
+
+<https://example.org/ch/CAS2.forhealdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.forhealdan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.forhealdan_sense_1>,
+        <https://example.org/ch/CAS2.forhealdan_sense_2>,
+        <https://example.org/ch/CAS2.forhealdan_sense_3>,
+        <https://example.org/ch/CAS2.forhealdan_sense_4>,
+        <https://example.org/ch/CAS2.forhealdan_sense_5> .
+
+<https://example.org/ch/CAS2.foriernan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.foriernan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.foriernan_form_sense_variant_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.foriernan_sense_1> .
+
+<https://example.org/ch/CAS2.forl_aem_tan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.forl_aem_tan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.forl_aem_tan_sense_1>,
+        <https://example.org/ch/CAS2.forl_aem_tan_sense_2>,
+        <https://example.org/ch/CAS2.forl_aem_tan_sense_3>,
+        <https://example.org/ch/CAS2.forl_aem_tan_sense_4>,
+        <https://example.org/ch/CAS2.forl_aem_tan_sense_5>,
+        <https://example.org/ch/CAS2.forl_aem_tan_sense_6> .
+
+<https://example.org/ch/CAS2.fors_um_can_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.fors_um_can_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.fors_um_can_sense_1> .
+
+<https://example.org/ch/CAS2.fri_eth_ge-niman_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.fri_eth_ge-niman_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.fri_eth_ge-niman_sense_1> .
+
+<https://example.org/ch/CAS2.full-g_am_n_entry> a ontolex:LexicalEntry ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.full-g_am_n_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.full-g_am_n_form_inflected_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.full-g_am_n_sense_1>,
+        <https://example.org/ch/CAS2.full-g_am_n_sense_2>,
+        <https://example.org/ch/CAS2.full-g_am_n_sense_3>,
+        <https://example.org/ch/CAS2.full-g_am_n_sense_4> .
+
+<https://example.org/ch/CAS2.full-g_am_n_variant_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.full-g_am_n_variant_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_1>,
+        <https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_2>,
+        <https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_3>,
+        <https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_4> .
+
+<https://example.org/ch/CAS2.geond-g_am_n_entry> a ontolex:LexicalEntry ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.geond-g_am_n_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.geond-g_am_n_sense_1> .
+
+<https://example.org/ch/CAS2.geond-g_am_n_variant_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.geond-g_am_n_variant_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.geond-g_am_n_variant_1_sense_1> .
+
+<https://example.org/ch/CAS2.giefan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.giefan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.giefan_sense_1>,
+        <https://example.org/ch/CAS2.giefan_sense_2>,
+        <https://example.org/ch/CAS2.giefan_sense_3>,
+        <https://example.org/ch/CAS2.giefan_sense_4> .
+
+<https://example.org/ch/CAS2.gyrran_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.georran_entry>,
+        <https://example.org/ch/CAS2.gierran_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.gyrran_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.gyrran_sense_1>,
+        <https://example.org/ch/CAS2.gyrran_sense_2>,
+        <https://example.org/ch/CAS2.gyrran_sense_3> .
+
+<https://example.org/ch/CAS2.h_am_tan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.h_am_tan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.h_am_tan_form_ge>,
+        <https://example.org/ch/CAS2.h_am_tan_form_inflected_1>,
+        <https://example.org/ch/CAS2.h_am_tan_form_inflected_1_alt_2>,
+        <https://example.org/ch/CAS2.h_am_tan_form_inflected_2>,
+        <https://example.org/ch/CAS2.h_am_tan_form_inflected_2_alt_2>,
+        <https://example.org/ch/CAS2.h_am_tan_form_inflected_3> ;
+    ontolex:sense <https://example.org/ch/CAS2.h_am_tan_sense_1>,
+        <https://example.org/ch/CAS2.h_am_tan_sense_2>,
+        <https://example.org/ch/CAS2.h_am_tan_sense_3>,
+        <https://example.org/ch/CAS2.h_am_tan_sense_4>,
+        <https://example.org/ch/CAS2.h_am_tan_sense_5>,
+        <https://example.org/ch/CAS2.h_am_tan_sense_6> .
+
+<https://example.org/ch/CAS2.h_em_hine_genam_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.h_em_hine_genam_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.h_em_hine_genam_sense_1> .
+
+<https://example.org/ch/CAS2.h_om_n_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.h_om_n_1_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.h_om_n_1_form_inflected_1>,
+        <https://example.org/ch/CAS2.h_om_n_1_form_inflected_2> ;
+    ontolex:sense <https://example.org/ch/CAS2.h_om_n_1_sense_1>,
+        <https://example.org/ch/CAS2.h_om_n_1_sense_2>,
+        <https://example.org/ch/CAS2.h_om_n_1_sense_3> .
+
+<https://example.org/ch/CAS2.h_om_n_2_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.h_om_n_2_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.h_om_n_2_sense_1> .
+
+<https://example.org/ch/CAS2.hebban_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.hebban_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.hebban_form_ge>,
+        <https://example.org/ch/CAS2.hebban_form_inflected_1>,
+        <https://example.org/ch/CAS2.hebban_form_inflected_2>,
+        <https://example.org/ch/CAS2.hebban_form_inflected_3>,
+        <https://example.org/ch/CAS2.hebban_form_inflected_3_variant_1>,
+        <https://example.org/ch/CAS2.hebban_form_inflected_4>,
+        <https://example.org/ch/CAS2.hebban_form_inflected_5> ;
+    ontolex:sense <https://example.org/ch/CAS2.hebban_sense_1>,
+        <https://example.org/ch/CAS2.hebban_sense_2>,
+        <https://example.org/ch/CAS2.hebban_sense_3> .
+
+<https://example.org/ch/CAS2.hl_im_dan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.hl_im_dan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.hl_im_dan_sense_1> .
+
+<https://example.org/ch/CAS2.hr_em_odan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.hr_em_odan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.hr_em_odan_form_ge>,
+        <https://example.org/ch/CAS2.hr_em_odan_form_inflected_1>,
+        <https://example.org/ch/CAS2.hr_em_odan_form_inflected_1_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.hr_em_odan_sense_1> .
+
+<https://example.org/ch/CAS2.iernan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.iernan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.iernan_form_inflected_1>,
+        <https://example.org/ch/CAS2.iernan_form_inflected_2>,
+        <https://example.org/ch/CAS2.iernan_form_inflected_3>,
+        <https://example.org/ch/CAS2.iernan_form_inflected_4> ;
+    ontolex:sense <https://example.org/ch/CAS2.iernan_sense_1>,
+        <https://example.org/ch/CAS2.iernan_sense_2>,
+        <https://example.org/ch/CAS2.iernan_sense_3>,
+        <https://example.org/ch/CAS2.iernan_sense_4>,
+        <https://example.org/ch/CAS2.iernan_sense_5>,
+        <https://example.org/ch/CAS2.iernan_sense_6>,
+        <https://example.org/ch/CAS2.iernan_sense_7>,
+        <https://example.org/ch/CAS2.iernan_sense_8> .
+
+<https://example.org/ch/CAS2.in_forl_aem_tan_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.in_forl_aem_tan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.in_forl_aem_tan_sense_1> .
+
+<https://example.org/ch/CAS2.l_aem_tan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.l_aem_tan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.l_aem_tan_form_inflected_1>,
+        <https://example.org/ch/CAS2.l_aem_tan_form_inflected_2> ;
+    ontolex:sense <https://example.org/ch/CAS2.l_aem_tan_sense_1>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_10>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_11>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_12>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_2>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_3>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_4>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_5>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_6>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_7>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_8>,
+        <https://example.org/ch/CAS2.l_aem_tan_sense_9> .
+
+<https://example.org/ch/CAS2.l_aem_tan_from_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.l_aem_tan_from_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.l_aem_tan_from_sense_1> .
+
+<https://example.org/ch/CAS2.l_aem_tan_n_em_ah_land_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.l_aem_tan_n_em_ah_land_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.l_aem_tan_n_em_ah_land_sense_1> .
+
+<https://example.org/ch/CAS2.l_em_o_entry> ontolex:otherForm <https://example.org/ch/CAS2.l_em_on_2_form> .
+
+<https://example.org/ch/CAS2.l_em_on_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.l_em_on_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.l_em_on_1_sense_1> .
+
+<https://example.org/ch/CAS2.l_um_can_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.l_um_can_1_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.l_um_can_1_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.l_um_can_1_sense_1>,
+        <https://example.org/ch/CAS2.l_um_can_1_sense_2>,
+        <https://example.org/ch/CAS2.l_um_can_1_sense_3>,
+        <https://example.org/ch/CAS2.l_um_can_1_sense_4>,
+        <https://example.org/ch/CAS2.l_um_can_1_sense_5> .
+
+<https://example.org/ch/CAS2.l_um_can_2_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.l_um_can_2_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.l_um_can_2_sense_1> .
+
+<https://example.org/ch/CAS2.l_um_tan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.l_um_tan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.l_um_tan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.l_um_tan_sense_1>,
+        <https://example.org/ch/CAS2.l_um_tan_sense_2>,
+        <https://example.org/ch/CAS2.l_um_tan_sense_3>,
+        <https://example.org/ch/CAS2.l_um_tan_sense_4>,
+        <https://example.org/ch/CAS2.l_um_tan_sense_5> .
+
+<https://example.org/ch/CAS2.licgan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.licgan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.licgan_sense_1>,
+        <https://example.org/ch/CAS2.licgan_sense_2>,
+        <https://example.org/ch/CAS2.licgan_sense_3>,
+        <https://example.org/ch/CAS2.licgan_sense_4>,
+        <https://example.org/ch/CAS2.licgan_sense_5>,
+        <https://example.org/ch/CAS2.licgan_sense_6> .
+
+<https://example.org/ch/CAS2.licgan_for_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.licgan_for_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.licgan_for_sense_1> .
+
+<https://example.org/ch/CAS2.licgan_mid_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.licgan_mid_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.licgan_mid_sense_1> .
+
+<https://example.org/ch/CAS2.linnan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.linnan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.linnan_sense_1> .
+
+<https://example.org/ch/CAS2.loten_d_ae_g_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.loten_d_ae_g_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.loten_d_ae_g_sense_1> .
+
+<https://example.org/ch/CAS2.mansl_em_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.mansl_em_an_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.mansl_em_an_sense_1> .
+
+<https://example.org/ch/CAS2.metan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.metan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.metan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.metan_sense_1>,
+        <https://example.org/ch/CAS2.metan_sense_2>,
+        <https://example.org/ch/CAS2.metan_sense_3>,
+        <https://example.org/ch/CAS2.metan_sense_4> .
+
+<https://example.org/ch/CAS2.metan_wi_eth_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.metan_wi_eth_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.metan_wi_eth_sense_1> .
+
+<https://example.org/ch/CAS2.niman_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.niman_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.niman_form_ge>,
+        <https://example.org/ch/CAS2.niman_form_sense_variant_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.niman_sense_1>,
+        <https://example.org/ch/CAS2.niman_sense_10>,
+        <https://example.org/ch/CAS2.niman_sense_2>,
+        <https://example.org/ch/CAS2.niman_sense_3>,
+        <https://example.org/ch/CAS2.niman_sense_4>,
+        <https://example.org/ch/CAS2.niman_sense_5>,
+        <https://example.org/ch/CAS2.niman_sense_6>,
+        <https://example.org/ch/CAS2.niman_sense_7>,
+        <https://example.org/ch/CAS2.niman_sense_8>,
+        <https://example.org/ch/CAS2.niman_sense_9> .
+
+<https://example.org/ch/CAS2.o_eth_-br_em_dan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.o_eth_-br_em_dan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.o_eth_-br_em_dan_sense_1> .
+
+<https://example.org/ch/CAS2.of-g_am_n_entry> a ontolex:LexicalEntry ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.of-g_am_n_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.of-g_am_n_form_inflected_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.of-g_am_n_sense_1>,
+        <https://example.org/ch/CAS2.of-g_am_n_sense_2>,
+        <https://example.org/ch/CAS2.of-g_am_n_sense_3>,
+        <https://example.org/ch/CAS2.of-g_am_n_sense_4> .
+
+<https://example.org/ch/CAS2.of-g_am_n_variant_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.of-g_am_n_variant_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_1>,
+        <https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_2>,
+        <https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_3>,
+        <https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_4> .
+
+<https://example.org/ch/CAS2.of_am_ceorfan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.of_am_ceorfan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.of_am_ceorfan_sense_1> .
+
+<https://example.org/ch/CAS2.of_am_sl_em_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.of_am_sl_em_an_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.of_am_sl_em_an_sense_1> .
+
+<https://example.org/ch/CAS2.ofcalan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ofcalan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.ofcalan_sense_1> .
+
+<https://example.org/ch/CAS2.ofdr_aem_dan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ofdr_aem_dan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.ofdr_aem_dan_form_inflected_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.ofdr_aem_dan_sense_1> .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_entry> a ontolex:LexicalEntry ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ofer-g_am_n_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.ofer-g_am_n_sense_1>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_sense_2>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_sense_3>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_sense_4>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_sense_5>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_sense_6> .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ofer-g_am_n_variant_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_1>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_2>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_3>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_4>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_5>,
+        <https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_6> .
+
+<https://example.org/ch/CAS2.oferst_im_gan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.oferst_im_gan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.oferst_im_gan_sense_1>,
+        <https://example.org/ch/CAS2.oferst_im_gan_sense_2>,
+        <https://example.org/ch/CAS2.oferst_im_gan_sense_3> .
+
+<https://example.org/ch/CAS2.ofsacan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ofsacan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.ofsacan_sense_1> .
+
+<https://example.org/ch/CAS2.on-bregdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.on-bregdan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.on-bregdan_sense_1>,
+        <https://example.org/ch/CAS2.on-bregdan_sense_2>,
+        <https://example.org/ch/CAS2.on-bregdan_sense_3> .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.on-dr_aem_dan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_1>,
+        <https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_2>,
+        <https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_3>,
+        <https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_4>,
+        <https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_5> ;
+    ontolex:sense <https://example.org/ch/CAS2.on-dr_aem_dan_sense_1>,
+        <https://example.org/ch/CAS2.on-dr_aem_dan_sense_2>,
+        <https://example.org/ch/CAS2.on-dr_aem_dan_sense_3> .
+
+<https://example.org/ch/CAS2.on_am_winnan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.on_am_winnan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.on_am_winnan_sense_1> .
+
+<https://example.org/ch/CAS2.on_b_ae_c_l_aem_tan_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.on_b_ae_c_l_aem_tan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.on_b_ae_c_l_aem_tan_sense_1> .
+
+<https://example.org/ch/CAS2.on_feohtan_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.on_feohtan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.on_feohtan_sense_1>,
+        <https://example.org/ch/CAS2.on_feohtan_sense_2>,
+        <https://example.org/ch/CAS2.on_feohtan_sense_3> .
+
+<https://example.org/ch/CAS2.on_niman_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.on_niman_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.on_niman_sense_1> .
+
+<https://example.org/ch/CAS2.onbesc_em_ofan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.onbesc_em_ofan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.onbesc_em_ofan_sense_1> .
+
+<https://example.org/ch/CAS2.ongietan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ongietan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.ongietan_form_sense_variant_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.ongietan_sense_1>,
+        <https://example.org/ch/CAS2.ongietan_sense_2>,
+        <https://example.org/ch/CAS2.ongietan_sense_3>,
+        <https://example.org/ch/CAS2.ongietan_sense_4>,
+        <https://example.org/ch/CAS2.ongietan_sense_5>,
+        <https://example.org/ch/CAS2.ongietan_sense_6>,
+        <https://example.org/ch/CAS2.ongietan_sense_7>,
+        <https://example.org/ch/CAS2.ongietan_sense_8> .
+
+<https://example.org/ch/CAS2.onginnan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.onginnan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.onginnan_form_sense_variant_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.onginnan_sense_1>,
+        <https://example.org/ch/CAS2.onginnan_sense_2>,
+        <https://example.org/ch/CAS2.onginnan_sense_3>,
+        <https://example.org/ch/CAS2.onginnan_sense_4> .
+
+<https://example.org/ch/CAS2.ont_em_on_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ont_em_on_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.ont_em_on_form_sense_variant_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.ont_em_on_sense_1>,
+        <https://example.org/ch/CAS2.ont_em_on_sense_2>,
+        <https://example.org/ch/CAS2.ont_em_on_sense_3>,
+        <https://example.org/ch/CAS2.ont_em_on_sense_4> .
+
+<https://example.org/ch/CAS2.r_aem_dan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.r_aem_dan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.r_aem_dan_form_inflected_1>,
+        <https://example.org/ch/CAS2.r_aem_dan_form_inflected_2> ;
+    ontolex:sense <https://example.org/ch/CAS2.r_aem_dan_sense_1>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_10>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_11>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_12>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_2>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_3>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_4>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_5>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_6>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_7>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_8>,
+        <https://example.org/ch/CAS2.r_aem_dan_sense_9> .
+
+<https://example.org/ch/CAS2.r_im_nan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.regn_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.r_im_nan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.r_im_nan_sense_1> .
+
+<https://example.org/ch/CAS2.sce_eth_eth_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.scea_eth_a_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.sce_eth_eth_an_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.sce_eth_eth_an_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.sce_eth_eth_an_sense_1> .
+
+<https://example.org/ch/CAS2.sige_niman_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.sige_niman_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.sige_niman_sense_1> .
+
+<https://example.org/ch/CAS2.singan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.singan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.singan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.singan_sense_1>,
+        <https://example.org/ch/CAS2.singan_sense_2>,
+        <https://example.org/ch/CAS2.singan_sense_3>,
+        <https://example.org/ch/CAS2.singan_sense_4>,
+        <https://example.org/ch/CAS2.singan_sense_5>,
+        <https://example.org/ch/CAS2.singan_sense_6> .
+
+<https://example.org/ch/CAS2.sl_aem_pan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.sl_aem_pan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.sl_aem_pan_form_ge>,
+        <https://example.org/ch/CAS2.sl_aem_pan_form_inflected_1>,
+        <https://example.org/ch/CAS2.sl_aem_pan_form_inflected_2>,
+        <https://example.org/ch/CAS2.sl_aem_pan_form_inflected_3>,
+        <https://example.org/ch/CAS2.sl_aem_pan_form_inflected_4>,
+        <https://example.org/ch/CAS2.sl_aem_pan_form_inflected_5> ;
+    ontolex:sense <https://example.org/ch/CAS2.sl_aem_pan_sense_1>,
+        <https://example.org/ch/CAS2.sl_aem_pan_sense_2>,
+        <https://example.org/ch/CAS2.sl_aem_pan_sense_3>,
+        <https://example.org/ch/CAS2.sl_aem_pan_sense_4>,
+        <https://example.org/ch/CAS2.sl_aem_pan_sense_5> .
+
+<https://example.org/ch/CAS2.smeortan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.smeortan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.smeortan_sense_1> .
+
+<https://example.org/ch/CAS2.stincan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.stincan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.stincan_sense_1>,
+        <https://example.org/ch/CAS2.stincan_sense_2>,
+        <https://example.org/ch/CAS2.stincan_sense_3> .
+
+<https://example.org/ch/CAS2.str_em_dan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.stregdan_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.str_em_dan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.str_em_dan_form_inflected_1>,
+        <https://example.org/ch/CAS2.str_em_dan_form_inflected_2>,
+        <https://example.org/ch/CAS2.str_em_dan_form_inflected_3>,
+        <https://example.org/ch/CAS2.str_em_dan_form_inflected_4> .
+
+<https://example.org/ch/CAS2.sw_im_eth_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.unforswi_eth_en_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.sw_im_eth_an_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.sw_im_eth_an_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.sw_im_eth_an_sense_1>,
+        <https://example.org/ch/CAS2.sw_im_eth_an_sense_2>,
+        <https://example.org/ch/CAS2.sw_im_eth_an_sense_3> .
+
+<https://example.org/ch/CAS2.swellan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.swellan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.swellan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.swellan_sense_1> .
+
+<https://example.org/ch/CAS2.t_em_on_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_em_on_1_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.t_em_on_1_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_em_on_1_sense_1>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_10>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_2>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_3>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_4>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_5>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_6>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_7>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_8>,
+        <https://example.org/ch/CAS2.t_em_on_1_sense_9> .
+
+<https://example.org/ch/CAS2.t_em_on_2_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_em_on_2_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_em_on_2_sense_1> .
+
+<https://example.org/ch/CAS2.t_em_on_3_entry> a ontolex:LexicalEntry ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.teohhian_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_em_on_3_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.t_em_on_3_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_em_on_3_sense_1>,
+        <https://example.org/ch/CAS2.t_em_on_3_sense_2>,
+        <https://example.org/ch/CAS2.t_em_on_3_sense_3>,
+        <https://example.org/ch/CAS2.t_em_on_3_sense_4> .
+
+<https://example.org/ch/CAS2.t_em_on_4_form> a ontolex:Form ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.t_im_en_entry> ;
+    ontolex:writtenRep "tēon"@ang .
+
+<https://example.org/ch/CAS2.t_em_on_5_form> a ontolex:Form ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.t_em_ona_entry> ;
+    ontolex:writtenRep "tēon"@ang .
+
+<https://example.org/ch/CAS2.t_em_on_6_form> a ontolex:Form ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.d_em_on_entry> ;
+    ontolex:writtenRep "tēon"@ang .
+
+<https://example.org/ch/CAS2.t_om_-fl_em_on_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_-fl_em_on_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_-fl_em_on_sense_1> .
+
+<https://example.org/ch/CAS2.t_om_-stregdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_-stregdan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_-stregdan_sense_1>,
+        <https://example.org/ch/CAS2.t_om_-stregdan_sense_2>,
+        <https://example.org/ch/CAS2.t_om_-stregdan_sense_3>,
+        <https://example.org/ch/CAS2.t_om_-stregdan_sense_4> .
+
+<https://example.org/ch/CAS2.t_om_bl_am_wan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_bl_am_wan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.t_om_bl_am_wan_form_inflected_1> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_bl_am_wan_sense_1>,
+        <https://example.org/ch/CAS2.t_om_bl_am_wan_sense_2>,
+        <https://example.org/ch/CAS2.t_om_bl_am_wan_sense_3> .
+
+<https://example.org/ch/CAS2.t_om_fealdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_fealdan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_fealdan_sense_1> .
+
+<https://example.org/ch/CAS2.t_om_hladan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_hladan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_hladan_sense_1> .
+
+<https://example.org/ch/CAS2.t_om_sl_em_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_sl_em_an_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_sl_em_an_sense_1>,
+        <https://example.org/ch/CAS2.t_om_sl_em_an_sense_2>,
+        <https://example.org/ch/CAS2.t_om_sl_em_an_sense_3> .
+
+<https://example.org/ch/CAS2.t_om_t_em_on_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_t_em_on_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_t_em_on_sense_1>,
+        <https://example.org/ch/CAS2.t_om_t_em_on_sense_2>,
+        <https://example.org/ch/CAS2.t_om_t_em_on_sense_3> .
+
+<https://example.org/ch/CAS2.t_om_wr_im_eth_an_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.t_om_wr_im_eth_an_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.t_om_wr_im_eth_an_sense_1> .
+
+<https://example.org/ch/CAS2.tacan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.tacan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.tacan_sense_1> .
+
+<https://example.org/ch/CAS2.togen_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.togen_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.togen_sense_1> .
+
+<https://example.org/ch/CAS2.tringan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.tringan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.tringan_sense_1> .
+
+<https://example.org/ch/CAS2.um_p-_am_bregdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_p-_am_bregdan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_p-_am_bregdan_sense_1> .
+
+<https://example.org/ch/CAS2.um_p-_am_weallan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_p-_am_weallan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_p-_am_weallan_sense_1> .
+
+<https://example.org/ch/CAS2.um_p-fl_em_ogan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_p-fl_em_ogan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_p-fl_em_ogan_sense_1> .
+
+<https://example.org/ch/CAS2.um_p_am_t_em_on_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI,
+        chm:StrongVerbII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_p_am_t_em_on_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_p_am_t_em_on_sense_1>,
+        <https://example.org/ch/CAS2.um_p_am_t_em_on_sense_2>,
+        <https://example.org/ch/CAS2.um_p_am_t_em_on_sense_3>,
+        <https://example.org/ch/CAS2.um_p_am_t_em_on_sense_4> .
+
+<https://example.org/ch/CAS2.um_p_forl_aem_tan_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_p_forl_aem_tan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_p_forl_aem_tan_sense_1> .
+
+<https://example.org/ch/CAS2.um_t-_am_g_am_n_entry> a ontolex:LexicalEntry ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_t-_am_g_am_n_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_t-_am_g_am_n_sense_1> .
+
+<https://example.org/ch/CAS2.um_t-_am_g_am_n_variant_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_t-_am_g_am_n_variant_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_t-_am_g_am_n_variant_1_sense_1> .
+
+<https://example.org/ch/CAS2.um_t_am_berstan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_t_am_berstan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_t_am_berstan_sense_1> .
+
+<https://example.org/ch/CAS2.um_t_am_eth_ringan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_t_am_eth_ringan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_t_am_eth_ringan_sense_1> .
+
+<https://example.org/ch/CAS2.um_t_am_sittan_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_t_am_sittan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_t_am_sittan_sense_1> .
+
+<https://example.org/ch/CAS2.um_t_am_sp_im_wan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIV ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_t_am_sp_im_wan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_t_am_sp_im_wan_sense_1> .
+
+<https://example.org/ch/CAS2.um_tdragan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.um_tdragan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.um_tdragan_sense_1> .
+
+<https://example.org/ch/CAS2.unbindan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.onbindan_entry> ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.unbindan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.unbindan_sense_1>,
+        <https://example.org/ch/CAS2.unbindan_sense_2>,
+        <https://example.org/ch/CAS2.unbindan_sense_3> .
+
+<https://example.org/ch/CAS2.understandan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.understandan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.understandan_sense_1>,
+        <https://example.org/ch/CAS2.understandan_sense_2>,
+        <https://example.org/ch/CAS2.understandan_sense_3>,
+        <https://example.org/ch/CAS2.understandan_sense_4> .
+
+<https://example.org/ch/CAS2.w_im_tan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.w_im_tan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.w_im_tan_sense_1>,
+        <https://example.org/ch/CAS2.w_im_tan_sense_2>,
+        <https://example.org/ch/CAS2.w_im_tan_sense_3>,
+        <https://example.org/ch/CAS2.w_im_tan_sense_4>,
+        <https://example.org/ch/CAS2.w_im_tan_sense_5>,
+        <https://example.org/ch/CAS2.w_im_tan_sense_6> .
+
+<https://example.org/ch/CAS2.wascan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVI ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.wascan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.wascan_sense_1>,
+        <https://example.org/ch/CAS2.wascan_sense_2>,
+        <https://example.org/ch/CAS2.wascan_sense_3> .
+
+<https://example.org/ch/CAS2.wealcan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.wealcan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.wealcan_sense_1>,
+        <https://example.org/ch/CAS2.wealcan_sense_2>,
+        <https://example.org/ch/CAS2.wealcan_sense_3>,
+        <https://example.org/ch/CAS2.wealcan_sense_4>,
+        <https://example.org/ch/CAS2.wealcan_sense_5>,
+        <https://example.org/ch/CAS2.wealcan_sense_6> .
+
+<https://example.org/ch/CAS2.wealdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.wealdan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.wealdan_form_ge> ;
+    ontolex:sense <https://example.org/ch/CAS2.wealdan_sense_1>,
+        <https://example.org/ch/CAS2.wealdan_sense_2>,
+        <https://example.org/ch/CAS2.wealdan_sense_3>,
+        <https://example.org/ch/CAS2.wealdan_sense_4> .
+
+<https://example.org/ch/CAS2.wi_eth_-bregdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.wi_eth_-bregdan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.wi_eth_-bregdan_sense_1> .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_entry> a ontolex:LexicalEntry ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.wi_eth_-g_am_n_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.wi_eth_-g_am_n_sense_1>,
+        <https://example.org/ch/CAS2.wi_eth_-g_am_n_sense_2>,
+        <https://example.org/ch/CAS2.wi_eth_-g_am_n_sense_3> .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_sense_1>,
+        <https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_sense_2>,
+        <https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_sense_3> .
+
+<https://example.org/ch/CAS2.wi_eth_licgendum_f_em_o_entry> a ontolex:LexicalEntry ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.wi_eth_licgendum_f_em_o_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.wi_eth_licgendum_f_em_o_sense_1> .
+
+<https://example.org/ch/CAS2.ymb-gan_entry> a ontolex:LexicalEntry ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ymb-gan_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.ymb-gan_sense_1> .
+
+<https://example.org/ch/CAS2.ymb-gan_variant_1_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbVII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.ymb-gan_variant_1_form> ;
+    ontolex:sense <https://example.org/ch/CAS2.ymb-gan_variant_1_sense_1> .
+
+<https://example.org/ch/CAS2.ae_t-bregdan_form> a ontolex:Form ;
+    ontolex:writtenRep "æt-bregdan"@ang,
+        "æt-brēdan"@ang .
+
+<https://example.org/ch/CAS2.ae_t-bregdan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.ae_t-bregdan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to take away, carry off, deprive of, snatch away, draw off, withdraw,"@en .
+
+<https://example.org/ch/CAS2.ae_t-bregdan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "release, rescue, enlarge"@en .
+
+<https://example.org/ch/CAS2.ae_t-bregdan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "prevent,"@en .
+
+<https://example.org/ch/CAS2.am_etan_form> a ontolex:Form ;
+    ontolex:writtenRep "āetan"@ang .
+
+<https://example.org/ch/CAS2.am_etan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to eat, devour,"@en .
+
+<https://example.org/ch/CAS2.am_hebban_form> a ontolex:Form ;
+    ontolex:writtenRep "āhebban"@ang .
+
+<https://example.org/ch/CAS2.am_hebban_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "āhefde"@ang .
+
+<https://example.org/ch/CAS2.am_hebban_form_inflected_2> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "āhefed"@ang .
+
+<https://example.org/ch/CAS2.am_hebban_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.am_hebban_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to lift up, stir up, raise, exalt, erect,"@en .
+
+<https://example.org/ch/CAS2.am_hebban_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "take away, remove"@en .
+
+<https://example.org/ch/CAS2.am_hebban_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "support, uphold"@en .
+
+<https://example.org/ch/CAS2.am_hebban_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "leaven"@en .
+
+<https://example.org/ch/CAS2.am_ne_forl_aem_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "āne forlǣtan"@ang,
+        "ānne forlǣtan"@ang .
+
+<https://example.org/ch/CAS2.am_sittan_form> a ontolex:Form ;
+    ontolex:writtenRep "āsittan"@ang .
+
+<https://example.org/ch/CAS2.am_sittan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.am_sittan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to dwell together, settle,"@en .
+
+<https://example.org/ch/CAS2.am_sittan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "apprehend, fear"@en .
+
+<https://example.org/ch/CAS2.am_sittan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "run aground"@en .
+
+<https://example.org/ch/CAS2.am_weor_eth_an_form> a ontolex:Form ;
+    ontolex:writtenRep "āweorðan"@ang .
+
+<https://example.org/ch/CAS2.am_weor_eth_an_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to pass away, vanish, become worthless,"@en .
+
+<https://example.org/ch/CAS2.b_em_atan_form> a ontolex:Form ;
+    ontolex:writtenRep "bēatan"@ang .
+
+<https://example.org/ch/CAS2.b_em_atan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-bēatan"@ang .
+
+<https://example.org/ch/CAS2.b_em_atan_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "bēot"@ang .
+
+<https://example.org/ch/CAS2.b_em_atan_form_inflected_2> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "beoft"@ang .
+
+<https://example.org/ch/CAS2.b_em_atan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.b_em_atan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'beat,' strike, thrust, dash,"@en .
+
+<https://example.org/ch/CAS2.b_em_atan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "hurt, injure,"@en .
+
+<https://example.org/ch/CAS2.b_em_atan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "tramp, tread,"@en .
+
+<https://example.org/ch/CAS2.be-fr_im_nan_form> a ontolex:Form ;
+    ontolex:writtenRep "be-frignan"@ang,
+        "be-frīnan"@ang .
+
+<https://example.org/ch/CAS2.be-fr_im_nan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to question, ask, learn,"@en .
+
+<https://example.org/ch/CAS2.bedr_em_osan_form> a ontolex:Form ;
+    ontolex:writtenRep "bedrēosan"@ang .
+
+<https://example.org/ch/CAS2.bedr_em_osan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.bedr_em_osan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to overcome, deceive"@en .
+
+<https://example.org/ch/CAS2.bedr_em_osan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "deprive of, bereave, despoil"@en .
+
+<https://example.org/ch/CAS2.befaran_form> a ontolex:Form ;
+    ontolex:writtenRep "befaran"@ang .
+
+<https://example.org/ch/CAS2.befaran_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.befaran_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to go, go round or among, traverse, encompass, surround,"@en .
+
+<https://example.org/ch/CAS2.befaran_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "come upon, surprise, catch,"@en .
+
+<https://example.org/ch/CAS2.beorgan_1_form> a ontolex:Form ;
+    ontolex:writtenRep "beorgan"@ang .
+
+<https://example.org/ch/CAS2.beorgan_1_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-beorgan"@ang .
+
+<https://example.org/ch/CAS2.beorgan_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.beorgan_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to save, deliver, preserve, guard, defend, fortify, spare,"@en .
+
+<https://example.org/ch/CAS2.beorgan_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "beware of, avoid, guard against"@en .
+
+<https://example.org/ch/CAS2.berstan_form> a ontolex:Form ;
+    ontolex:writtenRep "berstan"@ang .
+
+<https://example.org/ch/CAS2.berstan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-berstan"@ang .
+
+<https://example.org/ch/CAS2.berstan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.berstan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to break, 'burst,' fail, fall,"@en .
+
+<https://example.org/ch/CAS2.berstan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "break away from, escape"@en .
+
+<https://example.org/ch/CAS2.berstan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "break to pieces, crash, resound"@en .
+
+<https://example.org/ch/CAS2.bew_am_wan_form> a ontolex:Form ;
+    ontolex:writtenRep "bewāwan"@ang .
+
+<https://example.org/ch/CAS2.bew_am_wan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to blow upon,"@en .
+
+<https://example.org/ch/CAS2.biddan2_form> a ontolex:Form ;
+    ontolex:writtenRep "ge-biddan"@ang .
+
+<https://example.org/ch/CAS2.biddan2_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.biddan2_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to beg, ask, pray,"@en .
+
+<https://example.org/ch/CAS2.biddan2_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "worship,"@en .
+
+<https://example.org/ch/CAS2.cuman_form> a ontolex:Form ;
+    ontolex:writtenRep "cuman"@ang .
+
+<https://example.org/ch/CAS2.cuman_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to 'come,' approach, get to, attain,"@en .
+
+<https://example.org/ch/CAS2.cuman_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "he came"@en,
+        "he swam,"@en .
+
+<https://example.org/ch/CAS2.cuman_um_p_form> a ontolex:Form ;
+    ontolex:writtenRep "cuman ūp"@ang .
+
+<https://example.org/ch/CAS2.cuman_um_p_form_sense_variant_2> a ontolex:Form ;
+    ontolex:writtenRep "cuman forð"@ang .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "land, be born"@en .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "go, depart,"@en .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "come to oneself, recover"@en .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "become"@en .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "happen"@en .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_7> a ontolex:LexicalSense ;
+    rdfs:label "put"@en .
+
+<https://example.org/ch/CAS2.cuman_um_p_sense_8> a ontolex:LexicalSense ;
+    rdfs:label "come together, arrive, assemble,"@en .
+
+<https://example.org/ch/CAS2.cwe_eth_an_form> a ontolex:Form ;
+    ontolex:writtenRep "cweðan"@ang .
+
+<https://example.org/ch/CAS2.cwe_eth_an_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-cweðan"@ang .
+
+<https://example.org/ch/CAS2.cwe_eth_an_on_hwone_form> a ontolex:Form ;
+    ontolex:writtenRep "cweðan on hwone"@ang .
+
+<https://example.org/ch/CAS2.cwe_eth_an_on_hwone_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "assign to one"@en .
+
+<https://example.org/ch/CAS2.cwe_eth_an_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.cwe_eth_an_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to say, speak, name, call, proclaim, summon, declare,"@en .
+
+<https://example.org/ch/CAS2.cwe_eth_an_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "order, give orders"@en .
+
+<https://example.org/ch/CAS2.cwe_eth_an_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "agree, settle, resolve"@en .
+
+<https://example.org/ch/CAS2.cwe_eth_an_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "consider, regard,"@en .
+
+<https://example.org/ch/CAS2.cwe_eth_e_g_em_form> a ontolex:Form ;
+    ontolex:writtenRep "cweðe gē"@ang .
+
+<https://example.org/ch/CAS2.cwe_eth_e_g_em_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "think you?"@en .
+
+<https://example.org/ch/CAS2.cwyst_eth_um_l_am_form> a ontolex:Form ;
+    ontolex:writtenRep "cwyst ðū lā"@ang .
+
+<https://example.org/ch/CAS2.cwyst_eth_um_l_am_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "sayest thou?"@en,
+        "'numquid.'"@la .
+
+<https://example.org/ch/CAS2.delan_form> a ontolex:Form ;
+    ontolex:writtenRep "delan"@ang .
+
+<https://example.org/ch/CAS2.delan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.delan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to fall, decay"@en .
+
+<https://example.org/ch/CAS2.delan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "to be arrogant, proud, boastful"@en .
+
+<https://example.org/ch/CAS2.eald_f_ae_der_form> a ontolex:Form ;
+    ontolex:writtenRep "eald fæder"@ang .
+
+<https://example.org/ch/CAS2.eald_f_ae_der_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "grandfather"@en .
+
+<https://example.org/ch/CAS2.eftfl_om_wan_form> a ontolex:Form ;
+    ontolex:writtenRep "eftflōwan"@ang .
+
+<https://example.org/ch/CAS2.eftfl_om_wan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to flow back,"@en .
+
+<https://example.org/ch/CAS2.eth_icgan_form> a ontolex:Form ;
+    ontolex:writtenRep "ðacgan"@ang,
+        "ðeacgan"@ang,
+        "ðecgan"@ang,
+        "ðicgan"@ang,
+        "ðæcgan"@ang .
+
+<https://example.org/ch/CAS2.eth_icgan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-ðacgan"@ang,
+        "ge-ðeacgan"@ang,
+        "ge-ðecgan"@ang,
+        "ge-ðicgan"@ang,
+        "ge-ðæcgan"@ang .
+
+<https://example.org/ch/CAS2.eth_icgan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.eth_icgan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to take, receive, accept,"@en .
+
+<https://example.org/ch/CAS2.eth_icgan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "partake of, consume, taste, eat, drink,"@en .
+
+<https://example.org/ch/CAS2.eth_indan_form> a ontolex:Form ;
+    ontolex:writtenRep "ðindan"@ang .
+
+<https://example.org/ch/CAS2.eth_indan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.eth_indan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to swell, swell up,"@en .
+
+<https://example.org/ch/CAS2.eth_indan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "melt, pass away,"@en .
+
+<https://example.org/ch/CAS2.eth_indan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "be angry"@en .
+
+<https://example.org/ch/CAS2.eth_ridda_f_ae_der_form> a ontolex:Form ;
+    ontolex:writtenRep "ðridda fæder"@ang .
+
+<https://example.org/ch/CAS2.eth_ridda_f_ae_der_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "great-grandfather,"@en .
+
+<https://example.org/ch/CAS2.f_ae_der_form> a ontolex:Form ;
+    ontolex:writtenRep "feder"@ang,
+        "fæder"@ang .
+
+<https://example.org/ch/CAS2.f_ae_der_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.f_ae_der_sense_2> a ontolex:LexicalSense ;
+    rdfs:label """
+                        
+                           'father,'
+                        
+                     """@en .
+
+<https://example.org/ch/CAS2.f_ae_der_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "male ancestor,"@en .
+
+<https://example.org/ch/CAS2.f_ae_der_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "the Father, God,"@en .
+
+<https://example.org/ch/CAS2.f_ae_der_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "parents,"@en .
+
+<https://example.org/ch/CAS2.f_em_on_1_form> a ontolex:Form ;
+    ontolex:writtenRep "fēon"@ang .
+
+<https://example.org/ch/CAS2.f_em_on_1_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-fēon"@ang .
+
+<https://example.org/ch/CAS2.f_em_on_1_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to be glad, rejoice, exult,"@en .
+
+<https://example.org/ch/CAS2.f_em_ower_eth_a_f_ae_der_form> a ontolex:Form ;
+    ontolex:writtenRep "fēowerða fæder"@ang .
+
+<https://example.org/ch/CAS2.f_em_ower_eth_a_f_ae_der_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "great-great-grandfather,"@en .
+
+<https://example.org/ch/CAS2.feohtan_form> a ontolex:Form ;
+    ontolex:writtenRep "fehtan"@ang,
+        "feohtan"@ang .
+
+<https://example.org/ch/CAS2.feohtan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-fehtan"@ang,
+        "ge-feohtan"@ang .
+
+<https://example.org/ch/CAS2.feohtan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to 'fight,' combat, strive,"@en .
+
+<https://example.org/ch/CAS2.fetan_form> a ontolex:Form ;
+    ontolex:writtenRep "ge-fetan"@ang .
+
+<https://example.org/ch/CAS2.fetan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to fall,"@en .
+
+<https://example.org/ch/CAS2.findan_ae_t_form> a ontolex:Form ;
+    ontolex:writtenRep "findan æt"@ang .
+
+<https://example.org/ch/CAS2.findan_ae_t_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "obtain from"@en .
+
+<https://example.org/ch/CAS2.findan_form> a ontolex:Form ;
+    ontolex:writtenRep "findan"@ang .
+
+<https://example.org/ch/CAS2.findan_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "funde"@ang .
+
+<https://example.org/ch/CAS2.findan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.findan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to find, meet with,"@en .
+
+<https://example.org/ch/CAS2.findan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "discover, obtain by search or study,"@en .
+
+<https://example.org/ch/CAS2.findan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "provide"@en .
+
+<https://example.org/ch/CAS2.findan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "consider, devise, arrange, dispose, decide,"@en .
+
+<https://example.org/ch/CAS2.findan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "show, inform"@en .
+
+<https://example.org/ch/CAS2.fl_em_ogan_form> a ontolex:Form ;
+    ontolex:writtenRep "flēogan"@ang .
+
+<https://example.org/ch/CAS2.fl_em_ogan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-flēogan"@ang .
+
+<https://example.org/ch/CAS2.fl_em_ogan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.fl_em_ogan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'fly,'"@en ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.fl_em_on_entry> .
+
+<https://example.org/ch/CAS2.fl_em_ogan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "flee, take to flight,"@en .
+
+<https://example.org/ch/CAS2.for_eth_-st_ae_ppan_form> a ontolex:Form ;
+    ontolex:writtenRep "forð-steppan"@ang,
+        "forð-stæppan"@ang .
+
+<https://example.org/ch/CAS2.for_eth_-st_ae_ppan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.for_eth_-st_ae_ppan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to issue forth, proceed, pass by,"@en .
+
+<https://example.org/ch/CAS2.for_eth_-st_ae_ppan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "follow,"@en .
+
+<https://example.org/ch/CAS2.for_eth_am_t_em_on_form> a ontolex:Form ;
+    ontolex:writtenRep "forðātēon"@ang .
+
+<https://example.org/ch/CAS2.for_eth_am_t_em_on_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "forðātogen"@ang .
+
+<https://example.org/ch/CAS2.for_eth_am_t_em_on_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to bring forth, produce,"@en .
+
+<https://example.org/ch/CAS2.foresprecan_form> a ontolex:Form ;
+    ontolex:writtenRep "foresprecan"@ang .
+
+<https://example.org/ch/CAS2.foresprecan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.foresprecan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to speak or answer for, be surety for, intercede for,"@en .
+
+<https://example.org/ch/CAS2.foresprecan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "say before"@en .
+
+<https://example.org/ch/CAS2.foresprecen_form> a ontolex:Form ;
+    ontolex:writtenRep "foresprecen"@ang .
+
+<https://example.org/ch/CAS2.foresprecen_sense_1> a ontolex:LexicalSense ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.forspecan_entry> .
+
+<https://example.org/ch/CAS2.foresprecen_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "above-mentioned, aforesaid,"@en .
+
+<https://example.org/ch/CAS2.forgietan_form> a ontolex:Form ;
+    ontolex:writtenRep "forgietan"@ang,
+        "forgitan"@ang,
+        "forgytan"@ang .
+
+<https://example.org/ch/CAS2.forgietan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to 'forget,'"@en .
+
+<https://example.org/ch/CAS2.forhealdan_form> a ontolex:Form ;
+    ontolex:writtenRep "forhealdan"@ang .
+
+<https://example.org/ch/CAS2.forhealdan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.forhealdan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to forsake, fall away from, rebel against,"@en .
+
+<https://example.org/ch/CAS2.forhealdan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "defile, pollute,"@en .
+
+<https://example.org/ch/CAS2.forhealdan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "keep back, withhold,"@en .
+
+<https://example.org/ch/CAS2.forhealdan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "misuse, abuse"@en .
+
+<https://example.org/ch/CAS2.foriernan_form> a ontolex:Form ;
+    ontolex:writtenRep "foriernan"@ang .
+
+<https://example.org/ch/CAS2.foriernan_form_sense_variant_1> a ontolex:Form ;
+    ontolex:writtenRep "foreiernan"@ang .
+
+<https://example.org/ch/CAS2.foriernan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to run before, outrun,"@en .
+
+<https://example.org/ch/CAS2.forl_aem_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "forlǣtan"@ang .
+
+<https://example.org/ch/CAS2.forl_aem_tan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.forl_aem_tan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to let go, relinquish, surrender, lose, leave, abandon, neglect,"@en .
+
+<https://example.org/ch/CAS2.forl_aem_tan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "remit, pardon, excuse"@en .
+
+<https://example.org/ch/CAS2.forl_aem_tan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "loose, release"@en .
+
+<https://example.org/ch/CAS2.forl_aem_tan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "let, permit, allow,"@en .
+
+<https://example.org/ch/CAS2.forl_aem_tan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "grant, give"@en .
+
+<https://example.org/ch/CAS2.fors_um_can_form> a ontolex:Form ;
+    ontolex:writtenRep "forsūcan"@ang,
+        "forsūgan"@ang .
+
+<https://example.org/ch/CAS2.fors_um_can_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to suck out, empty"@en .
+
+<https://example.org/ch/CAS2.fri_eth_ge-niman_form> a ontolex:Form ;
+    ontolex:writtenRep "frið ge-niman"@ang .
+
+<https://example.org/ch/CAS2.fri_eth_ge-niman_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "make peace"@en .
+
+<https://example.org/ch/CAS2.full-g_am_n_form> a ontolex:Form ;
+    ontolex:writtenRep "full-gān"@ang .
+
+<https://example.org/ch/CAS2.full-g_am_n_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "full-ēode"@ang .
+
+<https://example.org/ch/CAS2.full-g_am_n_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.full-g_am_n_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to accomplish, fulfil, perform, carry out,"@en .
+
+<https://example.org/ch/CAS2.full-g_am_n_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "follow, imitate, obey"@en .
+
+<https://example.org/ch/CAS2.full-g_am_n_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "help,"@en .
+
+<https://example.org/ch/CAS2.full-g_am_n_variant_1_form> a ontolex:Form ;
+    ontolex:writtenRep "full-gangan"@ang .
+
+<https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to accomplish, fulfil, perform, carry out,"@en .
+
+<https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "follow, imitate, obey"@en .
+
+<https://example.org/ch/CAS2.full-g_am_n_variant_1_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "help,"@en .
+
+<https://example.org/ch/CAS2.geond-g_am_n_form> a ontolex:Form ;
+    ontolex:writtenRep "geond-gān"@ang .
+
+<https://example.org/ch/CAS2.geond-g_am_n_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to traverse, go round"@en .
+
+<https://example.org/ch/CAS2.geond-g_am_n_variant_1_form> a ontolex:Form ;
+    ontolex:writtenRep "geond-gangan"@ang .
+
+<https://example.org/ch/CAS2.geond-g_am_n_variant_1_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to traverse, go round"@en .
+
+<https://example.org/ch/CAS2.giefan_form> a ontolex:Form ;
+    ontolex:writtenRep "geafan"@ang,
+        "gefan"@ang,
+        "geofan"@ang,
+        "giafan"@ang,
+        "giefan"@ang,
+        "gifan"@ang,
+        "giofan"@ang,
+        "gyfan"@ang .
+
+<https://example.org/ch/CAS2.giefan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.giefan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'give,' bestow,"@en .
+
+<https://example.org/ch/CAS2.giefan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "commit, entrust,"@en .
+
+<https://example.org/ch/CAS2.giefan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "give in marriage,"@en .
+
+<https://example.org/ch/CAS2.gyrran_form> a ontolex:Form ;
+    ontolex:writtenRep "gyrran"@ang .
+
+<https://example.org/ch/CAS2.gyrran_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.gyrran_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to sound, chatter,"@en .
+
+<https://example.org/ch/CAS2.gyrran_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "to creak, grate,"@en .
+
+<https://example.org/ch/CAS2.h_am_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "hātan"@ang .
+
+<https://example.org/ch/CAS2.h_am_tan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-hātan"@ang .
+
+<https://example.org/ch/CAS2.h_am_tan_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:voice lexinfo:activeVoice ;
+    ontolex:writtenRep "hēt"@ang .
+
+<https://example.org/ch/CAS2.h_am_tan_form_inflected_1_alt_2> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:voice lexinfo:activeVoice ;
+    ontolex:writtenRep "hēht"@ang .
+
+<https://example.org/ch/CAS2.h_am_tan_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:voice lexinfo:activeVoice ;
+    ontolex:writtenRep "hēton"@ang .
+
+<https://example.org/ch/CAS2.h_am_tan_form_inflected_2_alt_2> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:voice lexinfo:activeVoice ;
+    ontolex:writtenRep "hēhton"@ang .
+
+<https://example.org/ch/CAS2.h_am_tan_form_inflected_3> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:voice lexinfo:passiveVoice ;
+    ontolex:writtenRep "hātte"@ang .
+
+<https://example.org/ch/CAS2.h_am_tan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.h_am_tan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to command, direct, bid, order,"@en .
+
+<https://example.org/ch/CAS2.h_am_tan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "summon,"@en .
+
+<https://example.org/ch/CAS2.h_am_tan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "vow, promise,"@en .
+
+<https://example.org/ch/CAS2.h_am_tan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "name, call,"@en .
+
+<https://example.org/ch/CAS2.h_am_tan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "be called,"@en .
+
+<https://example.org/ch/CAS2.h_em_hine_genam_form> a ontolex:Form ;
+    ontolex:writtenRep "hē hine genam"@ang .
+
+<https://example.org/ch/CAS2.h_em_hine_genam_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "he collected himself, reflected"@en .
+
+<https://example.org/ch/CAS2.h_om_n_1_form> a ontolex:Form ;
+    ontolex:writtenRep "hōn"@ang .
+
+<https://example.org/ch/CAS2.h_om_n_1_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "heng"@ang .
+
+<https://example.org/ch/CAS2.h_om_n_1_form_inflected_2> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "hangen"@ang .
+
+<https://example.org/ch/CAS2.h_om_n_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.h_om_n_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to hang, suspend, crucify,"@en .
+
+<https://example.org/ch/CAS2.h_om_n_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "adorn"@en .
+
+<https://example.org/ch/CAS2.h_om_n_2_form> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    ontolex:writtenRep "hōn"@ang .
+
+<https://example.org/ch/CAS2.h_om_n_2_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "tendrils of a vine"@en .
+
+<https://example.org/ch/CAS2.hebban_form> a ontolex:Form ;
+    ontolex:writtenRep "hebban"@ang,
+        "hæbban"@ang .
+
+<https://example.org/ch/CAS2.hebban_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-hebban"@ang,
+        "ge-hæbban"@ang .
+
+<https://example.org/ch/CAS2.hebban_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:present ;
+    ontolex:writtenRep "hōf"@ang .
+
+<https://example.org/ch/CAS2.hebban_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:tense lexinfo:present ;
+    ontolex:writtenRep "hōfon"@ang .
+
+<https://example.org/ch/CAS2.hebban_form_inflected_3> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "hafen"@ang .
+
+<https://example.org/ch/CAS2.hebban_form_inflected_3_variant_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "hæfen"@ang .
+
+<https://example.org/ch/CAS2.hebban_form_inflected_4> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "hefde"@ang .
+
+<https://example.org/ch/CAS2.hebban_form_inflected_5> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "hefod"@ang .
+
+<https://example.org/ch/CAS2.hebban_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.hebban_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'heave,' raise, lift, lift up, exalt,"@en .
+
+<https://example.org/ch/CAS2.hebban_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "rise,"@en .
+
+<https://example.org/ch/CAS2.hl_im_dan_form> a ontolex:Form ;
+    ontolex:writtenRep "hlīdan"@ang .
+
+<https://example.org/ch/CAS2.hl_im_dan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to come forth, spring up,"@en .
+
+<https://example.org/ch/CAS2.hr_em_odan_form> a ontolex:Form ;
+    ontolex:writtenRep "hrēodan"@ang .
+
+<https://example.org/ch/CAS2.hr_em_odan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-hrēodan"@ang .
+
+<https://example.org/ch/CAS2.hr_em_odan_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "hroden"@ang .
+
+<https://example.org/ch/CAS2.hr_em_odan_form_inflected_1_ge> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "ge-hroden"@ang .
+
+<https://example.org/ch/CAS2.hr_em_odan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to adorn"@en .
+
+<https://example.org/ch/CAS2.iernan_form> a ontolex:Form ;
+    ontolex:writtenRep "iernan"@ang,
+        "irnan"@ang,
+        "rinnan"@ang,
+        "yrnan"@ang,
+        "ærnan"@ang .
+
+<https://example.org/ch/CAS2.iernan_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "arn"@ang .
+
+<https://example.org/ch/CAS2.iernan_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "orn"@ang .
+
+<https://example.org/ch/CAS2.iernan_form_inflected_3> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "urnon"@ang .
+
+<https://example.org/ch/CAS2.iernan_form_inflected_4> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "urnen"@ang .
+
+<https://example.org/ch/CAS2.iernan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.iernan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to run, move rapidly, hasten, flow, spread,"@en .
+
+<https://example.org/ch/CAS2.iernan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "pursue,"@en .
+
+<https://example.org/ch/CAS2.iernan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "cause to move rapidly, turn, grind,"@en .
+
+<https://example.org/ch/CAS2.iernan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "get to, attain, meet with"@en .
+
+<https://example.org/ch/CAS2.iernan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "occur"@en .
+
+<https://example.org/ch/CAS2.iernan_sense_7> a ontolex:LexicalSense ;
+    rdfs:label "coagulate,"@en .
+
+<https://example.org/ch/CAS2.iernan_sense_8> a ontolex:LexicalSense ;
+    rdfs:label "grow up"@en .
+
+<https://example.org/ch/CAS2.in_forl_aem_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "in forlǣtan"@ang .
+
+<https://example.org/ch/CAS2.in_forl_aem_tan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "within"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "lǣtan"@ang .
+
+<https://example.org/ch/CAS2.l_aem_tan_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "lēt"@ang .
+
+<https://example.org/ch/CAS2.l_aem_tan_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "leort"@ang .
+
+<https://example.org/ch/CAS2.l_aem_tan_from_form> a ontolex:Form ;
+    ontolex:writtenRep "lǣtan from"@ang .
+
+<https://example.org/ch/CAS2.l_aem_tan_from_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "refrain from"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_n_em_ah_land_form> a ontolex:Form ;
+    ontolex:writtenRep "ge-lǣtan nēah land"@ang .
+
+<https://example.org/ch/CAS2.l_aem_tan_n_em_ah_land_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "approach the shore"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_10> a ontolex:LexicalSense ;
+    rdfs:label """
+                        
+                           'let'
+                        
+                     """@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_11> a ontolex:LexicalSense ;
+    rdfs:label "assert, pretend,"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_12> a ontolex:LexicalSense ;
+    rdfs:label "allot, assign"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to allow to remain, leave behind, depart from, 'let' alone,"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "leave undone,"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "bequeath,"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "allow,"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "cause to do,"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_7> a ontolex:LexicalSense ;
+    rdfs:label "regard as, consider,"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_8> a ontolex:LexicalSense ;
+    rdfs:label "behave towards, treat"@en .
+
+<https://example.org/ch/CAS2.l_aem_tan_sense_9> a ontolex:LexicalSense ;
+    rdfs:label "allow to escape, emit, let out, set free,"@en .
+
+<https://example.org/ch/CAS2.l_em_on_1_form> a ontolex:Form ;
+    ontolex:writtenRep "lēon"@ang .
+
+<https://example.org/ch/CAS2.l_em_on_1_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to lend, grant"@en .
+
+<https://example.org/ch/CAS2.l_em_on_2_form> a ontolex:Form ;
+    lexinfo:case lexinfo:accusativeCase,
+        lexinfo:dativeCase,
+        lexinfo:genitiveCase ;
+    lexinfo:number lexinfo:singular ;
+    ontolex:writtenRep "lēon"@ang .
+
+<https://example.org/ch/CAS2.l_um_can_1_form> a ontolex:Form ;
+    ontolex:writtenRep "lūcan"@ang .
+
+<https://example.org/ch/CAS2.l_um_can_1_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-lūcan"@ang .
+
+<https://example.org/ch/CAS2.l_um_can_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.l_um_can_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to lock, close, enclose, fasten, shut up,"@en .
+
+<https://example.org/ch/CAS2.l_um_can_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "close up, form one mass,"@en .
+
+<https://example.org/ch/CAS2.l_um_can_1_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "interlock, intertwine, twist, wind,"@en .
+
+<https://example.org/ch/CAS2.l_um_can_1_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "conclude"@en .
+
+<https://example.org/ch/CAS2.l_um_can_2_form> a ontolex:Form ;
+    ontolex:writtenRep "lūcan"@ang .
+
+<https://example.org/ch/CAS2.l_um_can_2_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "pluck out, pull up,"@en .
+
+<https://example.org/ch/CAS2.l_um_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "lūtan"@ang .
+
+<https://example.org/ch/CAS2.l_um_tan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-lūtan"@ang .
+
+<https://example.org/ch/CAS2.l_um_tan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to bend, stoop, decline,"@en .
+
+<https://example.org/ch/CAS2.l_um_tan_sense_2> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.l_um_tan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "bow, make obeisance, fall down,"@en .
+
+<https://example.org/ch/CAS2.l_um_tan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "lay down,"@en .
+
+<https://example.org/ch/CAS2.l_um_tan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "entreat"@en .
+
+<https://example.org/ch/CAS2.licgan_for_form> a ontolex:Form ;
+    ontolex:writtenRep "licgan for"@ang .
+
+<https://example.org/ch/CAS2.licgan_for_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "take the part of,"@en .
+
+<https://example.org/ch/CAS2.licgan_form> a ontolex:Form ;
+    ontolex:writtenRep "licgan"@ang .
+
+<https://example.org/ch/CAS2.licgan_mid_form> a ontolex:Form ;
+    ontolex:writtenRep "licgan mid"@ang .
+
+<https://example.org/ch/CAS2.licgan_mid_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "cohabit with"@en .
+
+<https://example.org/ch/CAS2.licgan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.licgan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'lie,' be situated, be at rest, remain, be,"@en .
+
+<https://example.org/ch/CAS2.licgan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "lie down, lie low, yield, subside, lie prostrate, fail, lie dead,"@en .
+
+<https://example.org/ch/CAS2.licgan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "lead, extend to,"@en .
+
+<https://example.org/ch/CAS2.licgan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "flow, go, run,"@en .
+
+<https://example.org/ch/CAS2.licgan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "belong to"@en .
+
+<https://example.org/ch/CAS2.linnan_form> a ontolex:Form ;
+    ontolex:writtenRep "linnan"@ang .
+
+<https://example.org/ch/CAS2.linnan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to cease from, desist, lose, yield up"@en .
+
+<https://example.org/ch/CAS2.loten_d_ae_g_form> a ontolex:Form ;
+    ontolex:writtenRep "ge-loten dæg"@ang .
+
+<https://example.org/ch/CAS2.loten_d_ae_g_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "after part of day"@en .
+
+<https://example.org/ch/CAS2.mansl_em_an_form> a ontolex:Form ;
+    ontolex:writtenRep "manslēan"@ang .
+
+<https://example.org/ch/CAS2.mansl_em_an_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to kill, murder,"@en .
+
+<https://example.org/ch/CAS2.metan_form> a ontolex:Form ;
+    ontolex:writtenRep "metan"@ang .
+
+<https://example.org/ch/CAS2.metan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-metan"@ang .
+
+<https://example.org/ch/CAS2.metan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.metan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to measure, 'mete' out, mark off,"@en .
+
+<https://example.org/ch/CAS2.metan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "compare,"@en .
+
+<https://example.org/ch/CAS2.metan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "estimate,"@en .
+
+<https://example.org/ch/CAS2.metan_wi_eth_form> a ontolex:Form ;
+    ontolex:writtenRep "metan wið"@ang .
+
+<https://example.org/ch/CAS2.metan_wi_eth_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "pass over, traverse,"@en .
+
+<https://example.org/ch/CAS2.niman_form> a ontolex:Form ;
+    ontolex:writtenRep "neoman"@ang,
+        "niman"@ang,
+        "nioman"@ang,
+        "nyman"@ang .
+
+<https://example.org/ch/CAS2.niman_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-neoman"@ang,
+        "ge-niman"@ang,
+        "ge-nioman"@ang,
+        "ge-nyman"@ang .
+
+<https://example.org/ch/CAS2.niman_form_sense_variant_1> a ontolex:Form ;
+    ontolex:writtenRep "neoman"@ang .
+
+<https://example.org/ch/CAS2.niman_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.niman_sense_10> a ontolex:LexicalSense ;
+    rdfs:label "take to wife"@en .
+
+<https://example.org/ch/CAS2.niman_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to take, assume, undertake, accept, receive, get,"@en .
+
+<https://example.org/ch/CAS2.niman_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "hold, seize, catch, grasp, pluck up, carry off,"@en .
+
+<https://example.org/ch/CAS2.niman_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "bear, carry, bring"@en .
+
+<https://example.org/ch/CAS2.niman_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "betake oneself, go,"@en .
+
+<https://example.org/ch/CAS2.niman_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "contain"@en .
+
+<https://example.org/ch/CAS2.niman_sense_7> a ontolex:LexicalSense ;
+    rdfs:label "suffer, tolerate"@en .
+
+<https://example.org/ch/CAS2.niman_sense_8> a ontolex:LexicalSense ;
+    rdfs:label "give"@en .
+
+<https://example.org/ch/CAS2.niman_sense_9> a ontolex:LexicalSense ;
+    rdfs:label "grasp, comprehend"@en .
+
+<https://example.org/ch/CAS2.o_eth_-br_em_dan_form> a ontolex:Form ;
+    ontolex:writtenRep "oð-bregdan"@ang,
+        "oð-brēdan"@ang .
+
+<https://example.org/ch/CAS2.o_eth_-br_em_dan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to snatch away, carry off, rescue, remove, withdraw,"@en .
+
+<https://example.org/ch/CAS2.of-g_am_n_form> a ontolex:Form ;
+    ontolex:writtenRep "of-gān"@ang .
+
+<https://example.org/ch/CAS2.of-g_am_n_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "of-ēode"@ang .
+
+<https://example.org/ch/CAS2.of-g_am_n_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.of-g_am_n_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to demand, require, exact, extort,"@en .
+
+<https://example.org/ch/CAS2.of-g_am_n_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "attain, obtain, acquire, gain,"@en .
+
+<https://example.org/ch/CAS2.of-g_am_n_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "start from, begin"@en .
+
+<https://example.org/ch/CAS2.of-g_am_n_variant_1_form> a ontolex:Form ;
+    ontolex:writtenRep "of-gangan"@ang .
+
+<https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to demand, require, exact, extort,"@en .
+
+<https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "attain, obtain, acquire, gain,"@en .
+
+<https://example.org/ch/CAS2.of-g_am_n_variant_1_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "start from, begin"@en .
+
+<https://example.org/ch/CAS2.of_am_ceorfan_form> a ontolex:Form ;
+    ontolex:writtenRep "ofāceorfan"@ang .
+
+<https://example.org/ch/CAS2.of_am_ceorfan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to cut or prune off,"@en .
+
+<https://example.org/ch/CAS2.of_am_sl_em_an_form> a ontolex:Form ;
+    ontolex:writtenRep "ofāslēan"@ang .
+
+<https://example.org/ch/CAS2.of_am_sl_em_an_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to smite off,"@en .
+
+<https://example.org/ch/CAS2.ofcalan_form> a ontolex:Form ;
+    ontolex:writtenRep "ofcalan"@ang .
+
+<https://example.org/ch/CAS2.ofcalan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to chill, make or grow cold,"@en .
+
+<https://example.org/ch/CAS2.ofdr_aem_dan_form> a ontolex:Form ;
+    ontolex:writtenRep "ofdrǣdan"@ang .
+
+<https://example.org/ch/CAS2.ofdr_aem_dan_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "ofdrǣdd"@ang .
+
+<https://example.org/ch/CAS2.ofdr_aem_dan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to fear, be afraid, terrified,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_form> a ontolex:Form ;
+    ontolex:writtenRep "ofer-gān"@ang .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to pass over, beyond, across, traverse, cross,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "transgress,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "overrun, overcome, overspread, conquer,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "come upon, overtake, seize, attach,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "pass off, pass away, end,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_form> a ontolex:Form ;
+    ontolex:writtenRep "ofer-gangan"@ang .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to pass over, beyond, across, traverse, cross,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "transgress,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "overrun, overcome, overspread, conquer,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "come upon, overtake, seize, attach,"@en .
+
+<https://example.org/ch/CAS2.ofer-g_am_n_variant_1_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "pass off, pass away, end,"@en .
+
+<https://example.org/ch/CAS2.oferst_im_gan_form> a ontolex:Form ;
+    ontolex:writtenRep "oferstīgan"@ang .
+
+<https://example.org/ch/CAS2.oferst_im_gan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.oferst_im_gan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to climb over, mount, scale, surmount, overcome,"@en .
+
+<https://example.org/ch/CAS2.oferst_im_gan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "surpass, excel, exceed,"@en .
+
+<https://example.org/ch/CAS2.ofsacan_form> a ontolex:Form ;
+    ontolex:writtenRep "ofsacan"@ang .
+
+<https://example.org/ch/CAS2.ofsacan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to deny a charge,"@en .
+
+<https://example.org/ch/CAS2.on-bregdan_form> a ontolex:Form ;
+    ontolex:writtenRep "on-bregdan"@ang,
+        "on-brēdan"@ang .
+
+<https://example.org/ch/CAS2.on-bregdan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.on-bregdan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to move, bow, start up"@en .
+
+<https://example.org/ch/CAS2.on-bregdan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "burst open"@en .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_form> a ontolex:Form ;
+    ontolex:writtenRep "on-drǣdan"@ang .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "on-drēd"@ang .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "on-drǣd"@ang .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_3> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "on-dreord"@ang .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_4> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "on-drǣdde"@ang .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_form_inflected_5> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "on-drǣd"@ang .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to dread, fear,"@en .
+
+<https://example.org/ch/CAS2.on-dr_aem_dan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "be afraid,"@en .
+
+<https://example.org/ch/CAS2.on_am_winnan_form> a ontolex:Form ;
+    ontolex:writtenRep "onāwinnan"@ang .
+
+<https://example.org/ch/CAS2.on_am_winnan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to fight against,"@en .
+
+<https://example.org/ch/CAS2.on_b_ae_c_l_aem_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "on bæc lǣtan"@ang .
+
+<https://example.org/ch/CAS2.on_b_ae_c_l_aem_tan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "leave behind"@en .
+
+<https://example.org/ch/CAS2.on_feohtan_form> a ontolex:Form ;
+    ontolex:writtenRep "on feohtan"@ang .
+
+<https://example.org/ch/CAS2.on_feohtan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.on_feohtan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "attack, fight against"@en .
+
+<https://example.org/ch/CAS2.on_feohtan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "gain by fighting, win"@en .
+
+<https://example.org/ch/CAS2.on_niman_form> a ontolex:Form ;
+    ontolex:writtenRep "on niman"@ang .
+
+<https://example.org/ch/CAS2.on_niman_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "take effect,"@en .
+
+<https://example.org/ch/CAS2.onbesc_em_ofan_form> a ontolex:Form ;
+    ontolex:writtenRep "onbescēofan"@ang .
+
+<https://example.org/ch/CAS2.onbesc_em_ofan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to thrust out,"@en .
+
+<https://example.org/ch/CAS2.ongietan_form> a ontolex:Form ;
+    ontolex:writtenRep "ongeotan"@ang,
+        "ongetan"@ang,
+        "ongietan"@ang,
+        "ongitan"@ang,
+        "ongytan"@ang .
+
+<https://example.org/ch/CAS2.ongietan_form_sense_variant_1> a ontolex:Form ;
+    ontolex:writtenRep "āgietan"@ang .
+
+<https://example.org/ch/CAS2.ongietan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.ongietan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to grasp, seize"@en .
+
+<https://example.org/ch/CAS2.ongietan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "understand, learn, recognize, know, distinguish, judge, consider,"@en .
+
+<https://example.org/ch/CAS2.ongietan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "see, perceive"@en .
+
+<https://example.org/ch/CAS2.ongietan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "perceive by hearing, hear"@en .
+
+<https://example.org/ch/CAS2.ongietan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "feel, experience"@en .
+
+<https://example.org/ch/CAS2.ongietan_sense_7> a ontolex:LexicalSense ;
+    rdfs:label "know carnally"@en .
+
+<https://example.org/ch/CAS2.ongietan_sense_8> a ontolex:LexicalSense ;
+    rdfs:label "get, take away"@en .
+
+<https://example.org/ch/CAS2.onginnan_form> a ontolex:Form ;
+    ontolex:writtenRep "onginnan"@ang .
+
+<https://example.org/ch/CAS2.onginnan_form_sense_variant_1> a ontolex:Form ;
+    ontolex:writtenRep "āginnan"@ang .
+
+<https://example.org/ch/CAS2.onginnan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.onginnan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to begin, attempt, endeavour, try hard,"@en .
+
+<https://example.org/ch/CAS2.onginnan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "attack, assail"@en .
+
+<https://example.org/ch/CAS2.onginnan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "act"@en .
+
+<https://example.org/ch/CAS2.ont_em_on_form> a ontolex:Form ;
+    ontolex:writtenRep "ontēon"@ang .
+
+<https://example.org/ch/CAS2.ont_em_on_form_sense_variant_1> a ontolex:Form ;
+    ontolex:writtenRep "untēon"@ang .
+
+<https://example.org/ch/CAS2.ont_em_on_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.ont_em_on_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to draw to oneself, assume, undertake,"@en .
+
+<https://example.org/ch/CAS2.ont_em_on_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "pull"@en .
+
+<https://example.org/ch/CAS2.ont_em_on_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "untie"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_form> a ontolex:Form ;
+    ontolex:writtenRep "rēdan"@ang,
+        "rǣdan"@ang .
+
+<https://example.org/ch/CAS2.r_aem_dan_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "reord"@ang .
+
+<https://example.org/ch/CAS2.r_aem_dan_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "rēd"@ang .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_10> a ontolex:LexicalSense ;
+    rdfs:label "learn by reading"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_11> a ontolex:LexicalSense ;
+    rdfs:label "put in order,"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_12> a ontolex:LexicalSense ;
+    rdfs:label "help"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to advise, counsel, persuade,"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "consult, discuss, deliberate, plot, design,"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "decree, decide,"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "rule, guide, have control over, possess,"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "provide for"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_7> a ontolex:LexicalSense ;
+    rdfs:label "bring, deliver"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_8> a ontolex:LexicalSense ;
+    rdfs:label "have an idea, guess, forebode,"@en .
+
+<https://example.org/ch/CAS2.r_aem_dan_sense_9> a ontolex:LexicalSense ;
+    rdfs:label "read, explain,"@en .
+
+<https://example.org/ch/CAS2.r_im_nan_form> a ontolex:Form ;
+    ontolex:writtenRep "rīnan"@ang .
+
+<https://example.org/ch/CAS2.r_im_nan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to rain,"@en .
+
+<https://example.org/ch/CAS2.sce_eth_eth_an_form> a ontolex:Form ;
+    ontolex:writtenRep "sceaððan"@ang,
+        "sceððan"@ang,
+        "scyððan"@ang .
+
+<https://example.org/ch/CAS2.sce_eth_eth_an_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-sceaððan"@ang,
+        "ge-sceððan"@ang,
+        "ge-scyððan"@ang .
+
+<https://example.org/ch/CAS2.sce_eth_eth_an_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to scathe, injure, hurt, crush, oppress, disturb"@en .
+
+<https://example.org/ch/CAS2.sige_niman_form> a ontolex:Form ;
+    ontolex:writtenRep "sige niman"@ang .
+
+<https://example.org/ch/CAS2.sige_niman_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "gain victory"@en .
+
+<https://example.org/ch/CAS2.singan_form> a ontolex:Form ;
+    ontolex:writtenRep "singan"@ang,
+        "syngan"@ang .
+
+<https://example.org/ch/CAS2.singan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-singan"@ang,
+        "ge-syngan"@ang .
+
+<https://example.org/ch/CAS2.singan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.singan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'sing,' celebrate in song,"@en .
+
+<https://example.org/ch/CAS2.singan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "crow, sing"@en .
+
+<https://example.org/ch/CAS2.singan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "chant, intone,"@en .
+
+<https://example.org/ch/CAS2.singan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "read, recite, narrate,"@en .
+
+<https://example.org/ch/CAS2.singan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "sound, resound, ring, clank,"@en .
+
+<https://example.org/ch/CAS2.sl_aem_pan_form> a ontolex:Form ;
+    ontolex:writtenRep "slāpan"@ang,
+        "slēpan"@ang,
+        "slǣpan"@ang .
+
+<https://example.org/ch/CAS2.sl_aem_pan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-slāpan"@ang,
+        "ge-slēpan"@ang,
+        "ge-slǣpan"@ang .
+
+<https://example.org/ch/CAS2.sl_aem_pan_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "slēp"@ang .
+
+<https://example.org/ch/CAS2.sl_aem_pan_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "slēap"@ang .
+
+<https://example.org/ch/CAS2.sl_aem_pan_form_inflected_3> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "slǣpte"@ang .
+
+<https://example.org/ch/CAS2.sl_aem_pan_form_inflected_4> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "slēpte"@ang .
+
+<https://example.org/ch/CAS2.sl_aem_pan_form_inflected_5> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "slēpde"@ang .
+
+<https://example.org/ch/CAS2.sl_aem_pan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.sl_aem_pan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'sleep,'"@en .
+
+<https://example.org/ch/CAS2.sl_aem_pan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "be benumbed, motionless, inactive,"@en .
+
+<https://example.org/ch/CAS2.sl_aem_pan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "lie with,"@en .
+
+<https://example.org/ch/CAS2.sl_aem_pan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "rest in the grave, die,"@en .
+
+<https://example.org/ch/CAS2.smeortan_form> a ontolex:Form ;
+    ontolex:writtenRep "smeortan"@ang .
+
+<https://example.org/ch/CAS2.smeortan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to 'smart,'"@en .
+
+<https://example.org/ch/CAS2.stincan_form> a ontolex:Form ;
+    ontolex:writtenRep "ge-stincan"@ang .
+
+<https://example.org/ch/CAS2.stincan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.stincan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to smell,"@en .
+
+<https://example.org/ch/CAS2.stincan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "have the sense of smell,"@en .
+
+<https://example.org/ch/CAS2.str_em_dan_form> a ontolex:Form ;
+    ontolex:writtenRep "strēdan"@ang .
+
+<https://example.org/ch/CAS2.str_em_dan_form_inflected_1> a ontolex:Form ;
+    lexinfo:number lexinfo:singular ;
+    lexinfo:person lexinfo:thirdPerson ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "strēdde"@ang .
+
+<https://example.org/ch/CAS2.str_em_dan_form_inflected_2> a ontolex:Form ;
+    lexinfo:number lexinfo:plural ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "strǣdon"@ang .
+
+<https://example.org/ch/CAS2.str_em_dan_form_inflected_3> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "strēded"@ang .
+
+<https://example.org/ch/CAS2.str_em_dan_form_inflected_4> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "strēd"@ang .
+
+<https://example.org/ch/CAS2.stregdan_entry> a ontolex:LexicalEntry,
+        chm:StrongVerbIII ;
+    lexinfo:partOfSpeech lexinfo:verb ;
+    ontolex:canonicalForm <https://example.org/ch/CAS2.stregdan_form> ;
+    ontolex:otherForm <https://example.org/ch/CAS2.stregdan_form_inflected_1>,
+        <https://example.org/ch/CAS2.stregdan_form_inflected_2>,
+        <https://example.org/ch/CAS2.stregdan_form_inflected_3>,
+        <https://example.org/ch/CAS2.stregdan_form_inflected_4>,
+        <https://example.org/ch/CAS2.stregdan_form_inflected_5> ;
+    ontolex:sense <https://example.org/ch/CAS2.stregdan_sense_1>,
+        <https://example.org/ch/CAS2.stregdan_sense_2>,
+        <https://example.org/ch/CAS2.stregdan_sense_3> .
+
+<https://example.org/ch/CAS2.stregdan_form> a ontolex:Form ;
+    ontolex:writtenRep "stregdan"@ang .
+
+<https://example.org/ch/CAS2.stregdan_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "strægd"@ang .
+
+<https://example.org/ch/CAS2.stregdan_form_inflected_2> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "strugdon"@ang .
+
+<https://example.org/ch/CAS2.stregdan_form_inflected_3> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    ontolex:writtenRep "stregde"@ang .
+
+<https://example.org/ch/CAS2.stregdan_form_inflected_4> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "strogden"@ang .
+
+<https://example.org/ch/CAS2.stregdan_form_inflected_5> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "stregd"@ang .
+
+<https://example.org/ch/CAS2.stregdan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.stregdan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to strew, sprinkle, disperse, scatter, straggle"@en .
+
+<https://example.org/ch/CAS2.stregdan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "to spread, extend"@en .
+
+<https://example.org/ch/CAS2.sw_im_eth_an_form> a ontolex:Form ;
+    ontolex:writtenRep "swīðan"@ang .
+
+<https://example.org/ch/CAS2.sw_im_eth_an_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-swīðan"@ang .
+
+<https://example.org/ch/CAS2.sw_im_eth_an_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.sw_im_eth_an_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to strengthen, establish, support"@en .
+
+<https://example.org/ch/CAS2.sw_im_eth_an_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "use force against,"@en .
+
+<https://example.org/ch/CAS2.swellan_form> a ontolex:Form ;
+    ontolex:writtenRep "swellan"@ang .
+
+<https://example.org/ch/CAS2.swellan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-swellan"@ang .
+
+<https://example.org/ch/CAS2.swellan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to 'swell.'"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_form> a ontolex:Form ;
+    ontolex:writtenRep "tēon"@ang .
+
+<https://example.org/ch/CAS2.t_em_on_1_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-tēon"@ang .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_10> a ontolex:LexicalSense ;
+    rdfs:label "string up, play"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to pull, tug, draw, drag, row"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "withdraw, take,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "entice, allure, induce, lead, bring,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "bring up, educate,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "arrogate,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_7> a ontolex:LexicalSense ;
+    rdfs:label "bring forth, produce,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_8> a ontolex:LexicalSense ;
+    rdfs:label "restrain,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_1_sense_9> a ontolex:LexicalSense ;
+    rdfs:label "betake oneself to, go, roam,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_2_form> a ontolex:Form ;
+    ontolex:writtenRep "tēon"@ang .
+
+<https://example.org/ch/CAS2.t_em_on_2_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "accuse, censure,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_3_form> a ontolex:Form ;
+    ontolex:writtenRep "tēon"@ang .
+
+<https://example.org/ch/CAS2.t_em_on_3_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-tēon"@ang .
+
+<https://example.org/ch/CAS2.t_em_on_3_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.t_em_on_3_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to prepare, furnish forth, arrange, adorn, deck"@en .
+
+<https://example.org/ch/CAS2.t_em_on_3_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "produce, work, create, make,"@en .
+
+<https://example.org/ch/CAS2.t_em_on_3_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "fix, establish, constitute, ordain"@en .
+
+<https://example.org/ch/CAS2.t_om_-fl_em_on_form> a ontolex:Form ;
+    ontolex:writtenRep "tō-flēogan"@ang,
+        "tō-flēon"@ang .
+
+<https://example.org/ch/CAS2.t_om_-fl_em_on_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to be dispersed, fly apart, burst,"@en .
+
+<https://example.org/ch/CAS2.t_om_-stregdan_form> a ontolex:Form ;
+    ontolex:writtenRep "tō-stregdan"@ang,
+        "tō-strēdan"@ang .
+
+<https://example.org/ch/CAS2.t_om_-stregdan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.t_om_-stregdan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to scatter, dissipate, disperse,"@en .
+
+<https://example.org/ch/CAS2.t_om_-stregdan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "distract"@en .
+
+<https://example.org/ch/CAS2.t_om_-stregdan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "destroy"@en .
+
+<https://example.org/ch/CAS2.t_om_bl_am_wan_form> a ontolex:Form ;
+    ontolex:writtenRep "tōblāwan"@ang .
+
+<https://example.org/ch/CAS2.t_om_bl_am_wan_form_inflected_1> a ontolex:Form ;
+    lexinfo:tense lexinfo:past ;
+    lexinfo:verbFormMood lexinfo:participle ;
+    ontolex:writtenRep "tōblǣdd"@ang .
+
+<https://example.org/ch/CAS2.t_om_bl_am_wan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.t_om_bl_am_wan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to blow to pieces, blast, scatter,"@en .
+
+<https://example.org/ch/CAS2.t_om_bl_am_wan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "puff up, inflate, distend,"@en .
+
+<https://example.org/ch/CAS2.t_om_fealdan_form> a ontolex:Form ;
+    ontolex:writtenRep "tōfealdan"@ang .
+
+<https://example.org/ch/CAS2.t_om_fealdan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to come to land"@en .
+
+<https://example.org/ch/CAS2.t_om_hladan_form> a ontolex:Form ;
+    ontolex:writtenRep "tōhladan"@ang .
+
+<https://example.org/ch/CAS2.t_om_hladan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to scatter, disperse, destroy"@en .
+
+<https://example.org/ch/CAS2.t_om_sl_em_an_form> a ontolex:Form ;
+    ontolex:writtenRep "tōslēan"@ang .
+
+<https://example.org/ch/CAS2.t_om_sl_em_an_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.t_om_sl_em_an_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to strike in pieces, destroy,"@en .
+
+<https://example.org/ch/CAS2.t_om_sl_em_an_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "drive away,"@en .
+
+<https://example.org/ch/CAS2.t_om_t_em_on_form> a ontolex:Form ;
+    ontolex:writtenRep "tōtēon"@ang .
+
+<https://example.org/ch/CAS2.t_om_t_em_on_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.t_om_t_em_on_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to draw asunder, pull apart, rend, destroy,"@en .
+
+<https://example.org/ch/CAS2.t_om_t_em_on_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "take to oneself, claim for oneself,"@en .
+
+<https://example.org/ch/CAS2.t_om_wr_im_eth_an_form> a ontolex:Form ;
+    ontolex:writtenRep "tōwrīðan"@ang .
+
+<https://example.org/ch/CAS2.t_om_wr_im_eth_an_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to twist apart, distort"@en .
+
+<https://example.org/ch/CAS2.tacan_form> a ontolex:Form ;
+    ontolex:writtenRep "tacan"@ang .
+
+<https://example.org/ch/CAS2.tacan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to 'take,' seize,"@en .
+
+<https://example.org/ch/CAS2.togen_form> a ontolex:Form ;
+    ontolex:writtenRep "ge-togen"@ang .
+
+<https://example.org/ch/CAS2.togen_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "lengthened, long"@en .
+
+<https://example.org/ch/CAS2.tringan_form> a ontolex:Form ;
+    ontolex:writtenRep "tringan"@ang .
+
+<https://example.org/ch/CAS2.tringan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "press,"@en .
+
+<https://example.org/ch/CAS2.um_p-_am_bregdan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūp-ābregdan"@ang,
+        "ūp-ābrēdan"@ang .
+
+<https://example.org/ch/CAS2.um_p-_am_bregdan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to lift up, raise up, exalt,"@en .
+
+<https://example.org/ch/CAS2.um_p-_am_weallan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūp-āwallan"@ang,
+        "ūp-āweallan"@ang .
+
+<https://example.org/ch/CAS2.um_p-_am_weallan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to well up, steam up, boil up,"@en .
+
+<https://example.org/ch/CAS2.um_p-fl_em_ogan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūp-flēogan"@ang,
+        "ūp-flēon"@ang .
+
+<https://example.org/ch/CAS2.um_p-fl_em_ogan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to fly up"@en .
+
+<https://example.org/ch/CAS2.um_p_am_t_em_on_form> a ontolex:Form ;
+    ontolex:writtenRep "ūpātēon"@ang .
+
+<https://example.org/ch/CAS2.um_p_am_t_em_on_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.um_p_am_t_em_on_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to draw up, bring up, rear"@en .
+
+<https://example.org/ch/CAS2.um_p_am_t_em_on_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "draw out, pull out, pluck up"@en .
+
+<https://example.org/ch/CAS2.um_p_am_t_em_on_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "lift up, place in an upright position,"@en .
+
+<https://example.org/ch/CAS2.um_p_forl_aem_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūp forlǣtan"@ang .
+
+<https://example.org/ch/CAS2.um_p_forl_aem_tan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to direct upwards,"@en .
+
+<https://example.org/ch/CAS2.um_t-_am_g_am_n_form> a ontolex:Form ;
+    ontolex:writtenRep "ūt-āgān"@ang .
+
+<https://example.org/ch/CAS2.um_t-_am_g_am_n_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to go out, go forth"@en .
+
+<https://example.org/ch/CAS2.um_t-_am_g_am_n_variant_1_form> a ontolex:Form ;
+    ontolex:writtenRep "ūt-āgangan"@ang .
+
+<https://example.org/ch/CAS2.um_t-_am_g_am_n_variant_1_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to go out, go forth"@en .
+
+<https://example.org/ch/CAS2.um_t_am_berstan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūtāberstan"@ang .
+
+<https://example.org/ch/CAS2.um_t_am_berstan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to burst out, burst forth,"@en .
+
+<https://example.org/ch/CAS2.um_t_am_eth_ringan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūtāðringan"@ang .
+
+<https://example.org/ch/CAS2.um_t_am_eth_ringan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to press out"@en .
+
+<https://example.org/ch/CAS2.um_t_am_sittan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūt āsittan"@ang .
+
+<https://example.org/ch/CAS2.um_t_am_sittan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "starve out"@en .
+
+<https://example.org/ch/CAS2.um_t_am_sp_im_wan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūtāspīwan"@ang .
+
+<https://example.org/ch/CAS2.um_t_am_sp_im_wan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to spew forth, vomit up,"@en .
+
+<https://example.org/ch/CAS2.um_tdragan_form> a ontolex:Form ;
+    ontolex:writtenRep "ūtdragan"@ang .
+
+<https://example.org/ch/CAS2.um_tdragan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to remove,"@en .
+
+<https://example.org/ch/CAS2.unbindan_form> a ontolex:Form ;
+    ontolex:writtenRep "unbindan"@ang .
+
+<https://example.org/ch/CAS2.unbindan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.unbindan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to unbind, loose,"@en .
+
+<https://example.org/ch/CAS2.unbindan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "pay"@en .
+
+<https://example.org/ch/CAS2.understandan_form> a ontolex:Form ;
+    ontolex:writtenRep "understandan"@ang,
+        "understondan"@ang .
+
+<https://example.org/ch/CAS2.understandan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.understandan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'understand,' perceive,"@en .
+
+<https://example.org/ch/CAS2.understandan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "observe, notice, take for granted,"@en .
+
+<https://example.org/ch/CAS2.understandan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "'subsistere,'"@la .
+
+<https://example.org/ch/CAS2.w_im_tan_form> a ontolex:Form ;
+    ontolex:writtenRep "wītan"@ang .
+
+<https://example.org/ch/CAS2.w_im_tan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.w_im_tan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to look, behold, see,"@en .
+
+<https://example.org/ch/CAS2.w_im_tan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "guard, keep,"@en .
+
+<https://example.org/ch/CAS2.w_im_tan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "impute or ascribe to, accuse, reproach, blame,"@en .
+
+<https://example.org/ch/CAS2.w_im_tan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "depart, go, go out"@en .
+
+<https://example.org/ch/CAS2.w_im_tan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "die"@en ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.for_eth_gew_im_tan_entry> .
+
+<https://example.org/ch/CAS2.wascan_form> a ontolex:Form ;
+    ontolex:writtenRep "wacsan"@ang,
+        "wacxan"@ang,
+        "wascan"@ang,
+        "waxan"@ang,
+        "wæscan"@ang .
+
+<https://example.org/ch/CAS2.wascan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.wascan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to 'wash,' bathe, lave"@en .
+
+<https://example.org/ch/CAS2.wascan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "envelop,"@en ;
+    rdfs:seeAlso <https://example.org/ch/CAS2.weaxan_2_entry> .
+
+<https://example.org/ch/CAS2.wealcan_form> a ontolex:Form ;
+    ontolex:writtenRep "wealcan"@ang .
+
+<https://example.org/ch/CAS2.wealcan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.wealcan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to move round, revolve, roll, toss,"@en .
+
+<https://example.org/ch/CAS2.wealcan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "fluctuate"@en .
+
+<https://example.org/ch/CAS2.wealcan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "revolve in one’s mind, discuss, scheme, reflect,"@en .
+
+<https://example.org/ch/CAS2.wealcan_sense_5> a ontolex:LexicalSense ;
+    rdfs:label "wrap round, twist, curl;"@en .
+
+<https://example.org/ch/CAS2.wealcan_sense_6> a ontolex:LexicalSense ;
+    rdfs:label "traverse"@en .
+
+<https://example.org/ch/CAS2.wealdan_form> a ontolex:Form ;
+    ontolex:writtenRep "waldan"@ang,
+        "wealdan"@ang .
+
+<https://example.org/ch/CAS2.wealdan_form_ge> a ontolex:Form ;
+    ontolex:writtenRep "ge-waldan"@ang,
+        "ge-wealdan"@ang .
+
+<https://example.org/ch/CAS2.wealdan_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.wealdan_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to rule, control, determine, direct, command, govern, possess,"@en .
+
+<https://example.org/ch/CAS2.wealdan_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "exercise"@en,
+        "wield"@en .
+
+<https://example.org/ch/CAS2.wealdan_sense_4> a ontolex:LexicalSense ;
+    rdfs:label "cause, bring about,"@en .
+
+<https://example.org/ch/CAS2.wi_eth_-bregdan_form> a ontolex:Form ;
+    ontolex:writtenRep "wið-bregdan"@ang,
+        "wið-brēdan"@ang .
+
+<https://example.org/ch/CAS2.wi_eth_-bregdan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to withhold, restrain, withstand, oppose,"@en .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_form> a ontolex:Form ;
+    ontolex:writtenRep "wið-gān"@ang .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to go against, oppose"@en .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "pass away, vanish, disappear"@en .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_form> a ontolex:Form ;
+    ontolex:writtenRep "wið-gangan"@ang .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_sense_1> a ontolex:LexicalSense .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_sense_2> a ontolex:LexicalSense ;
+    rdfs:label "to go against, oppose"@en .
+
+<https://example.org/ch/CAS2.wi_eth_-g_am_n_variant_1_sense_3> a ontolex:LexicalSense ;
+    rdfs:label "pass away, vanish, disappear"@en .
+
+<https://example.org/ch/CAS2.wi_eth_licgendum_f_em_o_form> a ontolex:Form ;
+    ontolex:writtenRep "wið licgendum fēo"@ang .
+
+<https://example.org/ch/CAS2.wi_eth_licgendum_f_em_o_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "for ready money"@en .
+
+<https://example.org/ch/CAS2.ymb-gan_form> a ontolex:Form ;
+    ontolex:writtenRep "ymb-gan"@ang .
+
+<https://example.org/ch/CAS2.ymb-gan_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to go round, surround"@en .
+
+<https://example.org/ch/CAS2.ymb-gan_variant_1_form> a ontolex:Form ;
+    ontolex:writtenRep "ymb-gangan"@ang .
+
+<https://example.org/ch/CAS2.ymb-gan_variant_1_sense_1> a ontolex:LexicalSense ;
+    rdfs:label "to go round, surround"@en .
+

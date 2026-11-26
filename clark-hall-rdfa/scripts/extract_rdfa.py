@@ -8,8 +8,11 @@ pathout_1 = "output/clark_hall_rdfa_v1.ttl"
 pathin_2 = "data/sample.xml"
 pathout_2 = "output/sample.ttl"
 
-input_file = Path(pathin_2)  # Change this to pathin_1 or pathin_2 as needed
-output_file = Path(pathout_2)
+pathin_3 = "data/XML/CH_SV_failed_to_parse_rdfa.xml"
+pathout_3 = "output/clark_hall_rdfa.ttl"
+
+input_file = Path(pathin_3)  # Change this to pathin_1 or pathin_2 as needed
+output_file = Path(pathout_3)
 
 output_file.parent.mkdir(parents=True, exist_ok=True)
 

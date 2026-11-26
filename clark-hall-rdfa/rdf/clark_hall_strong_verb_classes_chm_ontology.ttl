@@ -47,6 +47,18 @@ chm:past_part_vowel a owl:DatatypeProperty ;
   rdfs:label "past participle vowel"@en .
 
 ########
+# Paradigm-cell relations
+########
+
+chm:cellmate a owl:ObjectProperty, owl:SymmetricProperty ;
+  rdfs:label "cellmate"@en ;
+  rdfs:domain ontolex:Form ;
+  rdfs:range ontolex:Form ;
+  rdfs:comment "Relates two distinct morphological forms that occupy the same cell in the inflectional paradigm of a lexical entry, irrespective of their orthographic or phonological differences."@en .
+
+
+
+########
 # Strong verb classes (OWL classes; also punned individuals)
 ########
 
