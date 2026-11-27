@@ -2,9 +2,7 @@
 
 ## Introduction
 
-The aim of this project is to use OntoLex-lemon, its Morphology module (Morph), and LexInfo to encode the morphological information contained in the Clark–Hall Old English dictionary as RDF.
-
-Our main objective is to use Semantic Web standards to make the morphological information contained in traditional lexicographic resources more machine-actionable, facilitating its querying, reuse and integration with other linguistic resources.
+The aim of this project is to use OntoLex-lemon, its Morphology module (Morph), and LexInfo to encode the morphological information contained in the Clark–Hall Old English dictionary as RDF.Our main objective overall is to use Semantic Web standards to make the morphological information contained in traditional lexicographic resources more machine-actionable, facilitating its querying, reuse and integration with other linguistic resources;  this is part of a wider project which seeks to make other kinds of linguistic similarly more accessible via Semantic Web technologies.
 
 Further objectives include:
 
