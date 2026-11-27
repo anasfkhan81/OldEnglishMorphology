@@ -22,8 +22,7 @@ The following prefixes are used in the ontology and the accompanying examples:
 @prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix exentry: <https://example.org/clarkhall/entry/> .
-@prefix exform:  <https://example.org/clarkhall/form/> .
+@prefix chsample: <https://example.org/clarkhall/sample/> .
 ```
 
 ### The Basic Classes
@@ -199,25 +198,25 @@ The forms currently represented in the example are:
 The lexical entry is represented as follows:
 
 ```turtle
-exentry:biidan a ontolex:LexicalEntry,
+chsample:biidan a ontolex:LexicalEntry,
                  chm:StrongVerb,
                  chm:StrongVerbI ;
     rdfs:label "bīdan"@ang ;
-    ontolex:canonicalForm exform:biidan_inf ;
+    ontolex:canonicalForm chsample:biidan_inf ;
     ontolex:otherForm
-        exform:biidan_pret-3sg,
-        exform:biidan_pret-pl_1,
-        exform:biidan_pret-pl_2,
-        exform:biidan_pres-2sg_1,
-        exform:biidan_pres-2sg_2,
-        exform:biidan_pres-2sg_3,
-        exform:biidan_pres-3sg .
+        chsample:biidan_pret-3sg,
+        chsample:biidan_pret-pl_1,
+        chsample:biidan_pret-pl_2,
+        chsample:biidan_pres-2sg_1,
+        chsample:biidan_pres-2sg_2,
+        chsample:biidan_pres-2sg_3,
+        chsample:biidan_pres-3sg .
 ```
 
 The infinitive is represented as the canonical form:
 
 ```turtle
-exform:biidan_inf a ontolex:Form ;
+chsample:biidan_inf a ontolex:Form ;
     ontolex:writtenRep "bīdan"@ang ;
     lexinfo:verbFormMood lexinfo:infinitive .
 ```
@@ -225,56 +224,56 @@ exform:biidan_inf a ontolex:Form ;
 The three variants of the present indicative second person singular are represented as distinct instances of `ontolex:Form`, each associated with the same set of grammatical features.
 
 ```turtle
-exform:biidan_pres-2sg_1 a ontolex:Form ;
+chsample:biidan_pres-2sg_1 a ontolex:Form ;
     ontolex:writtenRep "bīst"@ang ;
     lexinfo:tense lexinfo:present ;
     lexinfo:person lexinfo:secondPerson ;
     lexinfo:number lexinfo:singular ;
     lexinfo:verbFormMood lexinfo:indicative .
 
-exform:biidan_pres-2sg_2 a ontolex:Form ;
+chsample:biidan_pres-2sg_2 a ontolex:Form ;
     ontolex:writtenRep "bīdst"@ang ;
     lexinfo:tense lexinfo:present ;
     lexinfo:person lexinfo:secondPerson ;
     lexinfo:number lexinfo:singular ;
     lexinfo:verbFormMood lexinfo:indicative .
 
-exform:biidan_pres-2sg_3 a ontolex:Form ;
+chsample:biidan_pres-2sg_3 a ontolex:Form ;
     ontolex:writtenRep "bītst"@ang ;
     lexinfo:tense lexinfo:present ;
     lexinfo:person lexinfo:secondPerson ;
-    lexinfo:number lexinfo:singular ;
+    lexinfo:number lexinfo:singular ;ex
     lexinfo:verbFormMood lexinfo:indicative .
 ```
 
 Since all three forms occupy the same cell in the inflectional paradigm of *bīdan*, we relate them using `chm:cellmate`.
 
 ```turtle
-exform:biidan_pres-2sg_1
-    chm:cellmate exform:biidan_pres-2sg_2,
-                 exform:biidan_pres-2sg_3 .
+chsample:biidan_pres-2sg_1
+    chm:cellmate chsample:biidan_pres-2sg_2,
+                 chsample:biidan_pres-2sg_3 .
 
-exform:biidan_pres-2sg_2
-    chm:cellmate exform:biidan_pres-2sg_3 .
+chsample:biidan_pres-2sg_2
+    chm:cellmate chsample:biidan_pres-2sg_3 .
 ```
 
 Similarly, the two preterite plural forms, *beodan* and *bidon*, are represented as follows:
 
 ```turtle
-exform:biidan_pret-pl_1 a ontolex:Form ;
+chsample:biidan_pret-pl_1 a ontolex:Form ;
     ontolex:writtenRep "beodan"@ang ;
     lexinfo:tense lexinfo:past ;
     lexinfo:number lexinfo:plural ;
     lexinfo:verbFormMood lexinfo:indicative .
 
-exform:biidan_pret-pl_2 a ontolex:Form ;
+chsample:biidan_pret-pl_2 a ontolex:Form ;
     ontolex:writtenRep "bidon"@ang ;
     lexinfo:tense lexinfo:past ;
     lexinfo:number lexinfo:plural ;
     lexinfo:verbFormMood lexinfo:indicative .
 
-exform:biidan_pret-pl_1
-    chm:cellmate exform:biidan_pret-pl_2 .
+chsample:biidan_pret-pl_1
+    chm:cellmate chsample:biidan_pret-pl_2 .
 ```
 
 The inverse of each cellmate relation can be inferred on the basis of the symmetry of the property.
@@ -288,16 +287,16 @@ Clark–Hall uses the symbol ± to indicate that the verb occurs both with and w
 Rather than introducing a property to represent the optionality of the prefix, we explicitly represent the prefixed and unprefixed forms as separate instances of `ontolex:Form`.
 
 ```turtle
-exform:ceosan_inf a ontolex:Form ;
+chsample:ceosan_inf a ontolex:Form ;
     ontolex:writtenRep "cēosan"@ang ;
     lexinfo:verbFormMood lexinfo:infinitive .
 
-exform:ceosan_inf_2 a ontolex:Form ;
+chsample:ceosan_inf_2 a ontolex:Form ;
     ontolex:writtenRep "gecēosan"@ang ;
     lexinfo:verbFormMood lexinfo:infinitive .
 
-exform:ceosan_inf
-    chm:cellmate exform:ceosan_inf_2 .
+chsample:ceosan_inf
+    chm:cellmate chsample:ceosan_inf_2 .
 ```
 
 The same approach is used for the past participles *coren* and *gecoren*.
